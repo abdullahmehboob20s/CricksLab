@@ -1,0 +1,84 @@
+.score_card_footer {
+  background: rgba(255, 255, 255, 0.05);
+  min-height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3.125rem;
+}
+.score_card_footer_left {
+  display: flex;
+  align-items: center;
+}
+.run_rate {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-right: 4.375rem;
+}
+.run_rate_num {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #ffffff;
+}
+.recents_balls {
+  display: flex;
+  align-items: center;
+}
+.recent_text {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-right: 0.625rem;
+}
+.recents {
+  display: flex;
+  align-items: center;
+}
+
+.recent_ball {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 0.875rem;
+  color: #081027;
+  text-align: center;
+  line-height: 15px;
+}
+.recent_ball.blue {
+  background: #33a2d2;
+}
+.recent_ball.wicket {
+  background: #e55353;
+}
+.recent_ball.wd {
+  font-size: 10px;
+}
+.recent_ball:not(:last-child) {
+  margin-right: 0.625rem;
+}
+.score_card_view_details {
+  padding: 0.813rem 1.875rem;
+  background: #33a2d2;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  margin-right: 0.625rem;
+}
+.score_card_watch_live {
+  padding: 0.813rem 1.875rem;
+  background: #e55353;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}

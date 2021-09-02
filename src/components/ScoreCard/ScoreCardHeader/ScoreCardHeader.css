@@ -1,0 +1,67 @@
+.score_card_header {
+  background: rgba(255, 255, 255, 0.05);
+  min-height: 80px;
+}
+.score_card_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3.125rem;
+}
+
+.score_card_header_left {
+  display: flex;
+  align-items: center;
+}
+
+.score_card_header_left_date {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.score_card_left_live {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 10px;
+
+  width: 53px;
+  height: 32px;
+
+  background: rgba(229, 83, 83, 0.9);
+  border-radius: 5px;
+  margin-left: 1.25rem;
+  color: white;
+  font-size: 0.938rem;
+}
+
+.score_card_header_right {
+  display: flex;
+  align-items: center;
+}
+
+.score_card_header_right_title {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-right: 1rem;
+}
+
+.score_card_header_right_social_icons {
+  display: flex;
+  align-items: center;
+}
+
+.score_card_social_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  margin: 0 0.3rem;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}

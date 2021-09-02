@@ -1,0 +1,77 @@
+/* ===== Players ====== */
+
+.players {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.875rem;
+}
+
+/* ===== Player ====== */
+
+.player_container {
+  flex: 1;
+  position: relative;
+}
+
+.player_container.bowler_division {
+  padding-left: 30px;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.player {
+  padding: 0.625rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  position: relative;
+}
+
+.player.strike {
+  background: rgba(51, 162, 210, 0.2);
+}
+
+.player_container:not(:last-child) {
+  margin-right: 1.875rem;
+}
+
+.player_disc {
+  display: flex;
+  align-items: center;
+}
+
+.bat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: rgba(51, 162, 210, 0.2);
+  border-radius: 10px;
+  margin-right: 0.625rem;
+}
+.bat.strike {
+  background: #33a2d2;
+}
+
+.bowler {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: rgba(229, 83, 83, 0.2);
+  border-radius: 10px;
+  margin-right: 0.625rem;
+}
+
+.player_name {
+  font-size: 1rem;
+  color: #ffffff;
+}
+.player_score {
+  font-size: 1rem;
+  color: #ffffff;
+}

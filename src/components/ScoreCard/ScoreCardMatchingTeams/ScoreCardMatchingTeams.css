@@ -1,0 +1,73 @@
+.mathcing_teams {
+  margin-top: 1.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.team {
+  display: flex;
+  align-items: center;
+}
+.team.reverse {
+  flex-direction: row-reverse;
+}
+.team_img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  border: 2px solid #19632a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2.5rem;
+}
+.team_img.reverse {
+  margin-left: 2.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.team_name {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.team_score {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #33a2d2;
+  margin-bottom: 0.625rem;
+}
+
+.team_overs {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.team_content {
+  text-align: left;
+}
+
+.team_content.reverse {
+  text-align: right;
+}
+
+.yet_to_bat {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-top: 0.625rem;
+}
+
+.VS {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
