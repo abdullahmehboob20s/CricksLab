@@ -1,3 +1,11 @@
 .standings {
   background: #e5f3f8;
+  padding: 6.25rem 0;
+}
+.standing_cards_title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #081027;
+  margin-top: 3.125rem;
 }

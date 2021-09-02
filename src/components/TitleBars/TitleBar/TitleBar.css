@@ -9,6 +9,12 @@
   font-size: 2.25rem;
   color: #081027;
 }
+.title_bar_subtitle {
+  font-weight: normal;
+  font-size: 0.938rem;
+  color: #081027;
+  margin-top: 0.75rem;
+}
 .title_bar_btns {
   display: flex;
   align-items: center;
