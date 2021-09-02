@@ -1,6 +1,9 @@
 .standings {
   background: #e5f3f8;
   padding: 6.25rem 0;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 6.25rem;
 }
 .standing_cards_title {
   font-style: normal;

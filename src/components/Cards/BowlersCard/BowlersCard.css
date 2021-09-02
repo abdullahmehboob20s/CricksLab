@@ -1,5 +1,76 @@
 .standing_cards {
   margin-left: 5%;
-  margin-bottom: 6.25rem;
   margin-top: 1.875rem;
+}
+.bowlers_card {
+  position: relative;
+  width: 302px;
+  padding: 1.25rem;
+  background: #bee2ee;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.bowlers_card_vector {
+  position: absolute;
+  z-index: -1;
+  top: 20px;
+  left: 95%;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(103.26deg, #25af96 0%, #13b51b 100%);
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #ffffff;
+  padding-right: 22px;
+}
+.bowlers_card::before {
+  content: "";
+  width: 52%;
+  height: 90%;
+  position: absolute;
+  top: 32px;
+  right: -20px;
+  border: 2px solid #25af96;
+  background-color: transparent;
+  z-index: -1;
+  opacity: 0.2;
+  border-radius: 10px;
+}
+.bowlers_card_img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-bottom: 0.625rem;
+}
+.bowlers_card_title {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #081027;
+  margin-bottom: 1.25rem;
+}
+.player_history {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 0.625rem 1.25rem;
+  justify-content: space-between;
+}
+.player_history_title {
+  font-weight: 600;
+  font-size: 0.938rem;
+  line-height: 28px;
+  color: #081027;
+}
+.player_history_subtitle {
+  font-weight: normal;
+  font-size: 0.75rem;
+  line-height: 20px;
+  color: #081027;
 }
