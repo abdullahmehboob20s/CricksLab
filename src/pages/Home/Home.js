@@ -1,16 +1,18 @@
 import React from "react";
 import Navbar from "layouts/Navbar/Navbar";
-import "./Home.css";
 import ScoreCard from "layouts/ScoreCard/ScoreCard";
+import RelatedMatch from "layouts/RelatedMatch/RelatedMatch";
+import Standings from "layouts/Standings/Standings";
+import "./Home.css";
 
 function Home() {
   return (
     <>
       <Navbar />
       <div className="home">
-        <div className="container-wrapper">
-          <ScoreCard />
-        </div>
+        <ScoreCard />
+        <RelatedMatch />
+        <Standings />
       </div>
     </>
   );

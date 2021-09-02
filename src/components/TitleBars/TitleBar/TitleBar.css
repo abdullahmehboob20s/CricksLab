@@ -1,0 +1,35 @@
+.title_bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3.125rem;
+}
+.title_bar_title {
+  font-weight: bold;
+  font-size: 2.25rem;
+  color: #081027;
+}
+.title_bar_btns {
+  display: flex;
+  align-items: center;
+}
+.title_bar_forward_arrow {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #33a2d2;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  margin-right: 0.625rem;
+}
+.title_bar_btn {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #081027;
+  text-decoration: none;
+}

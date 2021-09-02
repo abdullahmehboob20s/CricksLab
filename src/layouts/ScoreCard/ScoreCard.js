@@ -7,21 +7,23 @@ import ScoreCardFooter from "components/ScoreCard/ScoreCardFooter/ScoreCardFoote
 
 function ScoreCard() {
   return (
-    <div className="score_card">
-      <div className="score_card_background"></div>
-      <div className="score_card_img"></div>
-      <div className="score_card_img_2"></div>
+    <div className="container-wrapper">
+      <div className="score_card">
+        <div className="score_card_background"></div>
+        <div className="score_card_img"></div>
+        <div className="score_card_img_2"></div>
 
-      <div className="score_card_items">
-        <ScoreCardHeader />
-        <div className="score_card_content">
-          <p className="score_card_title">
-            S.S.L. Season 2 - League Matches (MATCH #25)
-          </p>
-          <ScoreCardMatchingTeams />
-          <Players />
+        <div className="score_card_items">
+          <ScoreCardHeader />
+          <div className="score_card_content">
+            <p className="score_card_title">
+              S.S.L. Season 2 - League Matches (MATCH #25)
+            </p>
+            <ScoreCardMatchingTeams />
+            <Players />
+          </div>
+          <ScoreCardFooter />
         </div>
-        <ScoreCardFooter />
       </div>
     </div>
   );
