@@ -1,0 +1,42 @@
+.get_amazed {
+  width: 100%;
+  height: 700px;
+  background: #081027;
+  padding-left: 7rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.get_amazed_content {
+  width: 90%;
+  max-width: 600px;
+}
+.get_amazed_content_title {
+  font-weight: normal;
+  font-size: 2.25rem;
+  line-height: 48px;
+  color: #ffffff;
+  margin-bottom: 1.313rem;
+}
+.get_amazed_content_logo {
+  margin-bottom: 1.375rem;
+}
+.get_amazed_content_subtitle {
+  font-weight: normal;
+  font-size: 0.938rem;
+  line-height: 28px;
+  color: #ffffff;
+  margin-bottom: 3.125rem;
+}
+.get_amazed_btns_title {
+  font-weight: normal;
+  font-size: 0.938rem;
+  line-height: 28px;
+  color: #ffffff;
+  margin-bottom: 1.25rem;
+}
+.get_amazed_content_get_app {
+  display: inline-block;
+  margin-right: 1rem;
+  text-decoration: none;
+}
