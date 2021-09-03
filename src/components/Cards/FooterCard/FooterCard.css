@@ -1,0 +1,37 @@
+.footer_card {
+  display: block;
+  width: 208px;
+  height: 200px;
+  background: #33a2d2;
+  border-radius: 10px;
+  padding: 1.875rem;
+  margin-bottom: 2rem;
+
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.25rem;
+  color: #ffffff;
+
+  position: relative;
+  z-index: 4;
+
+  overflow: hidden;
+  text-decoration: none;
+}
+.footer_card_title {
+  position: relative;
+  z-index: 2;
+}
+.footer_card::before {
+  content: "";
+  width: 85%;
+  height: 85%;
+  position: absolute;
+  bottom: 0;
+  right: -5px;
+  background: url(../../../assets/images/bg-effect.svg);
+  background-position: center center;
+  background-size: contain;
+  z-index: 1;
+  background-repeat: no-repeat;
+}

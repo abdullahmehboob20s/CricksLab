@@ -1,0 +1,28 @@
+.footer_cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+.footer_links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.footer_social_links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+.footer_copyright {
+  text-align: center;
+  font-weight: normal;
+  font-size: 0.813rem;
+  color: #6e7077;
+  margin-top: 1rem;
+  margin-bottom: 51px;
+}

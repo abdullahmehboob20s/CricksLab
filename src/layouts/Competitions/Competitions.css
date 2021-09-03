@@ -4,3 +4,20 @@
   /* align-items: center; */
   justify-content: space-between;
 }
+.competitions_cards_tabs {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3.125rem;
+}
+.competitions_tab {
+  padding: 13px 15px;
+  border-bottom: 2px solid transparent;
+  font-weight: normal;
+  font-size: 0.875rem;
+  color: #081027;
+  cursor: pointer;
+}
+.competitions_tab.competitions_tab_active {
+  border-bottom: 2px solid #33a2d2;
+  color: #33a2d2;
+}

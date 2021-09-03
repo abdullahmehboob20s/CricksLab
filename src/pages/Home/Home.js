@@ -6,6 +6,7 @@ import Standings from "layouts/Standings/Standings";
 import Competitions from "layouts/Competitions/Competitions";
 import LatestNews from "layouts/LatestNews/LatestNews";
 import GetAmazed from "layouts/GetAmazed/GetAmazed";
+import Footer from "layouts/Footer/Footer";
 
 import "./Home.css";
 
@@ -20,6 +21,7 @@ function Home() {
         <Competitions />
         <LatestNews />
         <GetAmazed />
+        <Footer />
       </div>
     </>
   );

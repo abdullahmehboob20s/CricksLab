@@ -9,7 +9,7 @@ function LatestNews() {
     <div>
       <div className="container-wrapper">
         <TitleBar
-          title="Lates News"
+          title="Latest News"
           subtitle="Latest news and updates of Kuwait Cricket Association activities"
         />
         <div className="LatestNewsCards">
