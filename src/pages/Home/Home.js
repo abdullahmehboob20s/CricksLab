@@ -44,7 +44,7 @@ function Home() {
         <Competitions />
         <LatestNews />
         <GetAmazed />
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </>
   );
