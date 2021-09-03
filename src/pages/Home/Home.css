@@ -2,3 +2,23 @@
   background: linear-gradient(180deg, #e5f3f8 0%, rgba(255, 255, 255, 0) 100%);
   padding-top: 6.25rem;
 }
+.swiper-button-next {
+  background-image: url(../../assets/images/arrow-right.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev {
+  background-image: url(../../assets/images/arrow-right.svg);
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+  background-size: 100% auto;
+  background-position: center;
+}
+.swiper-button-prev::after {
+  display: none;
+}
