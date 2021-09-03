@@ -21,7 +21,11 @@ function Home() {
         <Swiper navigation={true} allowTouchMove={false} className="mySwiper">
           <SwiperSlide>
             <div className="container-wrapper">
-              <ScoreCard />
+              <ScoreCard
+                showFooterBtns={true}
+                showHeader={true}
+                showTitle={true}
+              />
             </div>
           </SwiperSlide>
           <SwiperSlide>

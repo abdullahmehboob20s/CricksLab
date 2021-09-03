@@ -38,13 +38,15 @@ function Navbar() {
         </div>
 
         <div className="navbar_links">
-          <Link className="navbar_link">
+          <Link to="/" className="navbar_link">
             Matches{" "}
             <span className="navbar_link_icon">
               <BsChevronDown />
             </span>
           </Link>
-          <Link className="navbar_link">Competitions</Link>
+          <Link to="match-details" className="navbar_link">
+            Competitions
+          </Link>
           <Link className="navbar_link">Teams</Link>
           <Link className="navbar_link">Clubs</Link>
           <Link className="navbar_link">Players</Link>

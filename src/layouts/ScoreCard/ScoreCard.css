@@ -1,5 +1,5 @@
 .score_card {
-  min-height: 596px;
+  height: auto;
   border-radius: 10px;
   margin-bottom: 6.25rem;
   position: relative;
@@ -50,7 +50,7 @@
 }
 
 .score_card_items {
-  min-height: 596px;
+  min-height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -59,6 +59,7 @@
 .score_card_content {
   flex: 1;
   padding: 0 5rem;
+  /* border: 2px solid red; */
 }
 
 .score_card_title {

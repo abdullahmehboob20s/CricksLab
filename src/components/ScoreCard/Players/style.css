@@ -12,7 +12,7 @@
 .player_container {
   flex: 1;
   position: relative;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .player_container.bowler_division {

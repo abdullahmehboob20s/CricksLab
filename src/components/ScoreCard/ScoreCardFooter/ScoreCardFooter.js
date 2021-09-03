@@ -3,7 +3,8 @@ import "./style.css";
 import RecentBall from "./RecentBall";
 import { Link } from "react-router-dom";
 
-function ScoreCardFooter() {
+function ScoreCardFooter(props) {
+  const { footerText, showFooterBtns } = props;
   return (
     <div className="score_card_footer">
       <div className="score_card_footer_left">
@@ -27,8 +28,14 @@ function ScoreCardFooter() {
         </div>
       </div>
       <div className="score_card_footer_right">
-        <Link className="score_card_view_details">View Detail</Link>
-        <Link className="score_card_watch_live">Watch Live</Link>
+        {showFooterBtns ? (
+          <>
+            <Link className="score_card_view_details">View Detail</Link>
+            <Link className="score_card_watch_live">Watch Live</Link>
+          </>
+        ) : (
+          <p className="footer_right_text">{footerText}</p>
+        )}
       </div>
     </div>
   );

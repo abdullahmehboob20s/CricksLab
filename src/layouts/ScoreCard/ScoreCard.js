@@ -5,7 +5,8 @@ import ScoreCardMatchingTeams from "components/ScoreCard/ScoreCardMatchingTeams/
 import Players from "components/ScoreCard/Players/Players";
 import ScoreCardFooter from "components/ScoreCard/ScoreCardFooter/ScoreCardFooter";
 
-function ScoreCard() {
+function ScoreCard(props) {
+  const { showHeader, showTitle, footerText, showFooterBtns } = props;
   return (
     <div className="score_card">
       <div className="score_card_background"></div>
@@ -13,15 +14,22 @@ function ScoreCard() {
       <div className="score_card_img_2"></div>
 
       <div className="score_card_items">
-        <ScoreCardHeader />
+        {showHeader ? <ScoreCardHeader /> : ""}
         <div className="score_card_content">
-          <p className="score_card_title">
-            S.S.L. Season 2 - League Matches (MATCH #25)
-          </p>
+          {showTitle ? (
+            <p className="score_card_title">
+              S.S.L. Season 2 - League Matches (MATCH #25)
+            </p>
+          ) : (
+            ""
+          )}
           <ScoreCardMatchingTeams />
           <Players />
         </div>
-        <ScoreCardFooter />
+        <ScoreCardFooter
+          footerText={footerText}
+          showFooterBtns={showFooterBtns}
+        />
       </div>
     </div>
   );
