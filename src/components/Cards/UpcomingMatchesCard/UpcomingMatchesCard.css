@@ -1,0 +1,101 @@
+.upcoming_matches_card {
+  background: rgba(51, 162, 210, 0.05);
+  border-radius: 10px;
+  padding: 1.875rem;
+  margin-bottom: 0.625rem;
+}
+.upcoming_matches_card_title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 24px;
+  text-align: center;
+  color: #081027;
+  margin-bottom: 2.25rem;
+}
+.upcoming_matches_card_teams {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.upcoming_matches_card_team {
+  display: flex;
+  align-items: center;
+}
+.upcoming_matches_card_team.reverse {
+  flex-direction: row-reverse;
+}
+.upcoming_matches_card_team_img {
+  border: 1px solid #dedee4;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+.upcoming_matches_card_team.reverse .upcoming_matches_card_team_img {
+  margin-left: 1rem;
+}
+.upcoming_matches_card_team_title {
+  width: 78px;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 24px;
+  color: #081027;
+}
+.upcoming_matches_card_team.reverse .upcoming_matches_card_team_title {
+  text-align: right;
+}
+
+.upcoming_matches_card_tems_vs {
+  width: 50px;
+  height: 50px;
+  background: rgba(51, 162, 210, 0.05);
+  backdrop-filter: blur(20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  font-weight: 600;
+  font-size: 0.75rem;
+  color: #6e7077;
+}
+
+.upcoming_matche_happend {
+  font-weight: normal;
+  font-size: 0.813rem;
+  color: #081027;
+  margin-top: 1.875rem;
+  text-align: center;
+}
+
+@media (max-width: 1500px) {
+  .upcoming_matches_card_title {
+    font-size: 0.8rem;
+  }
+
+  .upcoming_matches_card_team_img {
+    width: 45px;
+    height: 45px;
+    margin-right: 0.8rem;
+  }
+  .upcoming_matches_card_team.reverse .upcoming_matches_card_team_img {
+    margin-left: 0.8rem;
+  }
+  .upcoming_matches_card_team_title {
+    width: 78px;
+    font-weight: bold;
+    font-size: 0.8rem;
+    line-height: 18px;
+    color: #081027;
+  }
+  .upcoming_matches_card_team.reverse .upcoming_matches_card_team_title {
+    text-align: right;
+  }
+
+  .upcoming_matches_card_tems_vs {
+    width: 40px;
+    height: 40px;
+  }
+}

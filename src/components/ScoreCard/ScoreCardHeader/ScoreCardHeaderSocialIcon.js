@@ -1,7 +1,16 @@
 import React from "react";
 
 function ScoreCardHeaderSocialIcon(props) {
-  return <div className="score_card_social_icon">{props.icon}</div>;
+  const { dark } = props;
+  return (
+    <div
+      className={
+        dark ? "score_card_social_icon dark" : "score_card_social_icon"
+      }
+    >
+      {props.icon}
+    </div>
+  );
 }
 
 export default ScoreCardHeaderSocialIcon;

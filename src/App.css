@@ -19,6 +19,36 @@
   color: #081027;
 }
 
+.score_card_social_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  margin: 0 0.3rem;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.score_card_social_icon.dark {
+  background: rgba(8, 16, 39, 0.1);
+  color: #6e7077;
+}
+
+.score_card_header_right_title {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-right: 1rem;
+}
+
+.score_card_header_right_title.dark {
+  color: #6e7077;
+}
+
 @media (max-width: 1000px) {
   :root {
     font-size: 90%;

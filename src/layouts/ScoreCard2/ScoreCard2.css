@@ -1,0 +1,83 @@
+.score_card_2 {
+  padding: 1.25rem 1.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-left: 5px solid #33a2d2;
+  position: relative;
+  z-index: 2;
+}
+.score_card_2::before {
+  content: "";
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(90deg, #e5f3f8 0%, rgba(255, 255, 255, 0) 100%);
+  z-index: 1;
+}
+.score_card_2_team {
+  display: flex;
+  align-items: center;
+  z-index: 10;
+}
+.score_card_2_team.reverse {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.score_card_2_team_img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 1.875rem;
+  border: 1px solid #dedee4;
+}
+.score_card_2_team_img.blue {
+  border: 1px solid #33a2d2;
+}
+.score_card_2_team.reverse img {
+  border-radius: 505;
+  margin-left: 1.875rem;
+}
+.score_card_2_team_name {
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 24px;
+  color: #081027;
+}
+.score_card_2_score {
+  display: flex;
+  align-items: center;
+  margin-top: 0.313rem;
+}
+.team_runs {
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 24px;
+  color: #33a2d2;
+}
+.score_card_2_team_overs {
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 24px;
+  color: #081027;
+  margin-left: 0.4rem;
+}
+.score_card_2_team.reverse .score_card_2_team_overs {
+  flex: 1;
+  margin-left: 0rem;
+  text-align: right;
+}
+.match_live {
+  padding: 2px 10px;
+  width: 53px;
+  height: 32px;
+  background: rgba(229, 83, 83, 0.9);
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
