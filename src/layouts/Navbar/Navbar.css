@@ -202,3 +202,21 @@
     font-size: 0.875rem;
   }
 }
+
+@media (max-width: 500px) {
+  .navbar_icon {
+    width: 40px;
+    margin-right: 0.6rem;
+  }
+  .navbar_icon_2 {
+    width: 90px;
+    margin-right: 0.7rem;
+  }
+  .navbar_icon_3 {
+    border-left: 1px solid #dedee4;
+  }
+  .navbar_icon_3 img {
+    width: 120px;
+    margin-left: 0.4rem;
+  }
+}

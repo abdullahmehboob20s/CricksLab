@@ -68,3 +68,21 @@
   color: #ffffff;
   margin-top: 3.125rem;
 }
+
+@media (max-width: 1200px) {
+  .score_card_content {
+    padding: 0 3rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .score_card_content {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .score_card_content {
+    padding: 0 1rem;
+  }
+}

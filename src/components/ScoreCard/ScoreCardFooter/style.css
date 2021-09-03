@@ -82,3 +82,89 @@
   font-size: 0.875rem;
   text-transform: uppercase;
 }
+
+@media (max-width: 1350px) {
+  .run_rate {
+    margin-right: 2rem;
+  }
+
+  .recent_ball:not(:last-child) {
+    margin-right: 0.4rem;
+  }
+
+  .score_card_view_details {
+    padding: 0.813rem 1.3rem;
+  }
+  .score_card_watch_live {
+    padding: 0.813rem 1.3rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .score_card_footer {
+    padding: 0 2rem;
+  }
+
+  .recent_ball {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 1125px) {
+  .score_card_footer {
+    min-height: auto;
+  }
+  .score_card_footer_left {
+    align-items: unset;
+    flex-direction: column;
+    padding: 2rem 0;
+  }
+
+  .run_rate {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-right: 0rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .score_card_view_details {
+    display: block;
+    margin-right: 0rem;
+    margin-bottom: 1rem;
+  }
+  .score_card_watch_live {
+    display: block;
+  }
+}
+
+@media (max-width: 650px) {
+  .score_card_footer_left {
+    align-items: unset;
+    flex-direction: column;
+    padding: 0rem 0;
+    margin-bottom: 2rem;
+  }
+  .score_card_footer {
+    display: flex;
+    justify-content: unset;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 2rem 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .score_card_footer {
+    padding: 2rem 1rem;
+  }
+
+  .recent_ball {
+    width: 30px;
+    height: 30px;
+    font-size: 0.9rem;
+    line-height: 15px;
+  }
+}

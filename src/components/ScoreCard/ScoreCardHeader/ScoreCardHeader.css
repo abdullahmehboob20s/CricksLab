@@ -1,8 +1,6 @@
 .score_card_header {
   background: rgba(255, 255, 255, 0.05);
   min-height: 80px;
-}
-.score_card_header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -64,4 +62,32 @@
   color: white;
   font-size: 24px;
   cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .score_card_header {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .score_card_header {
+    min-height: auto;
+    display: flex;
+    align-items: unset;
+    justify-content: center;
+    padding: 2rem 2rem;
+    flex-direction: column;
+  }
+  .score_card_header_left {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .score_card_header {
+    padding: 2rem 1rem;
+  }
 }

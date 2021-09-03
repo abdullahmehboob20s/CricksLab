@@ -12,12 +12,16 @@ function LatestNews() {
           title="Latest News"
           subtitle="Latest news and updates of Kuwait Cricket Association activities"
         />
-        <div className="LatestNewsCards">
-          <LatestNewsManageCard />
-          <LatestNewsCard />
-          <LatestNewsCard />
-          <LatestNewsCard />
-          <LatestNewsCard />
+        <div className="lates_cards">
+          <div className="LatestNewsCards">
+            <LatestNewsManageCard />
+            <LatestNewsCard className="latest_news_card_2" />
+          </div>
+          <div className="LatestNewsCards_2">
+            <LatestNewsCard className="latest_news_card" />
+            <LatestNewsCard className="latest_news_card" />
+            <LatestNewsCard className="latest_news_card" />
+          </div>
         </div>
       </div>
     </div>

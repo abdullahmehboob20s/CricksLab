@@ -3,13 +3,10 @@
   background: #ffffff;
   border: 1px solid #dedee4;
   border-radius: 10px;
-  margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
   position: relative;
-}
-.competitions_card:not(:last-child) {
-  margin-right: 2rem;
+  flex-basis: 250px;
 }
 .competitions_card_img {
   display: block;

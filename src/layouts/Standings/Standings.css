@@ -80,3 +80,39 @@
   border: 2px solid red;
   z-index: 100;
 }
+
+@media (max-width: 1000px) {
+  .standing_tab {
+    padding: 0.813rem 0.6rem;
+  }
+
+  .standing_select {
+    padding: 0.813rem 0.6rem;
+  }
+  .standing_select .title {
+    margin-right: 0.6rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .standing_teams_specs {
+    display: flex;
+    align-items: unset;
+    justify-content: unset;
+    flex-direction: column;
+  }
+  .standing_teams_specs_left {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 410px) {
+  .standing_teams_specs_right {
+    display: flex;
+    align-items: unset;
+    flex-wrap: wrap;
+  }
+  .standing_select {
+    margin-bottom: 1rem;
+  }
+}

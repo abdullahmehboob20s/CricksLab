@@ -1,9 +1,10 @@
 .footer_cards {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 1.5rem;
+  gap: 1rem;
 }
 .footer_links {
   display: flex;

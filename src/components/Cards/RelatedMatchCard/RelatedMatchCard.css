@@ -42,3 +42,9 @@
   font-size: 0.813rem;
   color: #6e7077;
 }
+
+@media (max-width: 520px) {
+  .related_match_card {
+    width: 95%;
+  }
+}

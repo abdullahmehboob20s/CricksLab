@@ -12,6 +12,7 @@
 .player_container {
   flex: 1;
   position: relative;
+  margin-bottom: 2rem;
 }
 
 .player_container.bowler_division {
@@ -74,4 +75,33 @@
 .player_score {
   font-size: 1rem;
   color: #ffffff;
+}
+
+@media (max-width: 1125px) {
+  .players {
+    margin-bottom: 2.5rem;
+  }
+}
+@media (max-width: 800px) {
+  .players {
+    margin-bottom: 1rem;
+  }
+
+  .players {
+    display: flex;
+    align-items: unset;
+    justify-content: unset;
+    flex-direction: column;
+  }
+
+  .player_container.bowler_division {
+    padding-left: 0px;
+    border-left: 0px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .player_container:not(:last-child) {
+    margin-right: 0rem;
+  }
 }

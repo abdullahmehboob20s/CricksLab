@@ -70,3 +70,11 @@
   line-height: 20px;
   color: #081027;
 }
+
+@media (max-width: 500px) {
+  .bowlers_card {
+    width: 85%;
+    padding: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+}

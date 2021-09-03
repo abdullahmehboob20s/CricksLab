@@ -1,10 +1,16 @@
 .latest_news_card {
-  width: 380px;
+  flex: 1;
   background: #ffffff;
   border: 1px solid #dedee4;
   border-radius: 10px;
-  margin-bottom: 3.188rem;
-  /* margin: 3.125rem; */
+  flex-basis: 300px;
+}
+.latest_news_card_2 {
+  flex: 0.25;
+  background: #ffffff;
+  border: 1px solid #dedee4;
+  border-radius: 10px;
+  flex-basis: 300px;
 }
 .latest_news_card_img {
   width: 100%;
@@ -26,4 +32,14 @@
   font-size: 0.813rem;
   line-height: 22px;
   color: #6e7077;
+}
+
+@media (max-width: 1300px) {
+  .latest_news_card_2 {
+    flex: 1;
+    background: #ffffff;
+    border: 1px solid #dedee4;
+    border-radius: 10px;
+    flex-basis: 300px;
+  }
 }

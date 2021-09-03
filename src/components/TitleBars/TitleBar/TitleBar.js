@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function TitleBar(props) {
   return (
     <div className="title_bar">
-      <div>
+      <div className="title_bar_left">
         <p className="title_bar_title">{props.title}</p>
         {props.subtitle ? (
           <p className="title_bar_subtitle">{props.subtitle}</p>

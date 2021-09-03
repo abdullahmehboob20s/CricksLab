@@ -1,6 +1,5 @@
 import React from "react";
 import "./FooterCard.css";
-import bg_effect from "assets/images/bg-effect.svg";
 import { Link } from "react-router-dom";
 
 function FooterCard(props) {

@@ -22,6 +22,33 @@ function RelatedMatche() {
           pagination={{
             clickable: true,
           }}
+          breakpoints={{
+            1350: {
+              slidesPerView: 3.5,
+            },
+            1200: {
+              slidesPerView: 3,
+            },
+            1080: {
+              slidesPerView: 3,
+            },
+            900: {
+              slidesPerView: 2.5,
+              spaceBetween: 30,
+            },
+            720: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+            },
+            520: {
+              slidesPerView: 1.5,
+              spaceBetween: 40,
+            },
+            200: {
+              slidesPerView: 1,
+              spaceBetween: 0,
+            },
+          }}
           className="related_match_swiper"
         >
           <SwiperSlide>

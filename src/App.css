@@ -18,3 +18,15 @@
   font-weight: bold;
   color: #081027;
 }
+
+@media (max-width: 1000px) {
+  :root {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 450px) {
+  :root {
+    font-size: 80%;
+  }
+}

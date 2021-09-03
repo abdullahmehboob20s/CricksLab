@@ -2,9 +2,9 @@ import React from "react";
 import "./LatestNewsCard.css";
 import latest_card_img_1 from "assets/images/latest-card-img-1.png";
 
-function LatestNewsCard() {
+function LatestNewsCard(props) {
   return (
-    <div className="latest_news_card">
+    <div className={props.className}>
       <img className="latest_news_card_img" src={latest_card_img_1} alt="" />
       <div className="latest_news_card_content">
         <p className="latest_news_card_title">

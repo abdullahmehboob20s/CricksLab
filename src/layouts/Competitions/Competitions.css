@@ -3,6 +3,8 @@
   display: flex;
   /* align-items: center; */
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 .competitions_cards_tabs {
   display: flex;
