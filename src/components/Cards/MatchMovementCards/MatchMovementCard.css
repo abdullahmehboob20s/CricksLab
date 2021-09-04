@@ -1,0 +1,45 @@
+.match_movement_card {
+  display: flex;
+  align-items: center;
+}
+.match_movement_card_img {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  margin-right: 1.875rem;
+  overflow: hidden;
+  position: relative;
+}
+.match_movement_card_img img {
+  width: 100%;
+  height: 100%;
+}
+.match_movement_card_video_duration {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 70px;
+  height: 24px;
+  background: #171613;
+  opacity: 0.65;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 0.75rem;
+  color: white;
+}
+.match_movement_card_title {
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 24px;
+  color: #081027;
+  margin-bottom: 0.625rem;
+}
+.match_movement_card_subtitle {
+  font-weight: 600;
+  font-size: 0.813rem;
+  line-height: 22px;
+  color: #6e7077;
+}

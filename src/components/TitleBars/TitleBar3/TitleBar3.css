@@ -1,0 +1,31 @@
+.title_bar_3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 30px;
+  padding: 20px 0;
+}
+.title_bar_3.border {
+  border-top: 1px solid #dedee4;
+  border-bottom: 1px solid #dedee4;
+}
+.title_bar_3_title {
+  font-weight: bold;
+  font-size: 0.875rem;
+  color: #081027;
+}
+.title_bar_3_subtitles {
+  display: flex;
+  align-items: center;
+}
+.title_bar_3_subtitles p:nth-child(1) {
+  font-weight: bold;
+  font-size: 0.875rem;
+  color: #081027;
+}
+.title_bar_3_subtitles p:nth-child(2) {
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: #6e7077;
+  margin-left: 0.2rem;
+}

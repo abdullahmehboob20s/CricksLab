@@ -76,3 +76,80 @@
   color: #33a2d2;
   text-decoration: none;
 }
+.upcoming_matches_cards {
+  margin-bottom: 3.125rem;
+}
+.upcoming_matche_movement_cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+}
+
+.score_card_2_wrapper {
+  margin-bottom: 3.125rem;
+}
+
+.teams_current_details_table {
+  width: 100%;
+  border: 0;
+  border-collapse: collapse;
+}
+
+.teams_current_details_table_head {
+  background: rgba(51, 162, 210, 0.05);
+}
+
+.teams_details_table_headings {
+  padding: 0.938rem 1rem;
+  font-weight: bold;
+  font-size: 0.875rem;
+  color: #081027;
+}
+
+.teams_details_table_headings:first-child {
+  text-align: left;
+  padding: 0.938rem 1.875rem;
+}
+
+.teams_details_player_details {
+  display: flex;
+  align-items: center;
+  padding: 0.938rem 1.875rem;
+}
+.teams_details_player_details_wrapper:nth-child(even) {
+  background: #f9f9f9;
+}
+.teams_details_player_details img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 1.25rem;
+}
+.teams_player_detail_title {
+  font-weight: bold;
+  font-size: 0.875rem;
+  color: #081027;
+  line-height: 24px;
+}
+.teams_player_detail_title.batting {
+  color: #33a2d2;
+}
+.teams_player_detail_subtitle {
+  font-weight: normal;
+  font-size: 0.75rem;
+  line-height: 20px;
+  color: #6e7077;
+}
+.teams_details_table_text {
+  padding: 0.938rem 1rem;
+  font-weight: bold;
+  font-size: 0.875rem;
+  color: #081027;
+  text-align: center;
+}
+
+.teams_extras_details {
+  border-top: 1px solid #dedee4;
+  border-bottom: 1px solid #dedee4;
+  margin-bottom: 1.875rem;
+}
