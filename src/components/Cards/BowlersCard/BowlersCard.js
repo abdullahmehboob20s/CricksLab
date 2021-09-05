@@ -1,6 +1,6 @@
 import React from "react";
 import "./BowlersCard.css";
-import PlayerHistory from "./PlayerHistory";
+import PlayerHistory from "../PlayerHistory/PlayerHistory";
 
 function BowlersCard(props) {
   return (
@@ -15,7 +15,10 @@ function BowlersCard(props) {
         className="bowlers_card_img"
       />
       <p className="bowlers_card_title">{props.bowlerContent.name}</p>
-      <PlayerHistory playerHistory={props.bowlerContent.playerHistory} />
+      <PlayerHistory
+        bgColor="rgba(255, 255, 255, 0.3);"
+        playerHistory={props.bowlerContent.playerHistory}
+      />
     </div>
   );
 }

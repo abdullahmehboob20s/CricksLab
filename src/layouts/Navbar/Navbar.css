@@ -41,6 +41,12 @@
   margin-right: 1.5rem;
 }
 
+@media (min-width: 1500px) {
+  .navbar_input {
+    width: 360px;
+  }
+}
+
 .navbar_input input {
   position: absolute;
   top: 0;

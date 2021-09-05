@@ -1,3 +1,8 @@
+.footer {
+  background: #f9f9f9;
+  padding: 6.25rem 0;
+}
+
 .footer_cards {
   display: flex;
   align-items: center;
@@ -25,5 +30,4 @@
   font-size: 0.813rem;
   color: #6e7077;
   margin-top: 1rem;
-  margin-bottom: 51px;
 }

@@ -50,26 +50,6 @@
   color: #081027;
   margin-bottom: 1.25rem;
 }
-.player_history {
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  padding: 0.625rem 1.25rem;
-  justify-content: space-between;
-}
-.player_history_title {
-  font-weight: 600;
-  font-size: 0.938rem;
-  line-height: 28px;
-  color: #081027;
-}
-.player_history_subtitle {
-  font-weight: normal;
-  font-size: 0.75rem;
-  line-height: 20px;
-  color: #081027;
-}
 
 @media (max-width: 500px) {
   .bowlers_card {

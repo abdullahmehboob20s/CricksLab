@@ -2,67 +2,15 @@ import React from "react";
 import "./Standings.css";
 import TitleBar from "components/TitleBars/TitleBar/TitleBar";
 import "swiper/swiper-bundle.css";
-import bowlers_card_img_1 from "assets/images/bowlers-card-img-1.png";
-import bowlers_card_img_2 from "assets/images/bowlers-card-img-2.png";
-import bowlers_card_img_3 from "assets/images/bowlers-card-img-3.png";
-import bowlers_card_img_4 from "assets/images/bowlers-card-img-4.png";
 import Tabs from "components/Tabs/Tabs";
 import Tab from "components/Tabs/Tab";
 import TabPan from "components/Tabs/TabPan";
 import StandingCard from "components/Cards/StandingCards/StandingCard";
 import CardSelect from "components/Selects/CardSelect/CardSelect";
+import { useSelector } from "react-redux";
 
 function Standings() {
-  let bowlers = [
-    {
-      name: "Kwadwo Asamoah",
-      color: "#BEE2EE",
-      image: bowlers_card_img_1,
-      playerHistory: {
-        matches: 7,
-        won: 6,
-        lost: 1,
-        noResult: 0,
-        points: 12,
-      },
-    },
-    {
-      name: "Javi Martinez",
-      color: "#CBE9C4",
-      image: bowlers_card_img_2,
-      playerHistory: {
-        matches: 6,
-        won: 3,
-        lost: 3,
-        noResult: 0,
-        points: 6,
-      },
-    },
-    {
-      name: "Shinji Kagawa",
-      image: bowlers_card_img_3,
-      color: "#F8DFE2",
-      playerHistory: {
-        matches: 5,
-        won: 2,
-        lost: 3,
-        noResult: 0,
-        points: 4,
-      },
-    },
-    {
-      name: "John Terry",
-      image: bowlers_card_img_4,
-      color: "#F9F9F9",
-      playerHistory: {
-        matches: 5,
-        won: 2,
-        lost: 3,
-        noResult: 0,
-        points: 4,
-      },
-    },
-  ];
+  const { data } = useSelector((state) => state.standings);
   let selectItems = [
     { title: "abc" },
     { title: "abc" },
@@ -130,16 +78,16 @@ function Standings() {
         </div>
 
         <TabPan tabIndex={1}>
-          <StandingCard title="Top Bowler" bowlers={bowlers} />
+          <StandingCard title="Top Bowler" bowlers={data} />
         </TabPan>
         <TabPan tabIndex={2}>
-          <StandingCard title="Top Batsman" bowlers={bowlers} />
+          <StandingCard title="Top Batsman" bowlers={data} />
         </TabPan>
         <TabPan tabIndex={3}>
-          <StandingCard title="All Rounder" bowlers={bowlers} />
+          <StandingCard title="All Rounder" bowlers={data} />
         </TabPan>
         <TabPan tabIndex={4}>
-          <StandingCard title="Top Rated Teams" bowlers={bowlers} />
+          <StandingCard title="Top Rated Teams" bowlers={data} />
         </TabPan>
       </Tabs>
     </div>

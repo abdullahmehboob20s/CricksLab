@@ -23,6 +23,13 @@
   /* border: 2px solid red; */
 }
 
+@media (min-width: 1500px) {
+  .get_amazed::before {
+    top: -15%;
+    right: 50px;
+  }
+}
+
 .get_amazed_content {
   width: 40%;
 }

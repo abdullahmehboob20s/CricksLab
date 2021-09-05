@@ -1,0 +1,13 @@
+.follow_btn {
+  border-radius: 10px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}

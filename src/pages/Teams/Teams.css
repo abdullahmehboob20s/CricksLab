@@ -1,0 +1,6 @@
+.team_cards_wrapper {
+  display: flex;
+  gap: 3.125rem;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}

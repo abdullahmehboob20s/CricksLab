@@ -2,43 +2,20 @@ import React from "react";
 import TitleBar from "components/TitleBars/TitleBar/TitleBar";
 import CompetitionsCard from "components/Cards/CompetitionsCard/CompetitionsCard";
 import "./Competitions.css";
-import competition_card_img_1 from "assets/images/competition-card-img-1.png";
-import competition_card_img_2 from "assets/images/competition-card-img-2.png";
-import competition_card_img_3 from "assets/images/competition-card-img-3.png";
-import competition_card_img_4 from "assets/images/competition-card-img-4.png";
 import Tabs from "components/Tabs/Tabs";
 import Tab from "components/Tabs/Tab";
 import TabPan from "components/Tabs/TabPan";
+import { useSelector } from "react-redux";
 
 function Competitions() {
-  let leagues = [
-    {
-      name: "Kashmir Premier League 2021",
-      image: competition_card_img_1,
-      status: "Ongoing",
-    },
-    {
-      name: "United Cricket League",
-      image: competition_card_img_2,
-      status: "Ongoing",
-    },
-    {
-      name: "Delhi Saudagran Premier League 2021",
-      image: competition_card_img_3,
-      status: "Completed",
-    },
-    {
-      name: "LYE T10 Cricket League",
-      image: competition_card_img_4,
-      status: "Ongoing",
-    },
-  ];
+  const { data } = useSelector((state) => state.leagues);
 
   return (
-    <div className="competitions">
+    <div>
       <div className="container-wrapper">
         <TitleBar
           title="Competitions"
+          viewAll="/competitions"
           subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         />
 
@@ -66,21 +43,21 @@ function Competitions() {
 
           <TabPan tabIndex={1}>
             <div className="competitions_cards">
-              {leagues.map((league, index) => (
+              {data.slice(0, 4).map((league, index) => (
                 <CompetitionsCard key={index} data={league} />
               ))}
             </div>
           </TabPan>
           <TabPan tabIndex={2}>
             <div className="competitions_cards">
-              {leagues.map((league, index) => (
+              {data.slice(0, 4).map((league, index) => (
                 <CompetitionsCard key={index} data={league} />
               ))}
             </div>
           </TabPan>
           <TabPan tabIndex={3}>
             <div className="competitions_cards">
-              {leagues.map((league, index) => (
+              {data.slice(0, 4).map((league, index) => (
                 <CompetitionsCard key={index} data={league} />
               ))}
             </div>

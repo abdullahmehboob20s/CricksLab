@@ -17,7 +17,7 @@ function Home() {
   return (
     <>
       <Navbar />
-      <div className="home">
+      <div className="home bg-liner-gradient">
         <Swiper navigation={true} allowTouchMove={false} className="mySwiper">
           <SwiperSlide>
             <div className="container-wrapper">

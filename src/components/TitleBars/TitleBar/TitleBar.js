@@ -15,7 +15,7 @@ function TitleBar(props) {
         )}
       </div>
       <div className="title_bar_btns">
-        <Link className="title_bar_forward_arrow">
+        <Link to={props.viewAll} className="title_bar_forward_arrow">
           <IoIosArrowRoundForward />
         </Link>
         <Link to={props.viewAll} className="title_bar_btn">

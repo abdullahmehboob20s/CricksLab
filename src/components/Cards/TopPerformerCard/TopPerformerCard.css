@@ -1,0 +1,77 @@
+.top_performer_card {
+  background: rgba(51, 162, 210, 0.1);
+  border-radius: 10px;
+  padding: 1.875rem;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.box_1 {
+  position: absolute;
+  top: -18px;
+  left: -18px;
+  width: 80px;
+  height: 80px;
+  border-left: 2px solid #33a2d2;
+  border-top: 2px solid #33a2d2;
+  border-radius: 8px 0px 0px 0px;
+}
+.box_2 {
+  position: absolute;
+  bottom: -18px;
+  right: -18px;
+  width: 80px;
+  height: 80px;
+  border-right: 2px solid #33a2d2;
+  border-bottom: 2px solid #33a2d2;
+  border-radius: 0px 0px 9px 0px;
+}
+.box_3 {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+}
+.box_4 {
+  position: absolute;
+  top: 100%;
+  left: 30px;
+  width: 194px;
+  height: 54px;
+  background: #33a2d2;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.top_performer_performence {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+.top_performer_profile {
+  display: flex;
+  align-items: center;
+  gap: 0 0.938rem;
+}
+.top_performer_profile_img {
+  width: 90px;
+  height: 90px;
+  border-right: 50%;
+}
+.top_performer_profile_name {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #081027;
+}

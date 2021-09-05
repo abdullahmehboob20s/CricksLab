@@ -1,0 +1,21 @@
+.player_history {
+  /* background: rgba(110, 112, 119, 0.05); */
+  /* background: rgba(255, 255, 255, 0.3); */
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 0.625rem 1.25rem;
+  justify-content: space-between;
+}
+.player_history_title {
+  font-weight: 600;
+  font-size: 0.938rem;
+  line-height: 28px;
+  color: #081027;
+}
+.player_history_subtitle {
+  font-weight: normal;
+  font-size: 0.75rem;
+  line-height: 20px;
+  color: #081027;
+}

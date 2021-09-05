@@ -1,0 +1,29 @@
+.score_card_3 {
+  display: flex;
+  background: rgba(51, 162, 210, 0.05);
+  border-radius: 10px;
+  flex-wrap: wrap;
+}
+.score_card_3_col {
+  flex-basis: 150px;
+  padding: 1.25rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.313rem;
+  justify-content: center;
+}
+.score_card_3_col:not(:last-child) {
+  border-right: 1px solid #e5f3f8;
+}
+.score_card_3_col_1st_child {
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 24px;
+  color: #081027;
+}
+.score_card_3_col_2nd_child {
+  font-weight: normal;
+  font-size: 0.75rem;
+  color: #081027;
+}

@@ -1,5 +1,4 @@
 .match_details {
-  background: linear-gradient(180deg, #e5f3f8 0%, rgba(255, 255, 255, 0) 100%);
   padding-top: 6.25rem;
 }
 
@@ -152,4 +151,188 @@
   border-top: 1px solid #dedee4;
   border-bottom: 1px solid #dedee4;
   margin-bottom: 1.875rem;
+}
+
+/* live_commentry */
+.container-wrapper-30 {
+  padding: 0 1.875rem;
+}
+.live_commentry {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.875rem;
+}
+.live_commentry_title {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #000000;
+}
+.live_commentry_right {
+  display: flex;
+  align-items: center;
+}
+.match_details_scorecrd_table {
+  margin-bottom: 1.875rem;
+  margin-top: 1.875rem;
+}
+.match_details_players_table {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* squad_playing_X1 */
+.squad_playing_X1 {
+  background: rgba(51, 162, 210, 0.05);
+  padding: 0.938rem 1.875rem;
+  margin-top: 1rem;
+}
+.squad_playing_X1_cards {
+  margin-top: 1.875rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+}
+
+/* top_perfomers */
+.top_perfomers_title {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 32px;
+  color: #000000;
+}
+
+.top_players_team {
+  display: flex;
+  margin-top: 8rem;
+}
+.top_players_team_left {
+  flex: 1;
+  position: relative;
+  z-index: 10;
+}
+.top_players_team_right {
+  flex: 1;
+  position: relative;
+  z-index: 10;
+}
+.top_players_team_title {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #081027;
+  margin-bottom: 1.875rem;
+}
+.top_players_team_cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.information_title {
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 32px;
+  color: #000000;
+  margin-bottom: 1.875rem;
+}
+.information_cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0;
+}
+
+/* stats */
+.stats_title {
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 32px;
+  color: #000000;
+}
+.stats_title_bar_wrapper {
+  margin-top: 1.875rem;
+  background: rgba(51, 162, 210, 0.05);
+  padding: 15px;
+}
+.stats_title_bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.stats_title_bar_title {
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 24px;
+  color: #081027;
+}
+.stats_title_bar_title_right {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 24px;
+  color: #081027;
+}
+
+.stats_title_bar_indicator {
+  position: relative;
+  display: flex;
+}
+.indicator_1::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: #33a2d2;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+}
+.indicator_2::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: #0fb918;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+}
+
+/* stats_chart */
+.stats_chart {
+  width: 100%;
+  height: 500px;
+  margin-top: 2rem;
+  background-color: white;
+}
+
+/* stats_chart_2 */
+.stats_chart_2 {
+  width: 100%;
+  height: 400px;
+  margin-top: 2rem;
+  background-color: white;
+}
+
+.stats_title_bar_title_right_filter {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #081027;
+}
+
+.stats_title_bar_title_right_dropdown {
+  display: flex;
+  align-items: center;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #081027;
+  cursor: pointer;
 }

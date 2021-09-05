@@ -1,0 +1,18 @@
+.performence_card {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  padding: 0.625rem 1.25rem;
+}
+
+.performence_card_title {
+  font-weight: normal;
+  font-size: 0.75rem;
+  line-height: 20px;
+  color: #081027;
+}
+.performence_card_subtitle {
+  font-weight: 600;
+  font-size: 0.938rem;
+  line-height: 28px;
+  color: #081027;
+}

@@ -1,0 +1,39 @@
+.teams_card {
+  width: 100%;
+  flex: 1;
+  flex-basis: 280px;
+  /* max-width: 337px; */
+  height: 317px;
+  background: #ffffff;
+  border: 1px solid #dedee4;
+  border-radius: 10px;
+  padding: 1.25rem;
+  text-align: center;
+}
+.teams_card_img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 0.625rem;
+}
+
+.teams_card_title {
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 24px;
+  color: #081027;
+  margin-bottom: 5px;
+}
+
+.teams_card_country {
+  font-weight: 600;
+  font-size: 0.75rem;
+  color: #33a2d2;
+  margin-bottom: 1.25rem;
+}
+
+.teams_card_btn_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.25rem;
+}

@@ -1,0 +1,61 @@
+.titlebar_4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.titlebar_4_left {
+  display: flex;
+  align-items: center;
+  gap: 0 1.25rem;
+}
+.titlebar_4_rate {
+  width: 60px;
+  height: 60px;
+  background: #e5f3f8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+  font-size: 16px;
+  color: #081027;
+}
+
+.titlebar_4_title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #081027;
+
+  margin-bottom: 0.313rem;
+}
+
+.titlebar_4_subtitle {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  color: #081027;
+}
+
+.titlebar_4_ball_status {
+  width: 60px;
+  height: 60px;
+  background: #ffffff;
+  border: 1px solid #dedee4;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titlebar_4_ball_status.wicket {
+  border: 1px solid #e55353;
+  background-color: #e55353;
+  color: white;
+}
+.titlebar_4_ball_status.blue {
+  border: 1px solid #33a2d2;
+  background: #33a2d2;
+  color: white;
+}

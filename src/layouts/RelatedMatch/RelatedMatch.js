@@ -4,12 +4,10 @@ import "./RelatedMatch.css";
 import RelatedMatchCard from "components/Cards/RelatedMatchCard/RelatedMatchCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
-import videoImg_1 from "assets/images/video-image-1.png";
-import videoImg_2 from "assets/images/video-image-2.png";
-import videoImg_3 from "assets/images/video-image-3.png";
-import videoImg_4 from "assets/images/video-image-4.png";
+import { useSelector } from "react-redux";
 
 function RelatedMatche() {
+  const { data } = useSelector((state) => state.relatedMatchesData);
   return (
     <div>
       <div className="container-wrapper">
@@ -25,9 +23,10 @@ function RelatedMatche() {
           breakpoints={{
             1350: {
               slidesPerView: 3.5,
+              spaceBetween: 0,
             },
             1200: {
-              slidesPerView: 3,
+              slidesPerView: 2,
             },
             1080: {
               slidesPerView: 3,
@@ -51,18 +50,11 @@ function RelatedMatche() {
           }}
           className="related_match_swiper"
         >
-          <SwiperSlide>
-            <RelatedMatchCard videoThumbnail={videoImg_1} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <RelatedMatchCard videoThumbnail={videoImg_2} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <RelatedMatchCard videoThumbnail={videoImg_3} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <RelatedMatchCard videoThumbnail={videoImg_4} />
-          </SwiperSlide>
+          {data.map((item, index) => (
+            <SwiperSlide>
+              <RelatedMatchCard videoThumbnail={item.videoThumbNail} />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </div>

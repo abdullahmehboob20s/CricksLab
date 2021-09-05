@@ -1,9 +1,10 @@
 import React from "react";
+import "./PlayerHistory.css";
 
 function PlayerHistory(props) {
   let { playerHistory } = props;
   return (
-    <div className="player_history">
+    <div style={{ backgroundColor: props.bgColor }} className="player_history">
       <div>
         <p className="player_history_title">{playerHistory.matches}</p>
         <p className="player_history_subtitle">Mat</p>
