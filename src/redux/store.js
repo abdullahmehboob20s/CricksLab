@@ -9,6 +9,7 @@ import clubDetails from "./clubDetails";
 import PlayersDetails from "./PlayersDetails";
 import Officials from "./officials";
 import competitionOverview from "./competitionOverview";
+import battingLeaders from "./battingLeaders";
 
 export const store = configureStore({
   reducer: {
@@ -22,5 +23,6 @@ export const store = configureStore({
     PlayersDetails,
     Officials,
     competitionOverview,
+    battingLeaders,
   },
 });

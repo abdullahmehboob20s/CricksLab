@@ -1,0 +1,15 @@
+.matches_details {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.mathes_title_bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mathes_title_bar_right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}

@@ -2,9 +2,12 @@ import React from "react";
 import TitleBar5 from "components/TitleBars/TitleBar5/TitleBar5";
 import Table from "components/Tables/Table/Table";
 import { useSelector } from "react-redux";
+import Slider1 from "components/Sliders/Slider1/Slider1";
 
 function OverView() {
   const { groupB } = useSelector((state) => state.competitionOverview);
+  const { data } = useSelector((state) => state.battingLeaders);
+
   return (
     <div>
       <div className="mb-30">
@@ -56,6 +59,15 @@ function OverView() {
           mainHeadTitle="Team"
           data={groupB}
         />
+      </div>
+      <div className="mb-30">
+        <Slider1 headerTitle="Batting leaders" data={data} />
+      </div>
+      <div className="mb-30">
+        <Slider1 headerTitle="Bowling leaders" data={data} />
+      </div>
+      <div className="mb-30">
+        <Slider1 headerTitle="Fielding leaders" data={data} />
       </div>
     </div>
   );

@@ -9,6 +9,9 @@ import TabPan from "components/Tabs/TabPan";
 import Footer from "layouts/Footer/Footer";
 import OverView from "components/CompetitionOverview/OverView/OverView";
 import MVP from "components/CompetitionOverview/MVP/MVP";
+import TeamSquad from "components/CompetitionOverview/TeamSquad/TeamSquad";
+import UpcomingMatchesCard from "components/Cards/UpcomingMatchesCard/UpcomingMatchesCard";
+import Matches from "components/CompetitionOverview/Matches/Matches";
 
 function CompetitionOverview() {
   return (
@@ -87,15 +90,25 @@ function CompetitionOverview() {
                 <TabPan tabIndex={1}>
                   <OverView />
                 </TabPan>
+              </div>
+
+              <TabPan tabIndex={2}>
+                <TeamSquad />
+              </TabPan>
+              <div className="container-wrapper-30">
+                <TabPan tabIndex={3}>
+                  <Matches />
+                </TabPan>
+              </div>
+              <div className="container-wrapper-30">
                 <TabPan tabIndex={5}>
                   <MVP />
                 </TabPan>
               </div>
             </Tabs>
           </div>
-
-          <Footer />
         </div>
+        <Footer />
       </div>
     </>
   );

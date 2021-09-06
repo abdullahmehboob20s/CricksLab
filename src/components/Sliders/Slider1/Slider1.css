@@ -1,0 +1,32 @@
+.slider1_titles {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.slider1_title {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #081027;
+}
+.slider1_titles_right_btn {
+  width: 40px;
+  height: 40px;
+  background: #e5f3f8;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.slider1_titles_right_btn.btn_2 {
+  background: #33a2d2;
+  color: white;
+}
+.slider1_titles_right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}

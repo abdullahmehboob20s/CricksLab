@@ -2,7 +2,7 @@
   background: rgba(51, 162, 210, 0.05);
   border-radius: 10px;
   padding: 1.875rem;
-  margin-bottom: 0.625rem;
+  /* margin-bottom: 0.625rem; */
 }
 .upcoming_matches_card_title {
   font-style: normal;
@@ -68,6 +68,76 @@
   color: #081027;
   margin-top: 1.875rem;
   text-align: center;
+}
+
+.upcoming_matches_card_team.reverse .upcoming_matches_card_team_runs {
+  text-align: right;
+}
+.upcoming_matches_card_team.reverse .upcoming_matches_card_team_overs {
+  text-align: right;
+}
+
+.upcoming_matches_card_team_runs {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 22px;
+  color: #081027;
+}
+
+.upcoming_matches_card_team_overs {
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 18px;
+  color: #081027;
+}
+
+.upcoming_matches_match_details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.match_details_title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: #081027;
+}
+.match_details_subtitle {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 22px;
+  color: #505d87;
+}
+
+.match_details_status {
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.match_details_status.red {
+  background: #e55353;
+}
+.match_details_status.blue {
+  background: #33a2d2;
+}
+
+.match_details_status.green {
+  background: #0fb918;
+}
+
+.upcoming_matches_match_details_result {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 22px;
+  text-align: center;
+  color: #33a2d2;
+  margin-top: 30px;
 }
 
 @media (max-width: 1500px) {

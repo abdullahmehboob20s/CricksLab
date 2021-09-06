@@ -78,6 +78,9 @@
 }
 .upcoming_matches_cards {
   margin-bottom: 3.125rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .upcoming_matche_movement_cards {
   display: flex;

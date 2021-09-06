@@ -1,0 +1,22 @@
+.player_runs_card {
+  height: 68px;
+  background: rgba(110, 112, 119, 0.05);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.player_runs_card_title {
+  font-weight: 600;
+  font-size: 15px;
+  color: #081027;
+  line-height: 28px;
+}
+.player_runs_card_subtitle {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  color: #081027;
+}
