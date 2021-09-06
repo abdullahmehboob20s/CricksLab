@@ -1,0 +1,30 @@
+.officials_card {
+  flex: 1;
+  flex-basis: 300px;
+  /* width: 337px; */
+  height: 229px;
+  background: #ffffff;
+  border: 1px solid #dedee4;
+  box-sizing: border-box;
+  border-radius: 10px;
+  text-align: center;
+  padding: 1.25rem;
+}
+.officials_card_img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 0.625rem;
+}
+.official_card_title {
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 24px;
+  color: #081027;
+  margin-bottom: 5px;
+}
+.official_card_subtitle {
+  font-weight: 600;
+  font-size: 0.75rem;
+  color: #33a2d2;
+  margin-bottom: 1.25rem;
+}

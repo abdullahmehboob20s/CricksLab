@@ -37,3 +37,14 @@
   justify-content: center;
   margin-top: 1.25rem;
 }
+
+.teams_card_img_wrapper {
+  position: relative;
+}
+
+.teams_card_img_country_logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}

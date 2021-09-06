@@ -55,8 +55,15 @@ function MatchDetails() {
       <div className="match_details bg-liner-gradient">
         <div className="container-wrapper">
           <TitleBar2
-            title="S.S.L. Season 2 - League Matches (MATCH #25)"
+            title="Match Center"
+            subtitle="Matches"
+            subtitle2="Crease Hunters vs Mash Eagles"
+            mainTitle="S.S.L. Season 2 - League Matches (MATCH #25)"
             showRightSide={true}
+            showLiveWatching={true}
+            showSubscribeBtn={true}
+            showSharewith={true}
+            divider={true}
           />
           <ScoreCard
             showHeader={false}
@@ -65,8 +72,8 @@ function MatchDetails() {
             footerText="Hassan Butt to Zaryan Khan, 4 Runs"
           />
 
-          <div className="match_details_content">
-            <div className="match_details_content_left">
+          <div className="match_details_content ">
+            <div className="match_details_content_left py-30">
               <Tabs defaultTab={1}>
                 <div className="match_details_tabs">
                   <Tab

@@ -2,14 +2,16 @@ import React from "react";
 import "./PlayerHistory.css";
 
 function PlayerHistory(props) {
-  let { playerHistory } = props;
+  let { playerHistory, playerHistoryTitle } = props;
   return (
     <div style={{ backgroundColor: props.bgColor }} className="player_history">
-      <div>
-        <p className="player_history_title">{playerHistory.matches}</p>
-        <p className="player_history_subtitle">Mat</p>
-      </div>
-      <div>
+      {playerHistory.map((item, index) => (
+        <div>
+          <p className="player_history_title">{item}</p>
+          <p className="player_history_subtitle">{playerHistoryTitle[index]}</p>
+        </div>
+      ))}
+      {/* <div>
         <p className="player_history_title">{playerHistory.won}</p>
         <p className="player_history_subtitle">Won</p>
       </div>
@@ -24,7 +26,7 @@ function PlayerHistory(props) {
       <div>
         <p className="player_history_title">{playerHistory.points}</p>
         <p className="player_history_subtitle">PTS</p>
-      </div>
+      </div> */}
     </div>
   );
 }

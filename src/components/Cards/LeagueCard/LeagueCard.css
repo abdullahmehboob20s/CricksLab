@@ -1,0 +1,165 @@
+.league_card {
+  border-radius: 10px;
+  box-shadow: 0px 12px 36px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  z-index: 1000;
+  position: relative;
+  overflow: hidden;
+  background: #081027;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3.125rem;
+}
+.league_card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(8, 16, 39, 0.3) 0%,
+    #081027 32.81%,
+    #081027 68.75%,
+    rgba(8, 16, 39, 0.3) 100%
+  );
+  backdrop-filter: blur(50px);
+  z-index: -1;
+}
+
+.league_card_img_1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  transform: scale(1.2);
+  z-index: -2;
+  background-repeat: no-repeat;
+}
+.league_card_img_2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  transform: scale(1.2);
+  z-index: -2;
+  background-repeat: no-repeat;
+}
+
+.league_card_left {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.league_card_left_img {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #13b51b;
+  border-radius: 50%;
+  padding: 0.4rem;
+}
+
+.league_card_left_titles {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 0.625rem;
+}
+
+.league_card_left_title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 36px;
+  color: #ffffff;
+}
+.league_card_left_status {
+  width: 70px;
+  height: 32px;
+  background: #e55353;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.league_card_left_detail {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #33a2d2;
+  margin-bottom: 0.75rem;
+}
+
+.league_card_left_dates {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.start_date {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.end_date {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.start_date_title {
+  display: flex;
+  align-items: center;
+  color: #0fb918;
+  gap: 6px;
+}
+.end_date_title {
+  display: flex;
+  align-items: center;
+  color: #33a2d2;
+  gap: 6px;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  padding-left: 1rem;
+}
+
+.start_date_title img {
+  width: 18px;
+  height: 18px;
+}
+
+.league_card_left_dates_day {
+  font-weight: normal;
+  font-size: 0.875rem;
+  color: #ffffff;
+}
+
+.league_card_right {
+  display: flex;
+  align-items: center;
+}
+.league_card_right_divider {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30px;
+}
+
+.league_card_right_divider:not(:last-child) {
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.league_card_right_views {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: white;
+}

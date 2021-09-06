@@ -29,10 +29,10 @@ function Competitions() {
       <div className="competitions bg-liner-gradient">
         <div className="container-wrapper">
           <TitleBar2
-            title="Competitions"
+            title="Home"
+            subtitle2="Competitions"
+            mainTitle="Competitions"
             showRightSide={false}
-            uperTitle="Home"
-            uperSubTitle="Competitions"
           />
           <Tabs defaultTab={1}>
             <div className="competitions_cards_tabs">

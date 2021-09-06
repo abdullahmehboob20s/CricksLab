@@ -1,0 +1,310 @@
+import { createSlice } from "@reduxjs/toolkit";
+import table_img from "assets/images/table-img.png";
+import table_player_2 from "assets/images/table-player-2.png";
+
+const initialState = {
+  groupB: [
+    {
+      img: table_img,
+      name: "Rawalakot Hawks",
+      details: {
+        m: 5,
+        w: 3,
+        l: 1,
+        nr: 54,
+        d: 1,
+        p: 10,
+        nrr: 23,
+      },
+    },
+    {
+      img: table_img,
+      name: "Abrahm Khan",
+      details: {
+        m: 5,
+        w: 3,
+        l: 1,
+        nr: 34,
+        d: 1,
+        p: 7,
+        nrr: 215,
+      },
+    },
+    {
+      img: table_img,
+      name: "Rawalakot Hawks",
+      details: {
+        m: 5,
+        w: 3,
+        l: 1,
+        nr: 54,
+        d: 1,
+        p: 7,
+        nrr: "00.215",
+      },
+    },
+    {
+      img: table_img,
+      name: "Abrahm Khan",
+      details: {
+        m: 5,
+        w: 3,
+        l: 1,
+        nr: 34,
+        d: 1,
+        p: 7,
+        nrr: "00.215",
+      },
+    },
+    {
+      img: table_img,
+      name: "Rawalakot Hawks",
+      details: {
+        m: 5,
+        w: 3,
+        l: 1,
+        nr: 54,
+        d: 1,
+        p: 7,
+        nrr: "00.215",
+      },
+    },
+  ],
+  mvp: [
+    {
+      img: table_player_2,
+      name: "Roger Torff",
+      subtitle: "Dogar Rider",
+      details: {
+        m: 30.39,
+        w: 173.0,
+        l: 4.32,
+        nr: 207.71,
+        d: 1,
+      },
+    },
+    {
+      img: table_player_2,
+      name: "Roger Torff",
+      subtitle: "Dogar Rider",
+      details: {
+        m: 30.39,
+        w: 173.0,
+        l: 4.32,
+        nr: 207.71,
+        d: 1,
+      },
+    },
+    {
+      img: table_player_2,
+      name: "Roger Torff",
+      subtitle: "Dogar Rider",
+      details: {
+        m: 30.39,
+        w: 173.0,
+        l: 4.32,
+        nr: 207.71,
+        d: 1,
+      },
+    },
+    {
+      img: table_player_2,
+      name: "Roger Torff",
+      subtitle: "Dogar Rider",
+      details: {
+        m: 30.39,
+        w: 173.0,
+        l: 4.32,
+        nr: 207.71,
+        d: 1,
+      },
+    },
+    {
+      img: table_player_2,
+      name: "Roger Torff",
+      subtitle: "Dogar Rider",
+      details: {
+        m: 30.39,
+        w: 173.0,
+        l: 4.32,
+        nr: 207.71,
+        d: 1,
+      },
+    },
+    {
+      img: table_player_2,
+      name: "Roger Torff",
+      subtitle: "Dogar Rider",
+      details: {
+        m: 30.39,
+        w: 173.0,
+        l: 4.32,
+        nr: 207.71,
+        d: 1,
+      },
+    },
+    {
+      img: table_player_2,
+      name: "Roger Torff",
+      subtitle: "Dogar Rider",
+      details: {
+        m: 30.39,
+        w: 173.0,
+        l: 4.32,
+        nr: 207.71,
+        d: 1,
+      },
+    },
+    {
+      img: table_player_2,
+      name: "Roger Torff",
+      subtitle: "Dogar Rider",
+      details: {
+        m: 30.39,
+        w: 173.0,
+        l: 4.32,
+        nr: 207.71,
+        d: 1,
+      },
+    },
+    {
+      img: table_player_2,
+      name: "Roger Torff",
+      subtitle: "Dogar Rider",
+      details: {
+        m: 30.39,
+        w: 173.0,
+        l: 4.32,
+        nr: 207.71,
+        d: 1,
+      },
+    },
+    {
+      img: table_player_2,
+      name: "Roger Torff",
+      subtitle: "Dogar Rider",
+      details: {
+        m: 30.39,
+        w: 173.0,
+        l: 4.32,
+        nr: 207.71,
+        d: 1,
+      },
+    },
+    {
+      img: table_player_2,
+      name: "Roger Torff",
+      subtitle: "Dogar Rider",
+      details: {
+        m: 30.39,
+        w: 173.0,
+        l: 4.32,
+        nr: 207.71,
+        d: 1,
+      },
+    },
+    {
+      img: table_player_2,
+      name: "Roger Torff",
+      subtitle: "Dogar Rider",
+      details: {
+        m: 30.39,
+        w: 173.0,
+        l: 4.32,
+        nr: 207.71,
+        d: 1,
+      },
+    },
+    {
+      img: table_player_2,
+      name: "Roger Torff",
+      subtitle: "Dogar Rider",
+      details: {
+        m: 30.39,
+        w: 173.0,
+        l: 4.32,
+        nr: 207.71,
+        d: 1,
+      },
+    },
+    {
+      img: table_player_2,
+      name: "Roger Torff",
+      subtitle: "Dogar Rider",
+      details: {
+        m: 30.39,
+        w: 173.0,
+        l: 4.32,
+        nr: 207.71,
+        d: 1,
+      },
+    },
+    {
+      img: table_player_2,
+      name: "Roger Torff",
+      subtitle: "Dogar Rider",
+      details: {
+        m: 30.39,
+        w: 173.0,
+        l: 4.32,
+        nr: 207.71,
+        d: 1,
+      },
+    },
+    {
+      img: table_player_2,
+      name: "Roger Torff",
+      subtitle: "Dogar Rider",
+      details: {
+        m: 30.39,
+        w: 173.0,
+        l: 4.32,
+        nr: 207.71,
+        d: 1,
+      },
+    },
+    {
+      img: table_player_2,
+      name: "Roger Torff",
+      subtitle: "Dogar Rider",
+      details: {
+        m: 30.39,
+        w: 173.0,
+        l: 4.32,
+        nr: 207.71,
+        d: 1,
+      },
+    },
+    {
+      img: table_player_2,
+      name: "Roger Torff",
+      subtitle: "Dogar Rider",
+      details: {
+        m: 30.39,
+        w: 173.0,
+        l: 4.32,
+        nr: 207.71,
+        d: 1,
+      },
+    },
+    {
+      img: table_player_2,
+      name: "Roger Torff",
+      subtitle: "Dogar Rider",
+      details: {
+        m: 30.39,
+        w: 173.0,
+        l: 4.32,
+        nr: 207.71,
+        d: 1,
+      },
+    },
+  ],
+};
+
+export const competitionOverview = createSlice({
+  name: "relatedMatchData",
+  initialState,
+});
+
+export default competitionOverview.reducer;

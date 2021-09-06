@@ -50,10 +50,18 @@ function Navbar() {
           <Link to="teams" className="navbar_link">
             Teams
           </Link>
-          <Link className="navbar_link">Clubs</Link>
-          <Link className="navbar_link">Players</Link>
-          <Link className="navbar_link">Officials</Link>
-          <Link className="navbar_link_btn">Login / Sign Up</Link>
+          <Link to="/club-details" className="navbar_link">
+            Clubs
+          </Link>
+          <Link to="/player-details" className="navbar_link">
+            Players
+          </Link>
+          <Link to="/officials" className="navbar_link">
+            Officials
+          </Link>
+          <Link to="/competition-overview" className="navbar_link_btn">
+            Login / Sign Up
+          </Link>
         </div>
       </div>
     </div>

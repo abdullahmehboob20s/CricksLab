@@ -4,6 +4,10 @@ import Home from "pages/Home/Home";
 import MatchDetails from "pages/MatchDetails/MatchDetails";
 import Competitions from "pages/Competitions/CompetitionsPage";
 import Teams from "pages/Teams/Teams";
+import ClubDetails from "pages/ClubDetails/ClubDetails";
+import PlayerDetails from "pages/PlayerDetails/PlayerDetails";
+import Officials from "pages/Officials/Officials";
+import CompetitionOverview from "pages/CompetitionOverview/CompetitionOverview";
 
 function App() {
   return (
@@ -14,6 +18,14 @@ function App() {
           <Route exact path="/match-details" component={MatchDetails} />
           <Route exact path="/competitions" component={Competitions} />
           <Route exact path="/teams" component={Teams} />
+          <Route exact path="/club-details" component={ClubDetails} />
+          <Route exact path="/player-details" component={PlayerDetails} />
+          <Route exact path="/officials" component={Officials} />
+          <Route
+            exact
+            path="/competition-overview"
+            component={CompetitionOverview}
+          />
         </Switch>
       </Router>
     </>

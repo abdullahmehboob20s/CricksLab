@@ -19,11 +19,12 @@
   background: transparent;
 }
 .match_details_tabs {
-  margin: 1.875rem;
+  margin: 0 1.875rem;
   display: flex;
   align-items: center;
   border-bottom: 1px solid #dedee4;
   margin-bottom: 3.125rem;
+  /* border: 2px solid red; */
 }
 .match_details_tab {
   padding: 0.813rem 0.938rem;
@@ -154,9 +155,6 @@
 }
 
 /* live_commentry */
-.container-wrapper-30 {
-  padding: 0 1.875rem;
-}
 .live_commentry {
   display: flex;
   align-items: center;

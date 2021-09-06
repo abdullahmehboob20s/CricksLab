@@ -1,19 +1,20 @@
 import React from "react";
-import "./Teams.css";
+import "pages/Teams/Teams.css";
 import Navbar from "layouts/Navbar/Navbar";
 import TitleBar2 from "components/TitleBars/TitleBar2/TitleBar2";
 import Footer from "layouts/Footer/Footer";
 import TeamsCard from "components/Cards/TeamsCard/TeamsCard";
 import { useSelector } from "react-redux";
 import FollowButton from "components/Buttons/FollowButton/FollowButton";
+import OfficialsCard from "components/Cards/OfficialsCard/OfficialsCard";
 
-function Teams() {
-  const { teamsData } = useSelector((state) => state.teamsData);
+function Officials() {
+  const { data } = useSelector((state) => state.Officials);
   const [count, setCount] = React.useState(8);
   const [showBtn, setshowBtn] = React.useState(true);
 
   const loadMore = (props) => {
-    if (count >= teamsData.length) {
+    if (count >= data.length) {
       setshowBtn(false);
       return;
     }
@@ -27,8 +28,8 @@ function Teams() {
         <div className="container-wrapper">
           <TitleBar2
             title="Home"
-            subtitle2="Teams"
-            mainTitle="Teams"
+            subtitle2="Officials"
+            mainTitle="Officials"
             showRightSide={false}
           >
             <div className="row gap-50 align-center">
@@ -56,8 +57,8 @@ function Teams() {
           </TitleBar2>
 
           <div className="team_cards_wrapper">
-            {teamsData.slice(0, count).map((teamdata, index) => (
-              <TeamsCard teamdata={teamdata} />
+            {data.slice(0, count).map((officialdata, index) => (
+              <OfficialsCard data={officialdata} />
             ))}
           </div>
 
@@ -84,4 +85,4 @@ function Teams() {
   );
 }
 
-export default Teams;
+export default Officials;
