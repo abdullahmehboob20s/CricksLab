@@ -16,8 +16,8 @@ function ScoreCard3() {
         <p className="score_card_3_col_1st_child">ALI : 10 (5)</p>
         <p className="score_card_3_col_2nd_child">Amjad : 0 (4)</p>
       </div>
-      <div className="score_card_3_col">
-        <p className="score_card_3_col_1st_child">Abdullah : 4-0-96-1</p>
+      <div className="score_card_3_col ">
+        <p className="score_card_3_col_1st_child">Abdullah : 4-0-96-1 </p>
       </div>
     </div>
   );

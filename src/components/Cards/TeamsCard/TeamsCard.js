@@ -27,6 +27,11 @@ function TeamsCard({
         <img className="teams_card_img" src={teamdata.logo} alt="" />
       </div>
       <p className="teams_card_title">{teamdata.name}</p>
+      {teamdata.teamName ? (
+        <p className="teams_card_team_name">{teamdata.teamName}</p>
+      ) : (
+        ""
+      )}
       {showCountry ? (
         <p className="teams_card_country">{teamdata.country}</p>
       ) : (

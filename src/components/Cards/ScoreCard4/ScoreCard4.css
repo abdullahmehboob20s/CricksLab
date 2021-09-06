@@ -1,0 +1,49 @@
+.score_card_4 {
+  display: flex;
+  background: rgba(51, 162, 210, 0.05);
+  border-radius: 10px;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.score_card_4_col {
+  flex-basis: 150px;
+  padding: 1.25rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.313rem;
+  justify-content: center;
+}
+
+.score_card_4_col:nth-child(1) {
+  background: rgba(51, 162, 210, 0.25);
+}
+.score_card_4_col:nth-child(2) {
+  background: rgba(51, 162, 210, 0.2);
+}
+.score_card_4_col:nth-child(3) {
+  background: rgba(51, 162, 210, 0.15);
+}
+.score_card_4_col:nth-child(4) {
+  background: rgba(51, 162, 210, 0.1);
+}
+.score_card_4_col:nth-child(5) {
+  background: rgba(51, 162, 210, 0.05);
+}
+
+.score_card_4_col_1st_child {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 24px;
+  color: #33a2d2;
+}
+.score_card_4_col_2nd_child {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  color: #081027;
+}

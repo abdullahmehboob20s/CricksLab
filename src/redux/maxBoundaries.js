@@ -10,7 +10,7 @@ const initialState = {
     {
       name: "Kieron Pollard",
       country: "All Rounder",
-      countryLogo: country_logo,
+      teamName: "Sohna Punjab",
       logo: player1,
       playerHistoryTitle: ["Mat", "100S", "50S", "6S", "4S"],
       playerHistory: [39, 2, 4, 49, 41],
@@ -20,7 +20,7 @@ const initialState = {
     {
       name: "Shane Watson",
       country: "All Rounder",
-      countryLogo: country_logo,
+      teamName: "Khawar Tiger",
       logo: player2,
       playerHistoryTitle: ["Mat", "100S", "50S", "6S", "4S"],
       playerHistory: [39, 2, 4, 49, 41],
@@ -30,7 +30,7 @@ const initialState = {
     {
       name: "AB De Villirs",
       country: "Batsman | Right Handed",
-      countryLogo: country_logo,
+      teamName: "Sohna Punjab",
       logo: player3,
       playerHistoryTitle: ["Mat", "100S", "50S", "6S", "4S"],
       playerHistory: [39, 2, 4, 49, 41],
@@ -40,7 +40,7 @@ const initialState = {
     {
       name: "Andre Russell",
       country: "All Rounder",
-      countryLogo: country_logo,
+      teamName: "Khawar Tiger",
       logo: player4,
       playerHistoryTitle: ["Mat", "100S", "50S", "6S", "4S"],
       playerHistory: [39, 2, 4, 49, 41],
@@ -50,7 +50,7 @@ const initialState = {
     {
       name: "Kieron Pollard",
       country: "All Rounder",
-      countryLogo: country_logo,
+      teamName: "Sohna Punjab",
       logo: player1,
       playerHistoryTitle: ["Mat", "100S", "50S", "6S", "4S"],
       playerHistory: [39, 2, 4, 49, 41],
@@ -60,9 +60,9 @@ const initialState = {
   ],
 };
 
-export const battingLeaders = createSlice({
+export const maxBoundaries = createSlice({
   name: "relatedMatchData",
   initialState,
 });
 
-export default battingLeaders.reducer;
+export default maxBoundaries.reducer;

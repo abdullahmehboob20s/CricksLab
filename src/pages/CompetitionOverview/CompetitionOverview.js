@@ -12,6 +12,7 @@ import MVP from "components/CompetitionOverview/MVP/MVP";
 import TeamSquad from "components/CompetitionOverview/TeamSquad/TeamSquad";
 import UpcomingMatchesCard from "components/Cards/UpcomingMatchesCard/UpcomingMatchesCard";
 import Matches from "components/CompetitionOverview/Matches/Matches";
+import Boundaries from "components/CompetitionOverview/Boundaries/Boundaries";
 
 function CompetitionOverview() {
   return (
@@ -98,6 +99,11 @@ function CompetitionOverview() {
               <div className="container-wrapper-30">
                 <TabPan tabIndex={3}>
                   <Matches />
+                </TabPan>
+              </div>
+              <div className="container-wrapper-30">
+                <TabPan tabIndex={4}>
+                  <Boundaries />
                 </TabPan>
               </div>
               <div className="container-wrapper-30">

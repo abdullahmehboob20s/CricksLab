@@ -5,10 +5,8 @@ import { BsArrowLeft } from "react-icons/bs";
 import TeamsCard from "components/Cards/TeamsCard/TeamsCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
-import { useSelector } from "react-redux";
 
 function Slider1(props) {
-  //   const { data } = useSelector((state) => state.battingLeaders);
   return (
     <div>
       <div className="slider1_titles mb-30">
