@@ -11,7 +11,7 @@ function RelatedMatche() {
   return (
     <div>
       <div className="container-wrapper">
-        <TitleBar title="Related Match Videos" viewAll={"jasgdh"} />
+        <TitleBar title="Related Match Videos" viewAll={"team-details"} />
       </div>
       <div className="related_match_cards">
         <Swiper

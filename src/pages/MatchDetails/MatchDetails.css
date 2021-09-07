@@ -6,6 +6,7 @@
   display: flex;
   margin-bottom: 6.25rem;
   gap: 2rem;
+  align-items: flex-start;
 }
 .match_details_content_left {
   flex: 1;
@@ -24,6 +25,7 @@
   align-items: center;
   border-bottom: 1px solid #dedee4;
   margin-bottom: 3.125rem;
+  flex-wrap: wrap;
   /* border: 2px solid red; */
 }
 .match_details_tab {
@@ -336,4 +338,21 @@
   align-items: center;
   color: #081027;
   cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .match_details_content_right {
+    flex: 0.2;
+    width: 330px;
+    background: transparent;
+  }
+}
+
+@media (max-width: 1000px) {
+  .match_details_content_right {
+    width: 100%;
+  }
+  .match_details_content {
+    flex-direction: column;
+  }
 }

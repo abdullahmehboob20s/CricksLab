@@ -328,10 +328,6 @@ function MatchDetails() {
                     </div>
                   </div>
                 </TabPan>
-                {/* ============= */}
-                {/* ============= */}
-                {/* ============= */}
-                {/* ============= */}
                 <TabPan tabIndex={5}>
                   <div className="container-wrapper-30">
                     <p className="stats_title">Stats</p>
@@ -521,10 +517,6 @@ function MatchDetails() {
                     </div>
                   </div>
                 </TabPan>
-                {/* ============= */}
-                {/* ============= */}
-                {/* ============= */}
-                {/* ============= */}
               </Tabs>
             </div>
             <div className="match_details_content_right">

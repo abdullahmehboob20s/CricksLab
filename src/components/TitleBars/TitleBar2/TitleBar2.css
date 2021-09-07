@@ -34,6 +34,7 @@
 .title_bar_2_right {
   display: flex;
   align-items: center;
+  /* flex-wrap: wrap; */
 }
 
 .divider {
@@ -56,4 +57,32 @@
 }
 .subscribe_link img {
   margin-right: 0.3rem;
+}
+
+@media (max-width: 1000px) {
+  .title_bar_2_right {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .title_bar_2 {
+    gap: 2rem;
+  }
+
+  .divider {
+    padding-left: 0;
+    margin-left: 0;
+    border-left: 0;
+  }
+}
+
+@media (max-width: 760px) {
+  .title_bar_2 {
+    gap: 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

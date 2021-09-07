@@ -1,0 +1,58 @@
+.batting_stats_tabs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.batting_stats_table {
+  width: 100%;
+  border-collapse: collapse;
+  border-bottom: 1px solid #dedee4;
+}
+
+.batting_stats_table th {
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 24px;
+  color: #081027;
+}
+
+.batting_stats_table thead {
+  background: rgba(51, 162, 210, 0.05);
+}
+
+.batting_stats_table th:not(:first-child),
+.batting_stats_table td:not(:first-child) {
+  text-align: center;
+  padding: 0.938rem 0.2rem;
+}
+
+.batting_stats_table th,
+.batting_stats_table td {
+  padding: 0.938rem 1rem;
+}
+
+.batting_stats_table td {
+  font-weight: normal;
+  font-size: 0.875rem;
+  line-height: 24px;
+  color: #081027;
+}
+
+.batting_stats_table tbody tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.batting_stats_table td:first-child {
+  padding-left: 35px;
+  font-weight: bold;
+  font-size: 0.875rem;
+  color: #081027;
+  width: 150px;
+}
+.batting_stats_table td:last-child {
+  padding-right: 30px;
+}
+.batting_stats_table th:last-child {
+  padding-right: 30px;
+}

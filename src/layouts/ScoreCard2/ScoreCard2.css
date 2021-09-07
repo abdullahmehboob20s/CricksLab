@@ -81,3 +81,26 @@
   align-items: center;
   justify-content: center;
 }
+
+@media (max-width: 1200px) {
+  .score_card_2_team_img {
+    width: 65px;
+    height: 65px;
+    margin-right: 1rem;
+  }
+
+  .score_card_2_team_name {
+    font-size: 0.9rem;
+  }
+
+  .score_card_2_team_overs {
+    font-size: 0.8rem;
+  }
+
+  .team_runs {
+    font-size: 0.8rem;
+  }
+  .score_card_2_team_overs {
+    font-size: 0.8rem;
+  }
+}
