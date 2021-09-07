@@ -163,3 +163,18 @@
   gap: 6px;
   color: white;
 }
+
+.league_card_left_titles_location {
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.league_card_left_titles_location p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+}

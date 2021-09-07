@@ -1,22 +1,39 @@
+.squad_player_card_wrapper {
+  width: 228px;
+  border: 1px solid #dedee4;
+  border-radius: 10px;
+  padding: 20px;
+}
+.squad_player_card_wrapper.in-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.squad_player_card_wrapper.in-row .squad_player_card {
+  flex-direction: row;
+}
+.squad_player_card_wrapper.in-row .squad_player_card_details {
+  text-align: left;
+}
+.squad_player_card_wrapper.in-row .squad_player_card_name {
+  margin-bottom: 5px;
+}
 .squad_player_card {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
-  padding: 20px;
-
-  width: 228px;
-  height: 159px;
-
-  border: 1px solid #dedee4;
-  border-radius: 10px;
+  /* height: 159px; */
 }
 .squad_player_card_name {
   font-weight: bold;
   font-size: 1rem;
   line-height: 24px;
   color: #081027;
+  text-align: center;
 }
 .squad_player_card_img_wrapper {
   position: relative;
@@ -51,4 +68,21 @@
   justify-content: center;
   align-items: center;
   border: 1px solid #dedee4;
+}
+
+.squad_player_card_details {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  color: #6e7077;
+  text-align: center;
+}
+
+.squad_player_card_wrapper_btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 1.25rem;
 }

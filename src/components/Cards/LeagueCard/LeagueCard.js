@@ -6,8 +6,17 @@ import calendar_blue from "assets/images/calendar-blue.svg";
 import { AiOutlineEye } from "react-icons/ai";
 import { FiUsers } from "react-icons/fi";
 import FollowButton from "components/Buttons/FollowButton/FollowButton";
+import { HiOutlineLocationMarker } from "react-icons/hi";
 
-function LeagueCard() {
+function LeagueCard(props) {
+  const {
+    title,
+    subtitle,
+    status = true,
+    showStartAndEndDate = true,
+    showLocation = false,
+    showViews = true,
+  } = props;
   return (
     <div className="league_card">
       <img className="league_card_img_1" src={united_cricket} alt="" />
@@ -17,35 +26,56 @@ function LeagueCard() {
         <img className="league_card_left_img" src={united_cricket} alt="" />
         <div>
           <div className="league_card_left_titles">
-            <p className="league_card_left_title">United Cricket League</p>
-            <div className="league_card_left_status">Ongoing</div>
+            <p className="league_card_left_title">{title}</p>
+
+            {status ? (
+              <div className="league_card_left_status">Ongoing</div>
+            ) : (
+              ""
+            )}
           </div>
-          <p className="league_card_left_detail">Tournament</p>
-          <div className="league_card_left_dates">
-            <div className="start_date">
-              <div className="start_date_title">
-                <img src={calendar} alt="" />
-                Start Date
-              </div>
-              <p className="league_card_left_dates_day">09th Aug 2021 </p>
+          {showLocation ? (
+            <div className="league_card_left_titles_location">
+              <HiOutlineLocationMarker />
+              <p>Chandan Miani Rd, Sukkur, Sindh, Pakistan, Sukkur</p>
             </div>
-            <div className="end_date">
-              <div className="end_date_title">
-                <img src={calendar_blue} alt="" />
-                End Date
+          ) : (
+            ""
+          )}
+          <p className="league_card_left_detail">{subtitle}</p>
+          {showStartAndEndDate ? (
+            <div className="league_card_left_dates">
+              <div className="start_date">
+                <div className="start_date_title">
+                  <img src={calendar} alt="" />
+                  Start Date
+                </div>
+                <p className="league_card_left_dates_day">09th Aug 2021 </p>
               </div>
-              <p className="league_card_left_dates_day">09th Aug 2021 </p>
+              <div className="end_date">
+                <div className="end_date_title">
+                  <img src={calendar_blue} alt="" />
+                  End Date
+                </div>
+                <p className="league_card_left_dates_day">09th Aug 2021 </p>
+              </div>
             </div>
-          </div>
+          ) : (
+            ""
+          )}
         </div>
       </div>
       <div className="league_card_right">
-        <div className="league_card_right_divider">
-          <p className="league_card_right_views">
-            <AiOutlineEye />
-            5.9K Views
-          </p>
-        </div>
+        {showViews ? (
+          <div className="league_card_right_divider">
+            <p className="league_card_right_views">
+              <AiOutlineEye />
+              5.9K Views
+            </p>
+          </div>
+        ) : (
+          ""
+        )}
         <div className="league_card_right_divider">
           <p className="league_card_right_views">
             <FiUsers />

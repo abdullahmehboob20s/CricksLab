@@ -56,3 +56,18 @@
 .batting_stats_table th:last-child {
   padding-right: 30px;
 }
+
+.img_tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #c4c4c4;
+  border: none;
+  outline: none;
+  background-color: white;
+}
+.img_tab.img_tab_active {
+  color: #33a2d2;
+}

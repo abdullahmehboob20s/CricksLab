@@ -427,6 +427,86 @@ const initialState = {
       amt: 2100,
     },
   ],
+
+  squad2: [
+    {
+      playerDetails: { type: "Batsman", direction: "Left Handed" },
+      showFollowAndShareBtn: true,
+      isCaptian: true,
+      name: "Terry Ekstrom Bothman",
+      isFollowing: false,
+    },
+    {
+      playerDetails: { type: "Batsman", direction: "Left Handed" },
+      showFollowAndShareBtn: true,
+      isCaptian: false,
+      name: "Roger Vetrovs",
+      isFollowing: false,
+    },
+    {
+      playerDetails: { type: "Batsman", direction: "Left Handed" },
+      showFollowAndShareBtn: true,
+      isCaptian: false,
+      name: "Chance Geidt",
+      isFollowing: true,
+    },
+    {
+      playerDetails: { type: "Batsman", direction: "Left Handed" },
+      showFollowAndShareBtn: true,
+      isCaptian: false,
+      name: "Roger Korsgaard",
+      isFollowing: false,
+    },
+    {
+      playerDetails: { type: "Batsman", direction: "Left Handed" },
+      showFollowAndShareBtn: true,
+      isCaptian: false,
+      name: "Talan Levin",
+      isFollowing: false,
+    },
+    {
+      playerDetails: { type: "Batsman", direction: "Left Handed" },
+      showFollowAndShareBtn: true,
+      isCaptian: false,
+      name: "Cristofer Bergson",
+      isFollowing: false,
+    },
+    {
+      playerDetails: { type: "Batsman", direction: "Left Handed" },
+      showFollowAndShareBtn: true,
+      isCaptian: false,
+      name: "Emerson Dias",
+      isFollowing: false,
+    },
+    {
+      playerDetails: { type: "Batsman", direction: "Left Handed" },
+      showFollowAndShareBtn: true,
+      isCaptian: false,
+      name: "Zaire Rosser",
+      isFollowing: false,
+    },
+    {
+      playerDetails: { type: "Batsman", direction: "Left Handed" },
+      showFollowAndShareBtn: true,
+      isCaptian: false,
+      name: "Ahmad Vetrovs",
+      isFollowing: false,
+    },
+    {
+      playerDetails: { type: "Batsman", direction: "Left Handed" },
+      showFollowAndShareBtn: true,
+      isCaptian: false,
+      name: "Zain Korsgaard",
+      isFollowing: false,
+    },
+    {
+      playerDetails: { type: "Batsman", direction: "Left Handed" },
+      showFollowAndShareBtn: true,
+      isCaptian: false,
+      name: "Ryan Bator",
+      isFollowing: false,
+    },
+  ],
 };
 
 export const playerDetails = createSlice({

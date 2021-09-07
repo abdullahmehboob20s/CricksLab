@@ -30,7 +30,11 @@ function CompetitionOverview() {
           />
 
           <div className="mb-70">
-            <LeagueCard />
+            <LeagueCard
+              title="United Cricket League"
+              subtitle="Tournament"
+              status={true}
+            />
           </div>
 
           <div className="box mb-100 py-30">
