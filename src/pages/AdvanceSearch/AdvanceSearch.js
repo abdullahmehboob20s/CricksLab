@@ -4,7 +4,7 @@ import Navbar from "layouts/Navbar/Navbar";
 import TitleBar2 from "components/TitleBars/TitleBar2/TitleBar2";
 import Tabs from "components/Tabs/Tabs";
 import Tab from "components/Tabs/Tab";
-import TabPan from "components/Tabs/TabPan";
+// import TabPan from "components/Tabs/TabPan";
 import CompetitionsCard from "components/Cards/CompetitionsCard/CompetitionsCard";
 import { useSelector } from "react-redux";
 import Footer from "layouts/Footer/Footer";
