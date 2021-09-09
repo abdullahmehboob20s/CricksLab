@@ -7,8 +7,9 @@ import { FiSearch } from "react-icons/fi";
 import { BsChevronDown } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
+import Search from "components/SearchBars/Search/Search";
 
-function Navbar() {
+function Navbar({ showSearchBar = true }) {
   const [open, setOpen] = React.useState(false);
   return (
     <div className="navbar">
@@ -30,12 +31,7 @@ function Navbar() {
         </div>
       </div>
       <div className={open ? "navbar_right open" : "navbar_right"}>
-        <div className="navbar_input">
-          <input placeholder="Search" type="text" name="" id="" />
-          <span className="navbar_input_icon">
-            <FiSearch color="#6E7077" />
-          </span>
-        </div>
+        {showSearchBar ? <Search /> : ""}
 
         <div className="navbar_links">
           <Link to="/" className="navbar_link">

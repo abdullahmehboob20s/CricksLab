@@ -11,6 +11,7 @@ function LatestNews() {
         <TitleBar
           title="Latest News"
           subtitle="Latest news and updates of Kuwait Cricket Association activities"
+          viewAll="/advance-search"
         />
         <div className="lates_cards">
           <div className="LatestNewsCards">
