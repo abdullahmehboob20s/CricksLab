@@ -32,7 +32,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s ease;
 }
 .accordion_btn.reversed {
   transform: rotate(180deg);
+}
+
+.accordion_body_wrapper {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease;
 }

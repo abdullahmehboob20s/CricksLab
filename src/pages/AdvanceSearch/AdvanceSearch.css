@@ -87,3 +87,24 @@
   align-items: center;
   gap: 20px;
 }
+
+.calendar_date_picker {
+  flex-direction: row-reverse;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  color: #081027;
+}
+
+.calendar_date_picker .rdrStaticRange {
+  border-bottom: 0;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  color: #081027;
+}
+
+.calendar_date_picker .rdrDefinedRangesWrapper {
+  /* border: 2px solid red; */
+  border-left: 1px solid #dedee4;
+}

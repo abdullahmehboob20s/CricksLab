@@ -40,41 +40,47 @@ function Dropdowns(props) {
           <BsChevronDown />
         </div>
       </div>
-      {showDropdown ? (
-        <div className="dropdown_menu">
-          {searchBar ? (
-            <div className="mb-20">
-              <Search style={{ width: "100%" }} />
-            </div>
+      <div>
+        {showDropdown ? (
+          props.children ? (
+            <div className="dropdown_menu_2">{props.children}</div>
           ) : (
-            ""
-          )}
-          <div className="dropdown_menu_checkboxes">
-            {checkBoxes.map((item, index) => (
-              <Checkbox title={item} />
-            ))}
-          </div>
-          <div className="dropdown_menu_btns">
-            <Button
-              title="Cancel"
-              background="white"
-              border="none"
-              color="#6E7077"
-              onPress={() => setShowDropdown(false)}
-            />
-            <Button
-              title="Show Results"
-              px="20px"
-              py="12px"
-              border="none"
-              background="#33A2D2"
-              color="white"
-            />
-          </div>
-        </div>
-      ) : (
-        ""
-      )}
+            <div className="dropdown_menu">
+              {searchBar ? (
+                <div className="mb-20">
+                  <Search style={{ width: "100%" }} />
+                </div>
+              ) : (
+                ""
+              )}
+              <div className="dropdown_menu_checkboxes">
+                {checkBoxes.map((item, index) => (
+                  <Checkbox title={item} />
+                ))}
+              </div>
+              <div className="dropdown_menu_btns">
+                <Button
+                  title="Cancel"
+                  background="white"
+                  border="none"
+                  color="#6E7077"
+                  onPress={() => setShowDropdown(false)}
+                />
+                <Button
+                  title="Show Results"
+                  px="20px"
+                  py="12px"
+                  border="none"
+                  background="#33A2D2"
+                  color="white"
+                />
+              </div>
+            </div>
+          )
+        ) : (
+          ""
+        )}
+      </div>
     </div>
   );
 }

@@ -11,9 +11,22 @@ import Footer from "layouts/Footer/Footer";
 import { FiSearch } from "react-icons/fi";
 import cross from "assets/images/cross.png";
 import Dropdowns from "components/Dropdowns/Dropdown/Dropdowns";
+import "react-date-range/dist/styles.css"; // main style file
+import "react-date-range/dist/theme/default.css"; // theme css file
+import { DateRangePicker } from "react-date-range";
 
 function AdvanceSearch() {
   const { data } = useSelector((state) => state.leagues);
+
+  const handleSelect = (ranges) => {
+    console.log(ranges);
+  };
+
+  const selectionRange = {
+    startDate: new Date(),
+    endDate: new Date(),
+    key: "selection",
+  };
 
   return (
     <>
@@ -101,7 +114,13 @@ function AdvanceSearch() {
                       "Australia",
                     ]}
                   />
-                  <Dropdowns btnTitle="Date Range" />
+                  <Dropdowns btnTitle="Date Range">
+                    <DateRangePicker
+                      className="calendar_date_picker"
+                      ranges={[selectionRange]}
+                      onChange={handleSelect}
+                    />
+                  </Dropdowns>
                 </div>
                 <div className="advance_search_dropdowns_right">
                   <Dropdowns width="180px" btnTitle="Sort By" />

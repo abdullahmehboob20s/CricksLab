@@ -7,6 +7,7 @@ import SquadPlayerCard from "components/Cards/SquadPlayerCard/SquadPlayerCard";
 function Accordion(props) {
   const [active, setActive] = React.useState(props.open);
   const { squad } = useSelector((state) => state.playerDetails);
+  const accordionRef = React.useRef("");
 
   const toggleAccordion = () => {
     setActive(!active);
@@ -30,14 +31,19 @@ function Accordion(props) {
         </div>
       </div>
       <div
-        style={{ display: active ? "block" : "none" }}
-        className="accordion_body"
+        ref={accordionRef}
+        style={{
+          height: active ? accordionRef.current.scrollHeight + "px" : "0px",
+        }}
+        className="accordion_body_wrapper"
       >
-        <div className="container-wrapper-30 mb-30">
-          <div className="squad_playing_X1_cards">
-            {squad.map((player, index) => (
-              <SquadPlayerCard data={player} />
-            ))}
+        <div className="accordion_body">
+          <div className="container-wrapper-30 mb-30">
+            <div className="squad_playing_X1_cards">
+              {squad.map((player, index) => (
+                <SquadPlayerCard data={player} />
+              ))}
+            </div>
           </div>
         </div>
       </div>
