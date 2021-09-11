@@ -1,6 +1,24 @@
 .team_cards_wrapper {
-  display: flex;
+  /* display: flex;
+  flex-wrap: wrap; */
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(337px, 1fr));
+
   gap: 3.125rem;
-  flex-wrap: wrap;
   margin-bottom: 50px;
+  /* border: 2px solid red; */
+}
+
+@media (min-width: 1600px) {
+  .team_cards_wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 400px) {
+  .team_cards_wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }

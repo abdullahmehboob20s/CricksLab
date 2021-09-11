@@ -119,6 +119,9 @@ function AdvanceSearch() {
                       className="calendar_date_picker"
                       ranges={[selectionRange]}
                       onChange={handleSelect}
+                      showMonthAndYearPickers={false}
+                      // dayDisplayFormat={}
+                      weekdayDisplayFormat="EEEEE"
                     />
                   </Dropdowns>
                 </div>
@@ -132,7 +135,7 @@ function AdvanceSearch() {
           <div className="container-wrapper">
             <TitleBar2 mainTitle="Related Match Videos" showRightSide={false} />
 
-            <div className="competitions_cards">
+            <div className="team_cards_wrapper">
               {data.slice(0, 12).map((league, index) => (
                 <CompetitionsCard key={index} data={league} />
               ))}

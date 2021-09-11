@@ -5,17 +5,28 @@ import { BsArrowLeft } from "react-icons/bs";
 import TeamsCard from "components/Cards/TeamsCard/TeamsCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
+import SwiperCore, { Navigation } from "swiper";
+
+SwiperCore.use([Navigation]);
 
 function Slider1(props) {
+  const navigationPrevRef = React.useRef(null);
+  const navigationNextRef = React.useRef(null);
   return (
     <div>
       <div className="slider1_titles mb-30">
         <p className="slider1_title">{props.headerTitle}</p>
         <div className="slider1_titles_right">
-          <button className="slider1_titles_right_btn btn_1">
+          <button
+            className="slider1_titles_right_btn btn_1"
+            ref={navigationPrevRef}
+          >
             <BsArrowLeft />
           </button>
-          <button className="slider1_titles_right_btn btn_2">
+          <button
+            className="slider1_titles_right_btn btn_2"
+            ref={navigationNextRef}
+          >
             <BsArrowRight />
           </button>
         </div>
@@ -24,8 +35,15 @@ function Slider1(props) {
       <Swiper
         slidesPerView={5}
         spaceBetween={20}
-        pagination={{
-          clickable: true,
+        navigation={{
+          prevEl: navigationPrevRef.current,
+          nextEl: navigationNextRef.current,
+        }}
+        onInit={(swiper) => {
+          swiper.params.navigation.prevEl = navigationPrevRef.current;
+          swiper.params.navigation.nextEl = navigationNextRef.current;
+          swiper.navigation.init();
+          swiper.navigation.update();
         }}
       >
         {props.data.map((item, index) => (

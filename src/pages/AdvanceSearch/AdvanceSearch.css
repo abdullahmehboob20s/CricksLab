@@ -108,3 +108,60 @@
   /* border: 2px solid red; */
   border-left: 1px solid #dedee4;
 }
+
+.calendar_date_picker .rdrDateDisplayWrapper {
+  /* border: 2px solid red; */
+  display: none;
+}
+
+.calendar_date_picker .rdrMonthAndYearPickers {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #081027;
+}
+
+.calendar_date_picker .rdrWeekDay {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #33a2d2;
+}
+
+.rdrMonths {
+  /* border: 2px solid red; */
+  margin-top: 20px;
+}
+
+.rdrWeekDays {
+  margin-bottom: 30px;
+}
+
+.rdrDayNumber {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+
+  color: #081027;
+}
+
+.rdrMonthAndYearWrapper {
+  /* border: 2px solid red; */
+  margin-top: 20px;
+}
+
+.rdrStaticRanges {
+  margin-top: 30px;
+}
+
+.rdrNextPrevButton.rdrPprevButton {
+  /* border: 2px solid red; */
+  background: white;
+}
+.rdrNextPrevButton.rdrNextButton {
+  /* border: 2px solid red; */
+  background: white;
+}
