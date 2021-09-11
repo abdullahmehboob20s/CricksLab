@@ -35,7 +35,6 @@ import {
   Label,
   BarChart,
   Bar,
-  Legend,
 } from "recharts";
 
 function MatchDetails() {
