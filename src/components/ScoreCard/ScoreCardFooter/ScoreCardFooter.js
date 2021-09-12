@@ -8,12 +8,14 @@ function ScoreCardFooter(props) {
   return (
     <div className="score_card_footer">
       <div className="score_card_footer_left">
-        <p className="run_rate">
-          Runs Rate: <span className="run_rate_num">5.71</span>
-        </p>
-        <p className="run_rate">
-          Extra Runs: <span className="run_rate_num">20</span>
-        </p>
+        <div className="score_card_footer_left_runs">
+          <p className="run_rate">
+            Runs Rate: <span className="run_rate_num">5.71</span>
+          </p>
+          <p className="run_rate">
+            Extra Runs: <span className="run_rate_num">20</span>
+          </p>
+        </div>
         <div className="recents_balls">
           <p className="recent_text">Recent :</p>
           <div className="recents">

@@ -6,7 +6,13 @@ import Players from "components/ScoreCard/Players/Players";
 import ScoreCardFooter from "components/ScoreCard/ScoreCardFooter/ScoreCardFooter";
 
 function ScoreCard(props) {
-  const { showHeader, showTitle, footerText, showFooterBtns } = props;
+  const {
+    showHeader,
+    showTitle,
+    footerText,
+    showFooterBtns,
+    showLiveIndicator = false,
+  } = props;
   return (
     <div className="score_card">
       <div className="score_card_background"></div>
@@ -23,7 +29,7 @@ function ScoreCard(props) {
           ) : (
             ""
           )}
-          <ScoreCardMatchingTeams />
+          <ScoreCardMatchingTeams showLiveIndicator={showLiveIndicator} />
           <Players />
         </div>
         <ScoreCardFooter

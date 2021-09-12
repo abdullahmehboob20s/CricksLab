@@ -106,13 +106,31 @@
   }
 }
 
-@media (max-width: 410px) {
+@media (max-width: 500px) {
+  .standing_teams_specs_left {
+    overflow-x: scroll;
+    margin-bottom: 0.5rem;
+  }
   .standing_teams_specs_right {
+    display: none;
+  }
+
+  .standing_cards_title {
+    display: none;
+  }
+
+  .standing_tab {
+    min-width: fit-content;
+  }
+}
+
+@media (max-width: 410px) {
+  /* .standing_teams_specs_right {
     display: flex;
     align-items: unset;
     flex-wrap: wrap;
   }
   .standing_select {
     margin-bottom: 1rem;
-  }
+  } */
 }

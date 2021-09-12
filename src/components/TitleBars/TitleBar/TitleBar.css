@@ -3,6 +3,8 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 3.125rem;
+  position: relative;
+  /* border: 2px solid red; */
 }
 .title_bar_title {
   font-weight: bold;
@@ -44,10 +46,37 @@
 }
 
 @media (max-width: 500px) {
+  .title_bar_subtitle {
+    margin-top: 1.6rem;
+  }
+
   .title_bar_title {
     font-weight: bold;
     font-size: 2rem;
     color: #081027;
     margin-right: 2rem;
+  }
+
+  .title_bar_forward_arrow {
+    display: none;
+  }
+
+  .title_bar_btn {
+    position: absolute;
+    top: 6px;
+    right: 0;
+
+    width: 66px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #33a2d2;
+  }
+
+  .title_bar_title {
+    /* border: 2px solid red; */
+    margin-right: 66px;
   }
 }

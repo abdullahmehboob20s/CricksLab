@@ -23,3 +23,19 @@
   border-bottom: 2px solid #33a2d2;
   color: #33a2d2;
 }
+
+@media (max-width: 600px) {
+  .competitions_cards {
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+  }
+
+  .competitions_cards .competitions_card {
+    min-width: 308px;
+  }
+
+  .competitions_cards::-webkit-scrollbar {
+    /* background: orange; */
+    height: 5px;
+  }
+}

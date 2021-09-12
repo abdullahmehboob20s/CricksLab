@@ -70,7 +70,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -81,6 +80,26 @@
   align-items: center;
   font-size: 1.5rem;
   color: #ffffff;
+}
+
+.score_card_live_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 10px;
+  width: 53px;
+  height: 32px;
+  background: rgba(229, 83, 83, 0.9);
+  border-radius: 5px;
+  color: white;
+  font-size: 0.938rem;
+
+  position: absolute;
+  top: 80%;
+}
+
+.score_card_live_card.hide {
+  display: none;
 }
 
 @media (max-width: 1200px) {
@@ -188,8 +207,38 @@
   }
 
   .VS {
-    width: 60px;
-    height: 60px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -15%);
+    width: 50px;
+    height: 50px;
     font-size: 1rem;
+  }
+
+  .score_card_live_card {
+    width: 40px;
+    height: 28px;
+    font-size: 0.8rem;
+    position: absolute;
+    top: 160%;
+  }
+
+  .score_card_live_card.hide {
+    display: flex;
+  }
+}
+
+@media (max-width: 400px) {
+  .team {
+    width: 90px;
+  }
+  .team_name {
+    font-size: 0.9rem;
+  }
+
+  .team_img {
+    width: 70px;
+    height: 70px;
   }
 }

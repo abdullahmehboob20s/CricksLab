@@ -25,6 +25,7 @@ function Home() {
                 showFooterBtns={true}
                 showHeader={true}
                 showTitle={true}
+                showLiveIndicator={false}
               />
             </div>
           </SwiperSlide>
