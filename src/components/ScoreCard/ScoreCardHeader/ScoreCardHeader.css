@@ -49,6 +49,10 @@
   align-items: center;
 }
 
+.score_card_header_share_btn {
+  display: none;
+}
+
 @media (max-width: 1200px) {
   .score_card_header {
     padding: 0 2rem;
@@ -72,7 +76,28 @@
 }
 
 @media (max-width: 500px) {
+  .score_card_header_share_btn {
+    display: block;
+  }
   .score_card_header {
-    padding: 2rem 1rem;
+    padding: 3rem 2rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .score_card_header_left {
+    margin-bottom: 0rem;
+  }
+
+  .score_card_left_live {
+    display: none;
+  }
+
+  .score_card_header_right_title {
+    display: none;
+  }
+  .score_card_header_right_social_icons {
+    display: none;
   }
 }

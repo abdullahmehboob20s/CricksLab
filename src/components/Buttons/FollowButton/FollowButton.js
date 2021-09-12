@@ -13,18 +13,23 @@ function FollowButton(props) {
     onPress,
     px,
     py,
+    style,
   } = props;
   return (
     <button
-      style={{
-        backgroundColor: background,
-        border,
-        width,
-        height,
-        fontSize,
-        color,
-        padding: `${py} ${px}`,
-      }}
+      style={
+        style
+          ? style
+          : {
+              backgroundColor: background,
+              border,
+              width,
+              height,
+              fontSize,
+              color,
+              padding: `${py} ${px}`,
+            }
+      }
       className="follow_btn"
       onClick={onPress}
     >

@@ -3,19 +3,13 @@
   border: 1px solid #dedee4;
   border-radius: 10px;
   position: relative;
-  width: 200px;
+  width: 100%;
   padding: 0.8rem 0;
   margin-right: 1.5rem;
 }
 
 .navbar_input.width100Percent {
   width: 100%;
-}
-
-@media (min-width: 1500px) {
-  .navbar_input {
-    width: 360px;
-  }
 }
 
 .navbar_input input {

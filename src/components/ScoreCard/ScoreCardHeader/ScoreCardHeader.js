@@ -3,6 +3,8 @@ import "./ScoreCardHeader.css";
 import ScoreCardHeaderSocialIcon from "./ScoreCardHeaderSocialIcon";
 import { FaFacebook } from "react-icons/fa";
 import { AiOutlineTwitter, AiOutlineWhatsApp } from "react-icons/ai";
+import Button from "components/Buttons/FollowButton/FollowButton";
+import { BiShareAlt } from "react-icons/bi";
 
 function ScoreCardHeader() {
   const social_icons = [
@@ -29,6 +31,21 @@ function ScoreCardHeader() {
         <div className="score_card_left_live">LIVE</div>
       </div>
       <div className="score_card_header_right">
+        <div className="score_card_header_share_btn">
+          <Button
+            style={{
+              width: "50px",
+              height: "50px",
+              background: "rgba(51, 162, 210, 0.1)",
+              borderRadius: "10px",
+              border: "none",
+              outline: "none",
+              color: "#33A2D2",
+              fontSize: "24px",
+            }}
+            title={<BiShareAlt />}
+          />
+        </div>
         <p className="score_card_header_right_title">Share with:</p>
         <div className="score_card_header_right_social_icons">
           {social_icons.map((item, index) => (
