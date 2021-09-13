@@ -6,6 +6,8 @@ import { AiOutlineTwitter, AiOutlineWhatsApp } from "react-icons/ai";
 import ScoreCardHeaderSocialIcon from "components/ScoreCard/ScoreCardHeader/ScoreCardHeaderSocialIcon";
 import { Link } from "react-router-dom";
 import notification from "assets/images/notification.svg";
+import Button from "components/Buttons/FollowButton/FollowButton";
+import { BiShareAlt } from "react-icons/bi";
 
 function TitleBar2(props) {
   const social_icons = [
@@ -91,9 +93,26 @@ function TitleBar2(props) {
 
           {props.showSubscribeBtn ? (
             <div className="divider">
-              <Link className="subscribe_link">
-                <img src={notification} alt="" /> Subscribe
-              </Link>
+              <div className="title_bar_share_btns">
+                <Link className="subscribe_link">
+                  <img src={notification} alt="" /> <p> Subscribe</p>
+                </Link>
+                <div className="title_share_btn">
+                  <Button
+                    style={{
+                      width: "50px",
+                      height: "50px",
+                      background: "rgba(51, 162, 210, 0.1)",
+                      borderRadius: "10px",
+                      border: "none",
+                      outline: "none",
+                      color: "#33A2D2",
+                      fontSize: "24px",
+                    }}
+                    title={<BiShareAlt />}
+                  />
+                </div>
+              </div>
             </div>
           ) : (
             ""

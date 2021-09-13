@@ -78,6 +78,8 @@
 }
 
 .league_timings {
+  flex: 1;
+  /* border: 2px solid red; */
   /* background: rgba(51, 162, 210, 0.05); */
   border-radius: 0px 0px 9px 0px;
   height: 91px;
@@ -90,11 +92,18 @@
   flex: 1;
   padding: 1.25rem;
   background: rgba(15, 185, 24, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .league_timings_right {
   flex: 1;
   padding: 1.25rem;
   background: rgba(51, 162, 210, 0.05);
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .league_timings_calender {

@@ -32,3 +32,9 @@
   color: #6e7077;
   margin-top: 1rem;
 }
+
+@media (max-width: 500px) {
+  .footer_cards {
+    flex-direction: column;
+  }
+}

@@ -33,3 +33,13 @@
   z-index: 1;
   background-repeat: no-repeat;
 }
+
+@media (max-width: 500px) {
+  .footer_card {
+    width: 100%;
+  }
+
+  .footer_card::before {
+    background-position: right center;
+  }
+}

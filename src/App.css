@@ -73,6 +73,10 @@
   color: #081027;
 }
 
+.scrollbar-height-0::-webkit-scrollbar {
+  height: 0;
+}
+
 .score_card_social_icon {
   display: flex;
   justify-content: center;
@@ -130,5 +134,13 @@
 @media (max-width: 450px) {
   :root {
     font-size: 80%;
+  }
+}
+
+@media (max-width: 760px) {
+  .container-wrapper-30 {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 0;
   }
 }

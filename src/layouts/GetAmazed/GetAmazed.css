@@ -57,9 +57,13 @@
   color: #ffffff;
   margin-bottom: 1.25rem;
 }
+.get_amazed_content_btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
 .get_amazed_content_get_app {
   display: inline-block;
-  margin-right: 1rem;
   text-decoration: none;
 }
 
@@ -94,5 +98,42 @@
 
   .get_amazed_content {
     width: 100%;
+  }
+}
+
+@media (max-width: 510px) {
+  .get_amazed {
+    height: 1100px;
+  }
+  .get_amazed::before {
+    content: "";
+    width: 80%;
+    height: 100%;
+    bottom: 0%;
+    right: 0px;
+  }
+}
+@media (max-width: 400px) {
+  .get_amazed {
+    height: 1000px;
+  }
+  .get_amazed::before {
+    content: "";
+    width: 80%;
+    height: 100%;
+    bottom: 0%;
+    right: 0px;
+  }
+}
+@media (max-width: 350px) {
+  .get_amazed {
+    height: 1120px;
+  }
+  .get_amazed::before {
+    content: "";
+    width: 80%;
+    height: 100%;
+    bottom: 0%;
+    right: 0px;
   }
 }

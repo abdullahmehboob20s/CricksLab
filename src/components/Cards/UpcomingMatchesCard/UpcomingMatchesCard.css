@@ -23,6 +23,7 @@
 .upcoming_matches_card_team {
   display: flex;
   align-items: center;
+  gap: 1rem;
 }
 .upcoming_matches_card_team.reverse {
   flex-direction: row-reverse;
@@ -32,10 +33,10 @@
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  margin-right: 1rem;
+  /* margin-right: 1rem; */
 }
 .upcoming_matches_card_team.reverse .upcoming_matches_card_team_img {
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
   margin-right: 0;
 }
 .upcoming_matches_card_team_title {
@@ -150,13 +151,13 @@
     font-size: 0.8rem;
   }
 
+  .upcoming_matches_card_team {
+    gap: 0.8rem;
+  }
+
   .upcoming_matches_card_team_img {
     width: 45px;
     height: 45px;
-    margin-right: 0.8rem;
-  }
-  .upcoming_matches_card_team.reverse .upcoming_matches_card_team_img {
-    margin-left: 0.8rem;
   }
   .upcoming_matches_card_team_title {
     width: 78px;
@@ -172,5 +173,24 @@
   .upcoming_matches_card_tems_vs {
     width: 40px;
     height: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .upcoming_matches_card_team {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .upcoming_matches_card_team.reverse {
+    flex-direction: column;
+  }
+
+  .upcoming_matches_card_teams {
+    align-items: flex-start;
+  }
+
+  .upcoming_matches_card_team.reverse .upcoming_matches_card_team_title {
+    text-align: center;
   }
 }

@@ -12,7 +12,7 @@
   position: absolute;
   z-index: -1;
   top: 20px;
-  left: 95%;
+  right: -45px;
   width: 60px;
   height: 60px;
   background: linear-gradient(103.26deg, #25af96 0%, #13b51b 100%);
@@ -88,10 +88,16 @@
   left: 0;
 }
 
+@media (max-width: 760px) {
+  .player_performence_card {
+    width: 95%;
+  }
+  .player_performence_card_vector {
+    right: -45px;
+  }
+}
 @media (max-width: 500px) {
   .player_performence_card {
-    width: 85%;
-    padding: 1.25rem;
-    margin-bottom: 1.5rem;
+    width: 88%;
   }
 }

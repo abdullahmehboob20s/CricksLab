@@ -33,18 +33,22 @@ function CompetitionsCard(props) {
 
       <div className="league_timings">
         <div className="league_timings_left">
-          <div className="league_timings_calender">
-            <img src={calendar} alt="" />
-            <p>Start Date</p>
+          <div>
+            <div className="league_timings_calender">
+              <img src={calendar} alt="" />
+              <p>Start Date</p>
+            </div>
+            <p className="league_timings_calender_time">09th Aug 2021 </p>
           </div>
-          <p className="league_timings_calender_time">09th Aug 2021 </p>
         </div>
         <div className="league_timings_right">
-          <div className="league_timings_calender blue">
-            <img src={calendar_blue} alt="" />
-            <p>End Date</p>
+          <div>
+            <div className="league_timings_calender blue">
+              <img src={calendar_blue} alt="" />
+              <p>End Date</p>
+            </div>
+            <p className="league_timings_calender_time">15th Aug 2021 </p>
           </div>
-          <p className="league_timings_calender_time">15th Aug 2021 </p>
         </div>
       </div>
     </div>

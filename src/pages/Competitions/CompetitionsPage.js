@@ -57,21 +57,21 @@ function Competitions() {
             </div>
 
             <TabPan tabIndex={1}>
-              <div className="competitions_cards">
+              <div className="team_cards_wrapper">
                 {data.slice(0, count).map((league, index) => (
                   <CompetitionsCard key={index} data={league} />
                 ))}
               </div>
             </TabPan>
             <TabPan tabIndex={2}>
-              <div className="competitions_cards">
+              <div className="team_cards_wrapper">
                 {data.slice(0, count).map((league, index) => (
                   <CompetitionsCard key={index} data={league} />
                 ))}
               </div>
             </TabPan>
             <TabPan tabIndex={3}>
-              <div className="competitions_cards">
+              <div className="team_cards_wrapper">
                 {data.slice(0, count).map((league, index) => (
                   <CompetitionsCard key={index} data={league} />
                 ))}

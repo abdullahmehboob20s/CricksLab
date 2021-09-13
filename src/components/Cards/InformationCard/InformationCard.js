@@ -1,13 +1,11 @@
 import React from "react";
 import "./InformationCard.css";
 
-function InformationCard() {
+function InformationCard(props) {
   return (
     <div className="information_card">
-      <p className="information_card_title">Tournament:</p>
-      <p className="information_card_subtitle">
-        SHAMKOT SUPER LEAGUE SEASON 2 S.S.L
-      </p>
+      <p className="information_card_title">{props.title}</p>
+      <p className="information_card_subtitle">{props.subtitle}</p>
     </div>
   );
 }

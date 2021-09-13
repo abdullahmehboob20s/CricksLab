@@ -24,8 +24,8 @@
 
 .titlebar_4_title {
   font-weight: bold;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   color: #081027;
 
   margin-bottom: 0.313rem;
@@ -33,8 +33,8 @@
 
 .titlebar_4_subtitle {
   font-weight: normal;
-  font-size: 12px;
-  line-height: 20px;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
   color: #081027;
 }
 
@@ -58,4 +58,38 @@
   border: 1px solid #33a2d2;
   background: #33a2d2;
   color: white;
+}
+
+@media (max-width: 500px) {
+  .titlebar_4_rate {
+    width: 45px;
+    height: 45px;
+    font-size: 13px;
+  }
+
+  .titlebar_4_ball_status {
+    width: 45px;
+    height: 45px;
+  }
+
+  .titlebar_4_left {
+    gap: 0 0.8rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .titlebar_4_rate {
+    width: 40px;
+    height: 40px;
+    font-size: 12px;
+  }
+
+  .titlebar_4_ball_status {
+    width: 40px;
+    height: 40px;
+  }
+
+  .titlebar_4_left {
+    gap: 0 0.7rem;
+  }
 }

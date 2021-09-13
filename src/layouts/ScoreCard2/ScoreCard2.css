@@ -38,7 +38,6 @@
   border: 1px solid #33a2d2;
 }
 .score_card_2_team.reverse img {
-  border-radius: 505;
   margin-left: 1.875rem;
 }
 .score_card_2_team_name {
@@ -102,5 +101,52 @@
   }
   .score_card_2_team_overs {
     font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .score_card_2 {
+    align-items: flex-start;
+  }
+
+  .score_card_2_team {
+    flex-direction: column;
+  }
+  .score_card_2_team.reverse {
+    flex-direction: column;
+  }
+
+  .score_card_2_team_img {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .score_card_2_team.reverse img {
+    margin-left: 0;
+  }
+  .score_card_2_team_overs {
+    margin-left: 0.4rem;
+    text-align: center;
+  }
+  .score_card_2_team.reverse .score_card_2_team_overs {
+    text-align: center;
+  }
+
+  .score_card_2_score {
+    margin-top: 0rem;
+  }
+
+  .match_live {
+    width: 45px;
+    height: 25px;
+    margin-top: 2rem;
+  }
+  .score_card_2_team_name {
+    text-align: center;
+  }
+}
+
+@media (max-width: 360px) {
+  .score_card_2_team {
+    width: 50%;
   }
 }

@@ -27,3 +27,38 @@
   font-size: 0.75rem;
   color: #081027;
 }
+
+@media (max-width: 760px) {
+  .score_card_3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .score_card_3_col {
+    padding: initial 0.8rem;
+    border-right: 0;
+  }
+
+  .score_card_3_col:not(:last-child) {
+    border: 0;
+    /* border-right: 1px solid #e5f3f8; */
+  }
+
+  .score_card_3_col:nth-child(1) {
+    border-right: 1px solid #e5f3f8;
+  }
+  .score_card_3_col:nth-child(3) {
+    border-top: 1px solid #e5f3f8;
+    border-right: 1px solid #e5f3f8;
+  }
+  .score_card_3_col:nth-child(4) {
+    border-top: 1px solid #e5f3f8;
+  }
+}
+
+@media (max-width: 400px) {
+  .score_card_3 {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+  }
+}
