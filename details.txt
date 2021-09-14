@@ -1,0 +1,39 @@
+a) Here are the pages which are all done and are responsive according to figma design
+
+1) https://crickslab.netlify.app/
+2) https://crickslab.netlify.app/match-details
+3) https://crickslab.netlify.app/competitions
+4) https://crickslab.netlify.app/competition-overview
+
+================================
+
+b) links of pages which are completed for desktop view
+
+1) https://crickslab.netlify.app/teams
+2) https://crickslab.netlify.app/club-details
+3) https://crickslab.netlify.app/player-details
+4) https://crickslab.netlify.app/officials
+5) https://crickslab.netlify.app/advance-search
+6) https://crickslab.netlify.app/team-details
+
+================================
+
+c) Names of pages which are added recently
+
+1) Teams Details - Player List ( Leaderboard ) 
+1) Competitions Overview - ( Overview )
+2) Player Listing - ( Statistics )
+
+================================
+
+d) Name and links of pages which are left for responsiveness because figma design is not there excluding new pages
+
+Total 6 ( by excluding new pages )
+Total 8 ( by including new pages )
+
+1) https://crickslab.netlify.app/teams ( Teams Details ( Teams Listing ) )
+2) https://crickslab.netlify.app/club-details ( Clubs Details )
+3) https://crickslab.netlify.app/player-details ( Players Details )
+4) https://crickslab.netlify.app/officials ( Officials Details )
+5) https://crickslab.netlify.app/advance-search ( Advance Search )
+6) https://crickslab.netlify.app/team-details ( Teams Details )

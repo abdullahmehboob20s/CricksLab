@@ -241,6 +241,12 @@
   }
 }
 
+@media (max-width: 760px) {
+  .league_card {
+    margin-top: 30px;
+  }
+}
+
 @media (max-width: 650px) {
   .league_card {
     padding: 20px;

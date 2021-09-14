@@ -18,6 +18,7 @@
     rgba(255, 255, 255, 0) 20%,
     white 100%
   );
+  padding-top: 6.25rem;
 }
 .row {
   display: flex;
@@ -136,6 +137,14 @@
     width: 90%;
     margin: 0 auto;
     padding: 0 0;
+  }
+
+  .bg-liner-gradient {
+    padding-top: 30px;
+  }
+
+  .mb-70 {
+    margin-bottom: 50px;
   }
 }
 

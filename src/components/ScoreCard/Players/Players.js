@@ -2,9 +2,13 @@ import React from "react";
 import Player from "./Player";
 import "./style.css";
 
-function Players() {
+function Players({ showPlayersInResponsive }) {
   return (
-    <div className="players">
+    <div
+      className={
+        showPlayersInResponsive ? "players" : "players dontShowInResponsive"
+      }
+    >
       <Player
         name="Majun Khan"
         score="40 (44)"

@@ -82,6 +82,12 @@
   }
 }
 
+@media (max-width: 760px) {
+  .score_card {
+    margin-bottom: 50px;
+  }
+}
+
 @media (max-width: 500px) {
   .score_card_content {
     padding: 0 1rem;

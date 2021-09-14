@@ -26,6 +26,7 @@ function Home() {
                 showHeader={true}
                 showTitle={true}
                 showLiveIndicator={false}
+                showPlayersInResponsive={false}
               />
             </div>
           </SwiperSlide>

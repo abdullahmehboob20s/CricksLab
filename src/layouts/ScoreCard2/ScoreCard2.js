@@ -42,7 +42,14 @@ function ScoreCard2() {
         teamOvers="14 Overs"
         teamLogo={matching_team_1}
       />
-      <div className="match_live">LIVE</div>
+      <div className="match_live">
+        LIVE
+        <div className="live_dots">
+          <div className="live_dot dot_1"></div>
+          <div className="live_dot dot_2"></div>
+          <div className="live_dot dot_3"></div>
+        </div>
+      </div>
       <ScoreCard2Team
         teamName="Mash Eagles"
         reverse={true}

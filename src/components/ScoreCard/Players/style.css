@@ -117,15 +117,21 @@
   }
 }
 
-/* @media (max-width: 760px) {
-  .player_container {
+@media (max-width: 760px) {
+  /* .player_container {
     margin-bottom: 1rem;
-  }
+  } */
 
-  .player_container.bowler_division {
+  /* .player_container.bowler_division {
     padding-left: 0px;
     border-left: 0px solid rgba(255, 255, 255, 0.1);
     padding-top: 0px;
     border-top: 0px solid rgba(255, 255, 255, 0.1);
+  } */
+}
+
+@media (max-width: 500px) {
+  .players.dontShowInResponsive {
+    display: none;
   }
-} */
+}

@@ -114,7 +114,19 @@ function AdvanceSearch() {
                       "Australia",
                     ]}
                   />
-                  <Dropdowns btnTitle="Date Range">
+                  <Dropdowns
+                    btnTitle="Date Range"
+                    checkBoxes={[
+                      "This Week",
+                      "Last Week",
+                      "This Month",
+                      "Last Month",
+                      "This Quarter",
+                      "Last Quarter",
+                      "This Year",
+                      "Last Year",
+                    ]}
+                  >
                     <DateRangePicker
                       className="calendar_date_picker"
                       ranges={[selectionRange]}

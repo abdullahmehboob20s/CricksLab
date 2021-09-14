@@ -184,6 +184,10 @@
 }
 
 @media (max-width: 500px) {
+  .mathcing_teams {
+    margin-bottom: 20px;
+  }
+
   .team {
     width: 110px;
   }

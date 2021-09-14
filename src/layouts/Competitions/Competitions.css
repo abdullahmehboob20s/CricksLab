@@ -24,6 +24,12 @@
   color: #33a2d2;
 }
 
+@media (max-width: 760px) {
+  .competitions_cards_tabs {
+    margin-bottom: 30px;
+  }
+}
+
 @media (max-width: 600px) {
   .competitions_cards {
     overflow-x: scroll;

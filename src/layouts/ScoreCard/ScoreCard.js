@@ -12,6 +12,7 @@ function ScoreCard(props) {
     footerText,
     showFooterBtns,
     showLiveIndicator = false,
+    showPlayersInResponsive = true,
   } = props;
   return (
     <div className="score_card">
@@ -30,7 +31,7 @@ function ScoreCard(props) {
             ""
           )}
           <ScoreCardMatchingTeams showLiveIndicator={showLiveIndicator} />
-          <Players />
+          <Players showPlayersInResponsive={showPlayersInResponsive} />
         </div>
         <ScoreCardFooter
           footerText={footerText}

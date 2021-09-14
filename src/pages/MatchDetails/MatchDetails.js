@@ -127,7 +127,7 @@ function MatchDetails() {
                       <ScoreCard2 />
                     </div>
                     <div className="teams_current_details">
-                      <div className="teams_current_details_wrapper">
+                      <div className="teams_current_details_wrapper scrollbar-height-0">
                         <table className="teams_current_details_table">
                           <thead>
                             <TeamDetailsTableHead
@@ -159,7 +159,7 @@ function MatchDetails() {
                           title="Salman Shaikh, Mahamad Danish"
                         />
                       </div>
-                      <div className="teams_current_details_wrapper">
+                      <div className="teams_current_details_wrapper scrollbar-height-0">
                         <table className="teams_current_details_table">
                           <thead>
                             <TeamDetailsTableHead
