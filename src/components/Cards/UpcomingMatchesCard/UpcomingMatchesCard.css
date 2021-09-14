@@ -105,13 +105,13 @@
 }
 .match_details_title {
   font-weight: bold;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 24px;
   color: #081027;
 }
 .match_details_subtitle {
   font-weight: normal;
-  font-size: 13px;
+  font-size: 0.813rem;
   line-height: 22px;
   color: #505d87;
 }
@@ -192,5 +192,29 @@
 
   .upcoming_matches_card_team.reverse .upcoming_matches_card_team_title {
     text-align: center;
+  }
+
+  .upcoming_matches_card_team.reverse .upcoming_matches_card_team_runs {
+    text-align: center;
+  }
+
+  .upcoming_matches_card_team.reverse .upcoming_matches_card_team_overs {
+    text-align: center;
+  }
+}
+
+@media (max-width: 350px) {
+  .match_details_status {
+    padding: 8px 10px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 300px) {
+  .upcoming_matches_match_details {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: unset;
+    gap: 10px;
   }
 }

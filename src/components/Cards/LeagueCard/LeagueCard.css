@@ -10,6 +10,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 3.125rem;
+  position: relative;
 }
 .league_card::before {
   content: "";
@@ -144,6 +145,7 @@
 .league_card_right {
   display: flex;
   align-items: center;
+  position: relative;
 }
 .league_card_right_divider {
   height: 50px;
@@ -177,4 +179,144 @@
   font-size: 14px;
   line-height: 24px;
   color: #ffffff;
+}
+
+.league_card_right_follow_btn {
+  display: none;
+}
+
+@media (max-width: 1400px) {
+  .league_card_right_divider {
+    padding: 0 20px;
+  }
+
+  .league_card_left {
+    gap: 1.5rem;
+  }
+
+  .league_card_left_img {
+    width: 135px;
+    height: 135px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .league_card_right {
+    align-items: unset;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .league_card_right_divider {
+    height: auto;
+    display: flex;
+    align-items: unset;
+    justify-content: unset;
+    padding: 0 0;
+  }
+
+  .league_card_right_divider:not(:last-child) {
+    border-right: 0px;
+  }
+}
+
+@media (max-width: 950px) {
+  .league_card_left_dates {
+    flex-direction: column;
+    align-items: unset;
+    justify-content: unset;
+    margin-top: 1rem;
+  }
+
+  .end_date_title {
+    border-left: 0px;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 850px) {
+  .league_card_left {
+    flex-direction: column;
+    justify-content: unset;
+    align-items: unset;
+  }
+}
+
+@media (max-width: 650px) {
+  .league_card {
+    padding: 20px;
+    flex-direction: column;
+    justify-content: unset;
+    align-items: unset;
+    gap: 2rem;
+  }
+
+  .league_card_right {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+  .league_card_right_divider {
+    flex: 1;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 0;
+  }
+
+  .league_card_right::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .league_card_right_divider:nth-child(2) {
+    margin-left: 3rem;
+  }
+
+  .league_card_right_divider:last-child {
+    display: none;
+  }
+
+  .league_card_right_follow_btn {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .league_card_left_img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .league_card_left_title {
+    font-size: 1.1rem;
+    line-height: 22px;
+  }
+
+  .league_card_left_titles {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 326px) {
+  .league_card_right {
+    gap: 1rem;
+  }
+
+  .league_card_right::after {
+    display: none;
+  }
+
+  .league_card_right_divider:nth-child(2) {
+    margin-left: 0rem;
+  }
 }

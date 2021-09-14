@@ -131,16 +131,16 @@
   }
 }
 
-@media (max-width: 450px) {
-  :root {
-    font-size: 80%;
-  }
-}
-
 @media (max-width: 760px) {
   .container-wrapper-30 {
     width: 90%;
     margin: 0 auto;
     padding: 0 0;
+  }
+}
+
+@media (max-width: 450px) {
+  :root {
+    font-size: 80%;
   }
 }

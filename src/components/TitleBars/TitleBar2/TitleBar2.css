@@ -97,7 +97,6 @@
   }
 
   .title_bar_2_right {
-    /* border: 2px solid red; */
     width: 100%;
     display: flex;
     align-items: center;
@@ -140,5 +139,15 @@
   .watching {
     /* border: 2px solid red; */
     flex: 1;
+  }
+
+  .divider.showOnResponsive {
+    flex: 1;
+    width: 100%;
+    padding-left: 0;
+    border: 0;
+  }
+  .score_card_header_right.showOnResponsive {
+    display: flex;
   }
 }

@@ -3,14 +3,30 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 .boundaries_stats_title {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 .boundaries_dropdown {
   display: flex;
   align-items: center;
   gap: 96px;
+}
+
+@media (max-width: 500px) {
+  /* .boundaries_stats_title {
+    flex-direction: column;
+    justify-content: unset;
+    align-items: unset;
+  } */
+
+  .boundaries_dropdown {
+    gap: 30px;
+  }
 }

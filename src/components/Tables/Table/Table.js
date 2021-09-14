@@ -4,7 +4,7 @@ import "./Table.css";
 function Table(props) {
   const { tabelHead, mainHeadTitle, data, showIndexes = true } = props;
   return (
-    <div className="table_container">
+    <div className="table_container scrollbar-height-0">
       <table className="table">
         <thead className="table_thead">
           <tr className="table_thead_tr">

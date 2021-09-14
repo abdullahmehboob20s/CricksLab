@@ -13,7 +13,7 @@ function LatestNews() {
           subtitle="Latest news and updates of Kuwait Cricket Association activities"
           viewAll="/advance-search"
         />
-        <div className="lates_cards">
+        <div className="lates_cards scrollbar-height-0">
           <div className="LatestNewsCards">
             <LatestNewsManageCard />
             <LatestNewsCard className="latest_news_card_2" />

@@ -31,7 +31,7 @@ function Standings() {
       <Tabs defaultTab={1}>
         <div className="container-wrapper">
           <div className="standing_teams_specs">
-            <div className="standing_teams_specs_left">
+            <div className="standing_teams_specs_left scrollbar-height-0">
               <Tab
                 className="standing_tab"
                 activeClassName="tab_active"

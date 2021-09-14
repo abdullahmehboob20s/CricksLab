@@ -365,6 +365,7 @@
   .match_details_content_wrapper .container-wrapper {
     width: 100%;
   }
+
   .upcoming_matches {
     padding: 0rem 1.25rem;
   }
@@ -373,6 +374,7 @@
     flex-wrap: nowrap;
     margin-right: 0;
     overflow-x: scroll;
+    margin-left: 5%;
   }
 
   .match_details_tab {
@@ -381,6 +383,7 @@
 
   .match_details_content_left {
     border: 0px solid #dedee4;
+    background: transparent;
   }
 }
 

@@ -10,6 +10,7 @@ import Button from "components/Buttons/FollowButton/FollowButton";
 import { BiShareAlt } from "react-icons/bi";
 
 function TitleBar2(props) {
+  const { showShareOnResponsive = false } = props;
   const social_icons = [
     {
       icon: <FaFacebook />,
@@ -71,12 +72,20 @@ function TitleBar2(props) {
           )}
 
           {props.showSharewith ? (
-            <div className={props.divider ? "divider" : ""}>
-              <div className="score_card_header_right">
-                <p className="score_card_header_right_title dark">
+            <div
+              className={props.divider ? "divider" : "divider showOnResponsive"}
+            >
+              <div
+                className={
+                  showShareOnResponsive
+                    ? "score_card_header_right showOnResponsive"
+                    : "score_card_header_right"
+                }
+              >
+                <p className="score_card_header_right_title dark showOnResponsive">
                   Share with:
                 </p>
-                <div className="score_card_header_right_social_icons">
+                <div className="score_card_header_right_social_icons showOnResponsive">
                   {social_icons.map((item, index) => (
                     <ScoreCardHeaderSocialIcon
                       dark={true}

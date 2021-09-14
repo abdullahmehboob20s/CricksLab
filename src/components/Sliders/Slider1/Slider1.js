@@ -45,6 +45,23 @@ function Slider1(props) {
           swiper.navigation.init();
           swiper.navigation.update();
         }}
+        breakpoints={{
+          1100: {
+            slidesPerView: 5,
+          },
+          800: {
+            slidesPerView: 4,
+          },
+          550: {
+            slidesPerView: 3,
+          },
+          400: {
+            slidesPerView: 2,
+          },
+          100: {
+            slidesPerView: 1.5,
+          },
+        }}
       >
         {props.data.map((item, index) => (
           <SwiperSlide>

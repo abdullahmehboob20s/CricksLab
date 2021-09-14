@@ -1,12 +1,13 @@
-.table {
-  width: 100%;
-  text-align: left;
-  border-collapse: collapse;
-}
 .table_container {
   border-radius: 9px;
   overflow: hidden;
   border: 1px solid #dedee4;
+}
+
+.table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
 }
 .table_thead {
   background: #e5f3f8;
@@ -62,4 +63,14 @@
   line-height: 24px;
   color: #081027;
   text-align: center;
+}
+
+@media (max-width: 760px) {
+  .table_container {
+    overflow-x: scroll;
+  }
+
+  .table {
+    min-width: 800px;
+  }
 }

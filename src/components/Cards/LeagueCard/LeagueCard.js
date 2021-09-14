@@ -19,6 +19,18 @@ function LeagueCard(props) {
   } = props;
   return (
     <div className="league_card">
+      <div className="league_card_right_follow_btn">
+        <FollowButton
+          background="#33A2D2"
+          border="none"
+          width="119px"
+          height="50px"
+          title="Follow"
+          fontSize="14px"
+          color="white"
+          onPress={() => console.log("Nothing")}
+        />
+      </div>
       <img className="league_card_img_1" src={united_cricket} alt="" />
       <img className="league_card_img_2" src={united_cricket} alt="" />
 

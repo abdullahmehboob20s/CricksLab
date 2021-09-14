@@ -63,6 +63,10 @@
   .LatestNewsCards {
     flex-direction: column;
   }
+
+  .lates_cards {
+    margin-bottom: 6rem;
+  }
 }
 
 @media (max-width: 900px) {

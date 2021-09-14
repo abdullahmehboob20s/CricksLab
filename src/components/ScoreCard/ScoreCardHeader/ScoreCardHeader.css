@@ -98,4 +98,11 @@
   .score_card_header_right_social_icons {
     display: none;
   }
+
+  .score_card_header_right_title.showOnResponsive {
+    display: flex;
+  }
+  .score_card_header_right_social_icons.showOnResponsive {
+    display: flex;
+  }
 }
