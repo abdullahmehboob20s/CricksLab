@@ -63,6 +63,22 @@
   display: none;
 }
 
+@media (max-width: 1400px) {
+  .divider {
+    padding-left: 1rem;
+    margin-left: 1rem;
+    border-left: 1px solid #dedee4;
+  }
+
+  .title_bar_2_title {
+    font-size: 0.7rem;
+  }
+  .title_bar_2_subtitle {
+    font-size: 1rem;
+    line-height: 20px;
+  }
+}
+
 @media (max-width: 1000px) {
   .title_bar_2_right {
     display: flex;
@@ -91,7 +107,14 @@
     margin-bottom: 20px;
   }
 
+  .title_bar_2_subtitle {
+    font-size: 1.5rem;
+    line-height: 36px;
+  }
+
   .title_bar_2_title {
+    font-size: 0.813rem;
+    line-height: 22px;
     margin-bottom: 10px;
   }
 }
