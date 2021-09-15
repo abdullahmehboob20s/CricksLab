@@ -3,8 +3,12 @@ import "./Checkbox.css";
 
 function Checkbox(props) {
   return (
-    <div className="checkbox">
-      <input type="checkbox" name="" id={props.title} />
+    <div className={props.rounded ? "checkbox rounded" : "checkbox"}>
+      <input
+        type={props.radio ? "radio" : "checkbox"}
+        name={props.radioTitle ? props.radioTitle : ""}
+        id={props.title}
+      />
       <label htmlFor={props.title}>{props.title}</label>
     </div>
   );

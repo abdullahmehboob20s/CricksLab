@@ -280,6 +280,10 @@
     transform: translateX(-50%);
     background-color: rgba(255, 255, 255, 0.2);
   }
+  .league_card_right.dontShowDividerLineInresponsive::after {
+    content: "";
+    display: none;
+  }
 
   .league_card_right_divider:nth-child(2) {
     margin-left: 3rem;

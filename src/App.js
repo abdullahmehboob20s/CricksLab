@@ -1,5 +1,4 @@
 import "./App.css";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "pages/Home/Home";
 import MatchDetails from "pages/MatchDetails/MatchDetails";
 import Competitions from "pages/Competitions/CompetitionsPage";
@@ -10,21 +9,24 @@ import Officials from "pages/Officials/Officials";
 import CompetitionOverview from "pages/CompetitionOverview/CompetitionOverview";
 import TeamDetails from "pages/TeamDetails/TeamDetails";
 import AdvanceSearch from "pages/AdvanceSearch/AdvanceSearch";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import ScrollToTop from "components/ScrollToTop";
 
 function App() {
   return (
-    <>
+    <div>
       <Router>
+        <ScrollToTop />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/match-details" component={MatchDetails} />
-          <Route exact path="/competitions" component={Competitions} />
           <Route exact path="/teams" component={Teams} />
           <Route exact path="/club-details" component={ClubDetails} />
           <Route exact path="/player-details" component={PlayerDetails} />
           <Route exact path="/officials" component={Officials} />
           <Route exact path="/team-details" component={TeamDetails} />
           <Route exact path="/advance-search" component={AdvanceSearch} />
+          <Route exact path="/competitions" component={Competitions} />
           <Route
             exact
             path="/competition-overview"
@@ -32,7 +34,7 @@ function App() {
           />
         </Switch>
       </Router>
-    </>
+    </div>
   );
 }
 

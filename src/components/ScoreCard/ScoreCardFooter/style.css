@@ -64,6 +64,8 @@
 }
 .recent_ball.wd {
   font-size: 10px;
+  padding: 0 0.5rem;
+  line-height: 12px;
 }
 .score_card_view_details {
   padding: 0.813rem 1.875rem;

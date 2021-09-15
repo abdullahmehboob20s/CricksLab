@@ -87,6 +87,36 @@
   margin-top: 1.25rem;
 }
 
+@media (max-width: 600px) {
+  .squad_player_card_wrapper {
+    width: 100%;
+  }
+
+  .squad_player_card_wrapper.in-row .squad_player_card {
+    flex-direction: row;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: unset;
+  }
+}
+
+@media (max-width: 430px) {
+  .squad_player_card_wrapper.in-row {
+    flex-direction: column;
+  }
+  .squad_player_card_wrapper.in-row .squad_player_card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .squad_player_card_wrapper.in-row .squad_player_card_details {
+    text-align: center;
+  }
+  .squad_player_card_wrapper.in-row .squad_player_card_name {
+    margin-bottom: 0px;
+  }
+}
+
 @media (max-width: 500px) {
   .squad_player_card_wrapper {
     width: 100%;

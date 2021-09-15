@@ -16,8 +16,14 @@ function BowlersCard(props) {
       />
       <p className="bowlers_card_title">{props.bowlerContent.name}</p>
       <PlayerHistory
+        style={{
+          backgroundColor:
+            props.bowlerContent.color === "#F9F9F9"
+              ? "rgba(8, 16, 39, 0.05)"
+              : " rgba(255, 255, 255, 0.3)",
+        }}
         playerHistoryTitle={props.bowlerContent.playerHistoryTitle}
-        bgColor="rgba(255, 255, 255, 0.3);"
+        // bgColor="rgba(255, 255, 255, 0.3);"
         playerHistory={props.bowlerContent.playerHistory}
       />
     </div>

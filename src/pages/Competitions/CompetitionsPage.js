@@ -1,5 +1,4 @@
 import React from "react";
-import "./Competitions.css";
 import Navbar from "layouts/Navbar/Navbar";
 import TitleBar2 from "components/TitleBars/TitleBar2/TitleBar2";
 import Tabs from "components/Tabs/Tabs";
@@ -15,7 +14,7 @@ function Competitions() {
   const [count, setCount] = React.useState(12);
   const [showBtn, setshowBtn] = React.useState(true);
 
-  const loadMore = (props) => {
+  const loadMore = () => {
     if (count >= data.length) {
       setshowBtn(false);
       return;
@@ -24,7 +23,7 @@ function Competitions() {
   };
 
   return (
-    <>
+    <div>
       <Navbar />
       <div className="competitions bg-liner-gradient">
         <div className="container-wrapper">
@@ -97,7 +96,7 @@ function Competitions() {
         </div>
         <Footer />
       </div>
-    </>
+    </div>
   );
 }
 

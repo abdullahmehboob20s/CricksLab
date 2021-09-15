@@ -51,3 +51,12 @@
 .batting_stats_table th:last-child {
   padding-right: 30px;
 }
+
+@media (max-width: 760px) {
+  .batting_stats_table_container {
+    overflow-x: scroll;
+  }
+  .batting_stats_table {
+    width: 800px;
+  }
+}

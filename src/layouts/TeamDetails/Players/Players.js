@@ -6,6 +6,7 @@ import { IoGridOutline } from "react-icons/io5";
 import { FaBars } from "react-icons/fa";
 import { useSelector } from "react-redux";
 import SquadPlayerCard from "components/Cards/SquadPlayerCard/SquadPlayerCard";
+import "./Players.css";
 
 function Players() {
   const { squad2 } = useSelector((state) => state.playerDetails);
@@ -35,7 +36,7 @@ function Players() {
         </div>
       </div>
 
-      <div className={isGrid ? "squad_playing_X1_cards" : ""}>
+      <div className={isGrid ? "player_squad_player_card_wrapper" : ""}>
         {squad2.map((player, index) => (
           <SquadPlayerCard layout={isGrid} data={player} />
         ))}

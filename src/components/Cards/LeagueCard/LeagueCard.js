@@ -16,6 +16,7 @@ function LeagueCard(props) {
     showStartAndEndDate = true,
     showLocation = false,
     showViews = true,
+    showDividerInResponsive = true,
   } = props;
   return (
     <div className="league_card">
@@ -77,7 +78,13 @@ function LeagueCard(props) {
           )}
         </div>
       </div>
-      <div className="league_card_right">
+      <div
+        className={
+          showDividerInResponsive
+            ? "league_card_right "
+            : "league_card_right dontShowDividerLineInresponsive"
+        }
+      >
         {showViews ? (
           <div className="league_card_right_divider">
             <p className="league_card_right_views">

@@ -40,95 +40,101 @@ function TeamDetails() {
               showViews={false}
               showLocation={true}
               showStartAndEndDate={false}
+              showDividerInResponsive={false}
             />
           </div>
+        </div>
 
-          <div className="match_details_content ">
-            <div className="match_details_content_left py-30">
-              <Tabs defaultTab={1}>
-                <div className="match_details_tabs">
-                  <Tab
-                    className="match_details_tab"
-                    activeClassName="match_details_tabs_active"
-                    label="Statistics"
-                    tabIndex={1}
-                  />
-                  <Tab
-                    className="match_details_tab"
-                    activeClassName="match_details_tabs_active"
-                    label="Players"
-                    tabIndex={2}
-                  />
-                  <Tab
-                    className="match_details_tab"
-                    activeClassName="match_details_tabs_active"
-                    label="Matches"
-                    tabIndex={3}
-                  />
-                  <Tab
-                    className="match_details_tab"
-                    activeClassName="match_details_tabs_active"
-                    label="Leaderboard"
-                    tabIndex={4}
-                  />
-                  <Tab
-                    className="match_details_tab"
-                    activeClassName="match_details_tabs_active"
-                    label="MVP"
-                    tabIndex={5}
-                  />
-                </div>
+        <div className="match_details_content_wrapper">
+          <div className="container-wrapper">
+            <div className="match_details_content ">
+              <div className=" match_details_content_left py-30">
+                <Tabs defaultTab={1}>
+                  <div className="scrollbar-height-0 match_details_tabs">
+                    <Tab
+                      className="match_details_tab"
+                      activeClassName="match_details_tabs_active"
+                      label="Statistics"
+                      tabIndex={1}
+                    />
+                    <Tab
+                      className="match_details_tab"
+                      activeClassName="match_details_tabs_active"
+                      label="Players"
+                      tabIndex={2}
+                    />
+                    <Tab
+                      className="match_details_tab"
+                      activeClassName="match_details_tabs_active"
+                      label="Matches"
+                      tabIndex={3}
+                    />
+                    <Tab
+                      className="match_details_tab"
+                      activeClassName="match_details_tabs_active"
+                      label="Leaderboard"
+                      tabIndex={4}
+                    />
+                    <Tab
+                      className="match_details_tab"
+                      activeClassName="match_details_tabs_active"
+                      label="MVP"
+                      tabIndex={5}
+                    />
+                  </div>
 
-                <TabPan tabIndex={1}>
-                  <Statistics />
-                </TabPan>
-                <TabPan tabIndex={2}>
-                  <Players />
-                </TabPan>
-                <TabPan tabIndex={4}>
-                  <Leaderboard />
-                </TabPan>
-              </Tabs>
-            </div>
+                  <TabPan tabIndex={1}>
+                    <Statistics />
+                  </TabPan>
+                  <TabPan tabIndex={2}>
+                    <Players />
+                  </TabPan>
+                  <TabPan tabIndex={4}>
+                    <Leaderboard />
+                  </TabPan>
+                </Tabs>
+              </div>
 
-            {/* right side */}
-            <div className="match_details_content_right">
-              <div className="upcoming_matches">
-                <div className="upcoming_matches_titles">
-                  <p>Upcoming Matches</p>
-                  <Link>View all</Link>
-                </div>
-                <div className="upcoming_matches_cards">
-                  <UpcomingMatchesCard />
-                  <UpcomingMatchesCard />
-                </div>
-                <div className="upcoming_matche_movement">
+              {/* right side */}
+              <div className="match_details_content_right">
+                <div className="upcoming_matches">
                   <div className="upcoming_matches_titles">
-                    <p>Match Movement</p>
+                    <p>Upcoming Matches</p>
                     <Link>View all</Link>
                   </div>
-                  <div className="upcoming_matche_movement_cards">
-                    <MatchMovementCard
-                      videoThumbnail={video_image_1}
-                      title="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit"
-                      subTitle="1.8K views  •  10 min ago"
-                    />
-                    <MatchMovementCard
-                      videoThumbnail={video_image_2}
-                      title="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit"
-                      subTitle="1.8K views  •  10 min ago"
-                    />
-                    <MatchMovementCard
-                      videoThumbnail={video_image_3}
-                      title="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit"
-                      subTitle="1.8K views  •  10 min ago"
-                    />
+                  <div className="upcoming_matches_cards">
+                    <UpcomingMatchesCard />
+                    <UpcomingMatchesCard />
+                  </div>
+                  <div className="upcoming_matche_movement">
+                    <div className="upcoming_matches_titles">
+                      <p>Match Movement</p>
+                      <Link>View all</Link>
+                    </div>
+                    <div className="upcoming_matche_movement_cards">
+                      <MatchMovementCard
+                        videoThumbnail={video_image_1}
+                        title="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit"
+                        subTitle="1.8K views  •  10 min ago"
+                      />
+                      <MatchMovementCard
+                        videoThumbnail={video_image_2}
+                        title="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit"
+                        subTitle="1.8K views  •  10 min ago"
+                      />
+                      <MatchMovementCard
+                        videoThumbnail={video_image_3}
+                        title="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit"
+                        subTitle="1.8K views  •  10 min ago"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
         <Footer />
       </div>
     </div>

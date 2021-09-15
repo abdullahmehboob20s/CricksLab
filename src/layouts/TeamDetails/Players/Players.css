@@ -1,0 +1,5 @@
+.player_squad_player_card_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+}

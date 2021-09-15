@@ -23,6 +23,8 @@
 .title_bar_btns {
   display: flex;
   align-items: center;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 .title_bar_forward_arrow {
   display: inline-block;

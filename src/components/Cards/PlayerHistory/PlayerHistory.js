@@ -4,7 +4,7 @@ import "./PlayerHistory.css";
 function PlayerHistory(props) {
   let { playerHistory, playerHistoryTitle } = props;
   return (
-    <div style={{ backgroundColor: props.bgColor }} className="player_history">
+    <div style={props.style} className="player_history">
       {playerHistory.map((item, index) => (
         <div>
           <p className="player_history_title">{item}</p>

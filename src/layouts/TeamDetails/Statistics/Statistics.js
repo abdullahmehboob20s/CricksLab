@@ -50,7 +50,7 @@ function Statistics() {
           </div>
         </div>
       </div>
-      <div className="mb-30">
+      <div className="batting_stats_table_container scrollbar-height-0 mb-30">
         <table className="batting_stats_table">
           <thead>
             <tr>
@@ -111,7 +111,7 @@ function Statistics() {
           </div>
         </div>
       </div>
-      <div className="mb-30">
+      <div className="batting_stats_table_container scrollbar-height-0 mb-30">
         <table className="batting_stats_table">
           <thead>
             <tr>
