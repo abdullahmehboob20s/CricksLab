@@ -2,15 +2,32 @@ import React from "react";
 import "./Table.css";
 
 function Table(props) {
-  const { tabelHead, mainHeadTitle, data, showIndexes = true } = props;
+  const {
+    tabelHead,
+    mainHeadTitle,
+    data,
+    showIndexes = true,
+    border = true,
+    squeeze = false,
+  } = props;
   return (
-    <div className="table_container scrollbar-height-0">
+    <div
+      className={
+        border
+          ? "table_container scrollbar-height-0"
+          : "table_container scrollbar-height-0 no-border"
+      }
+    >
       <table className="table">
         <thead className="table_thead">
           <tr className="table_thead_tr">
             {tabelHead.map((item, index) => (
               <th
-                className={item === mainHeadTitle ? "table_th_2" : "table_th_1"}
+                className={
+                  item === mainHeadTitle
+                    ? "table_th_2"
+                    : `table_th_1 ${squeeze ? "squeeze" : ""}`
+                }
               >
                 {item}
               </th>
@@ -26,7 +43,11 @@ function Table(props) {
                 ""
               )}
               <td className="table_content">
-                <img className="table_content_img" src={item.img} alt="" />
+                {item.img ? (
+                  <img className="table_content_img" src={item.img} alt="" />
+                ) : (
+                  ""
+                )}
                 <div>
                   <p className="table_content_title">{item.name}</p>
                   {item.subtitle ? (
@@ -36,7 +57,13 @@ function Table(props) {
                   )}
                 </div>
               </td>
-              {item.details.m ? (
+
+              {item.content
+                ? item.content.map((a, i) => (
+                    <td className="table_content_item">{a}</td>
+                  ))
+                : ""}
+              {/* {item.details.m ? (
                 <td className="table_content_item">{item.details.m}</td>
               ) : (
                 ""
@@ -71,7 +98,7 @@ function Table(props) {
                 <td className="table_content_item">{item.details.nrr}</td>
               ) : (
                 ""
-              )}
+              )} */}
             </tr>
           ))}
         </tbody>

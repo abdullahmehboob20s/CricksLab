@@ -74,19 +74,6 @@
   cursor: pointer;
   font-size: 1.5rem;
 }
-.black_screen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  margin-top: 00px;
-  z-index: -10;
-  opacity: 0;
-  transition: 0.2s ease;
-}
-
 .searchWrapper {
   width: 200px;
 }
@@ -218,11 +205,6 @@
   }
   .navbar_right.open {
     right: 0;
-  }
-  .black_screen.show {
-    opacity: 1;
-    z-index: 1000;
-    transition: 0.4s ease;
   }
 
   .navbar_input {

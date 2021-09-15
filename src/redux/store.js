@@ -11,6 +11,7 @@ import Officials from "./officials";
 import competitionOverview from "./competitionOverview";
 import battingLeaders from "./battingLeaders";
 import maxBoundaries from "./maxBoundaries";
+import battingSummary from "./battingSummary";
 
 export const store = configureStore({
   reducer: {
@@ -26,5 +27,6 @@ export const store = configureStore({
     competitionOverview,
     battingLeaders,
     maxBoundaries,
+    battingSummary,
   },
 });

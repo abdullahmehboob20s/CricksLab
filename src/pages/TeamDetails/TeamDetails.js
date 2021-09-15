@@ -15,6 +15,7 @@ import LeagueCard from "components/Cards/LeagueCard/LeagueCard";
 import TitleBar2 from "components/TitleBars/TitleBar2/TitleBar2";
 import Statistics from "layouts/TeamDetails/Statistics/Statistics";
 import Players from "layouts/TeamDetails/Players/Players";
+import Leaderboard from "layouts/TeamDetails/Leaderboard/Leaderboard";
 
 function TeamDetails() {
   return (
@@ -84,6 +85,9 @@ function TeamDetails() {
                 <TabPan tabIndex={2}>
                   <Players />
                 </TabPan>
+                <TabPan tabIndex={4}>
+                  <Leaderboard />
+                </TabPan>
               </Tabs>
             </div>
 
@@ -124,9 +128,8 @@ function TeamDetails() {
               </div>
             </div>
           </div>
-
-          <Footer />
         </div>
+        <Footer />
       </div>
     </div>
   );

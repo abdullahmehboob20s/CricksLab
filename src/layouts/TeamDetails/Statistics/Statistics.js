@@ -3,6 +3,7 @@ import ScoreCard4 from "components/Cards/ScoreCard4/ScoreCard4";
 import TitleBar5 from "components/TitleBars/TitleBar5/TitleBar5";
 import Tab from "components/Tabs/Tab";
 import Tabs from "components/Tabs/Tabs";
+import "./Statistics.css";
 
 function Statistics() {
   const statistics = [

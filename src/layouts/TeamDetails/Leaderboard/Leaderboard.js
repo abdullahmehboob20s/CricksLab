@@ -1,0 +1,77 @@
+import React from "react";
+import TitleBar5 from "components/TitleBars/TitleBar5/TitleBar5";
+import { BsChevronDown } from "react-icons/bs";
+import Table from "components/Tables/Table/Table";
+import { useSelector } from "react-redux";
+
+function Leaderboard() {
+  const { data } = useSelector((state) => state.battingSummary);
+
+  return (
+    <div>
+      <div className="container-wrapper-30">
+        <div className="mb-30 boundaries_stats_title">
+          <TitleBar5 title="Boundaries Stats" fontSize="20px" />
+          <div className="boundaries_dropdown">
+            <p>Filter Matches</p>
+            <BsChevronDown />
+          </div>
+        </div>
+      </div>
+      <div className="mb-70">
+        <Table
+          tabelHead={[
+            "Player",
+            "M",
+            "INN",
+            "NO",
+            "100'S",
+            "50'S",
+            "4'S",
+            "6'S",
+            "HS",
+            "RUNS",
+            "	AVG",
+            "BF",
+            "SR",
+          ]}
+          mainHeadTitle="Player"
+          showIndexes={false}
+          data={data}
+          border={false}
+          squeeze={true}
+        />
+      </div>
+
+      <div className="container-wrapper-30">
+        <div className="mb-30 ">
+          <TitleBar5 title="Bowling Summary" fontSize="20px" />
+        </div>
+      </div>
+      <Table
+        tabelHead={[
+          "Player",
+          "M",
+          "INN",
+          "NO",
+          "100'S",
+          "50'S",
+          "4'S",
+          "6'S",
+          "HS",
+          "RUNS",
+          "	AVG",
+          "BF",
+          "SR",
+        ]}
+        mainHeadTitle="Player"
+        showIndexes={false}
+        data={data}
+        border={false}
+        squeeze={true}
+      />
+    </div>
+  );
+}
+
+export default Leaderboard;

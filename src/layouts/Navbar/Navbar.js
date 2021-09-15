@@ -11,6 +11,7 @@ import Search from "components/SearchBars/Search/Search";
 import { useSelector } from "react-redux";
 import FooterLink from "components/Links/FooterLink/FooterLink";
 import FooterSocialIcon from "components/Links/FooterSocialIcon/FooterSocialIcon";
+import BlackBackgroundScreen from "components/Screens/BlackBackgroundScreen";
 
 function Navbar({ showSearchBar = true }) {
   const [open, setOpen] = React.useState(false);
@@ -25,10 +26,7 @@ function Navbar({ showSearchBar = true }) {
         <FaBars />
       </div>
 
-      <div
-        onClick={() => setOpen(!open)}
-        className={open ? "black_screen show" : "black_screen"}
-      ></div>
+      <BlackBackgroundScreen show={open} hideOnClick={() => setOpen(false)} />
 
       {/* main content */}
       <div className="navbar_left">
