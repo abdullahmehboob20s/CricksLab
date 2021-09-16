@@ -4,7 +4,7 @@ import Navbar from "layouts/Navbar/Navbar";
 import TitleBar2 from "components/TitleBars/TitleBar2/TitleBar2";
 import Tabs from "components/Tabs/Tabs";
 import Tab from "components/Tabs/Tab";
-// import TabPan from "components/Tabs/TabPan";
+import TabPan from "components/Tabs/TabPan";
 import CompetitionsCard from "components/Cards/CompetitionsCard/CompetitionsCard";
 import { useSelector } from "react-redux";
 import Footer from "layouts/Footer/Footer";
@@ -122,41 +122,78 @@ function AdvanceSearch() {
                     </p>
 
                     <div className="advance_search_dropdowns_left_wrapper_checkboxes ">
-                      <Checkbox
-                        radio={true}
-                        radioTitle="tab"
-                        rounded={true}
-                        title="Competitions"
+                      <Tab
+                        className="radio_tab_container"
+                        tabIndex={1}
+                        label={
+                          <Checkbox
+                            radio={true}
+                            radioTitle="tab"
+                            rounded={true}
+                            title="Competitions"
+                          />
+                        }
                       />
-                      <Checkbox
-                        radio={true}
-                        radioTitle="tab"
-                        rounded={true}
-                        title="Clubs"
+
+                      <Tab
+                        className="radio_tab_container"
+                        tabIndex={2}
+                        label={
+                          <Checkbox
+                            radio={true}
+                            radioTitle="tab"
+                            rounded={true}
+                            title="Clubs"
+                          />
+                        }
                       />
-                      <Checkbox
-                        radio={true}
-                        radioTitle="tab"
-                        rounded={true}
-                        title="Matches"
+                      <Tab
+                        className="radio_tab_container"
+                        tabIndex={3}
+                        label={
+                          <Checkbox
+                            radio={true}
+                            radioTitle="tab"
+                            rounded={true}
+                            title="Matches"
+                          />
+                        }
                       />
-                      <Checkbox
-                        radio={true}
-                        radioTitle="tab"
-                        rounded={true}
-                        title="Teams"
+                      <Tab
+                        className="radio_tab_container"
+                        tabIndex={4}
+                        label={
+                          <Checkbox
+                            radio={true}
+                            radioTitle="tab"
+                            rounded={true}
+                            title="Teams"
+                          />
+                        }
                       />
-                      <Checkbox
-                        radio={true}
-                        radioTitle="tab"
-                        rounded={true}
-                        title="Players"
+                      <Tab
+                        className="radio_tab_container"
+                        tabIndex={5}
+                        label={
+                          <Checkbox
+                            radio={true}
+                            radioTitle="tab"
+                            rounded={true}
+                            title="Players"
+                          />
+                        }
                       />
-                      <Checkbox
-                        radio={true}
-                        radioTitle="tab"
-                        rounded={true}
-                        title="Officials"
+                      <Tab
+                        className="radio_tab_container"
+                        tabIndex={6}
+                        label={
+                          <Checkbox
+                            radio={true}
+                            radioTitle="tab"
+                            rounded={true}
+                            title="Officials"
+                          />
+                        }
                       />
                     </div>
                     <Dropdowns
@@ -229,15 +266,35 @@ function AdvanceSearch() {
             </div>
           </div>
 
-          <div className="container-wrapper">
-            <TitleBar2 mainTitle="Related Match Videos" showRightSide={false} />
+          <TabPan tabIndex={1}>
+            <div className="container-wrapper">
+              <TitleBar2
+                mainTitle="Related Match Videos"
+                showRightSide={false}
+              />
 
-            <div className="team_cards_wrapper">
-              {data.slice(0, 12).map((league, index) => (
-                <CompetitionsCard key={index} data={league} />
-              ))}
+              <div className="team_cards_wrapper">
+                {data.slice(0, 12).map((league, index) => (
+                  <CompetitionsCard key={index} data={league} />
+                ))}
+              </div>
             </div>
-          </div>
+          </TabPan>
+          <TabPan tabIndex={2}>
+            <div className="container-wrapper">index 2</div>
+          </TabPan>
+          <TabPan tabIndex={3}>
+            <div className="container-wrapper">index 3</div>
+          </TabPan>
+          <TabPan tabIndex={4}>
+            <div className="container-wrapper">index 4</div>
+          </TabPan>
+          <TabPan tabIndex={5}>
+            <div className="container-wrapper">index 5</div>
+          </TabPan>
+          <TabPan tabIndex={6}>
+            <div className="container-wrapper">index 6</div>
+          </TabPan>
         </Tabs>
         <Footer />
       </div>

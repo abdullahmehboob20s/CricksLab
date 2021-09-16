@@ -27,6 +27,7 @@
   line-height: 20px;
   color: #081027;
   cursor: pointer;
+  width: 100%;
 }
 
 .checkbox input[type="checkbox"]::before,

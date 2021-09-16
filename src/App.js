@@ -11,6 +11,8 @@ import TeamDetails from "pages/TeamDetails/TeamDetails";
 import AdvanceSearch from "pages/AdvanceSearch/AdvanceSearch";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import ScrollToTop from "components/ScrollToTop";
+import CompetitionOverviewDetails from "pages/CompetitionOverviewDetails/CompetitionOverviewDetails";
+import PlayerDetails2 from "pages/PlayerDetails2/PlayerDetails2";
 
 function App() {
   return (
@@ -27,6 +29,12 @@ function App() {
           <Route exact path="/team-details" component={TeamDetails} />
           <Route exact path="/advance-search" component={AdvanceSearch} />
           <Route exact path="/competitions" component={Competitions} />
+          <Route exact path="/player-details-2" component={PlayerDetails2} />
+          <Route
+            exact
+            path="/competition-overview-details"
+            component={CompetitionOverviewDetails}
+          />
           <Route
             exact
             path="/competition-overview"

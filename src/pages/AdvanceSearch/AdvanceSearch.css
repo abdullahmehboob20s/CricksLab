@@ -176,10 +176,12 @@
 
 .advance_search_dropdowns_left_filter_title {
   display: none;
+  cursor: pointer;
 }
 
 .filter_icon {
   display: none;
+  cursor: pointer;
 }
 
 .advance_search_dropdowns_left_wrapper_btns {
@@ -189,6 +191,11 @@
 .advance_search_dropdowns_left_filter_subtitle {
   display: none;
 }
+
+/* .radio_tab_container .checkbox label {
+  background-color: red;
+  z-index: 100000;
+} */
 
 @media (max-width: 950px) {
   .filter_icon {

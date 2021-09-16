@@ -1,0 +1,5 @@
+@media (max-width: 500px) {
+  .stats_table {
+    overflow-x: scroll;
+  }
+}

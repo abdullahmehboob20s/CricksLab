@@ -1,0 +1,51 @@
+.player_batting_formats {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.player_batting_formats thead {
+  background: rgba(51, 162, 210, 0.05);
+}
+
+.player_batting_formats th,
+.player_batting_formats td {
+  /* border: 2px solid red; */
+  text-align: center;
+  padding: 15px;
+}
+
+.player_batting_formats th {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #081027;
+}
+
+.player_batting_formats td {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #081027;
+}
+
+.player_batting_formats_teams span:nth-child(2) {
+  font-weight: bold;
+  line-height: 24px;
+  color: #33a2d2;
+}
+
+.player_batting_formats_date {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #081027;
+}
+
+@media (max-width: 500px) {
+  .player_batting_formats {
+    min-width: 500px;
+  }
+}

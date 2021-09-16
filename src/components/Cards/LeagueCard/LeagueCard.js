@@ -17,6 +17,8 @@ function LeagueCard(props) {
     showLocation = false,
     showViews = true,
     showDividerInResponsive = true,
+    location,
+    img,
   } = props;
   return (
     <div className="league_card">
@@ -36,7 +38,11 @@ function LeagueCard(props) {
       <img className="league_card_img_2" src={united_cricket} alt="" />
 
       <div className="league_card_left">
-        <img className="league_card_left_img" src={united_cricket} alt="" />
+        <img
+          className="league_card_left_img"
+          src={img ? img : united_cricket}
+          alt=""
+        />
         <div>
           <div className="league_card_left_titles">
             <p className="league_card_left_title">{title}</p>
@@ -50,7 +56,11 @@ function LeagueCard(props) {
           {showLocation ? (
             <div className="league_card_left_titles_location">
               <HiOutlineLocationMarker />
-              <p>Chandan Miani Rd, Sukkur, Sindh, Pakistan, Sukkur</p>
+              <p>
+                {location
+                  ? location
+                  : "Chandan Miani Rd, Sukkur, Sindh, Pakistan, Sukkur"}
+              </p>
             </div>
           ) : (
             ""

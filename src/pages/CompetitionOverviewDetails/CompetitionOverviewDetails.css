@@ -1,0 +1,40 @@
+.Information_wrapper {
+  padding: 30px;
+  background: rgba(51, 162, 210, 0.05);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.Information {
+  display: flex;
+}
+.Information_title {
+  width: 100px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 24px;
+  color: #081027;
+}
+
+.Information_disc {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 24px;
+  color: #081027;
+}
+
+.location_img {
+  width: 100%;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #dedee4;
+}
+
+@media (max-width: 320px) {
+  .Information_title {
+    width: 75px;
+  }
+}

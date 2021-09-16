@@ -73,6 +73,9 @@
   font-weight: bold;
   color: #081027;
 }
+.color-blue {
+  color: #33a2d2;
+}
 
 .scrollbar-height-0::-webkit-scrollbar {
   height: 0;
