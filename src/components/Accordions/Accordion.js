@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 import SquadPlayerCard from "components/Cards/SquadPlayerCard/SquadPlayerCard";
 
 function Accordion(props) {
-  const [active, setActive] = React.useState(props.open);
+  const [active, setActive] = React.useState(false);
   const { squad } = useSelector((state) => state.playerDetails);
   const accordionRef = React.useRef("");
 
@@ -33,7 +33,7 @@ function Accordion(props) {
       <div
         ref={accordionRef}
         style={{
-          height: active ? accordionRef.current.scrollHeight + "px" : "0px",
+          height: active ? accordionRef.current?.scrollHeight + "px" : "0px",
         }}
         className="accordion_body_wrapper"
       >

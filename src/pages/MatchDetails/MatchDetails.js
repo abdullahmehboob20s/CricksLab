@@ -518,6 +518,7 @@ function MatchDetails() {
                           <BarChart
                             width={500}
                             height={300}
+                            // layout="vertical"
                             data={data}
                             margin={{
                               top: 20,
@@ -528,7 +529,7 @@ function MatchDetails() {
                           >
                             <CartesianGrid strokeDasharray="0 0" />
                             <XAxis dataKey="name" />
-                            <YAxis />
+                            <YAxis orientation="right" />
                             <Tooltip />
                             <Bar dataKey="pv" stackId="a" fill="#8884d8" />
                             <Bar dataKey="uv" stackId="a" fill="#82ca9d" />

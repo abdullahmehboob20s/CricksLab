@@ -19,28 +19,14 @@ function TeamSquad() {
       <Accordion
         titleImg={accoridon_img}
         title="Abdul Qadir International Cricket Academy"
-        open={true}
       />
-      <Accordion
-        titleImg={accoridon_img_2}
-        title="Appolo Cricket Academy"
-        open={false}
-      />
-      <Accordion
-        titleImg={accoridon_img_3}
-        title="Iqbal Zahoor Academy"
-        open={false}
-      />
+      <Accordion titleImg={accoridon_img_2} title="Appolo Cricket Academy" />
+      <Accordion titleImg={accoridon_img_3} title="Iqbal Zahoor Academy" />
       <Accordion
         titleImg={accoridon_img_4}
         title="Lahore International Cricket Academy"
-        open={false}
       />
-      <Accordion
-        titleImg={accoridon_img_5}
-        title="Lahoreian Cricket Academy"
-        open={false}
-      />
+      <Accordion titleImg={accoridon_img_5} title="Lahoreian Cricket Academy" />
     </div>
   );
 }
