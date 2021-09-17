@@ -272,7 +272,7 @@
     width: 270px;
     height: 100vh;
     background-color: white;
-    z-index: 10000000000000000000000000000000 !important;
+    z-index: 10000000 !important;
     /* border: 2px solid black; */
     padding-bottom: 114px;
     padding-top: 30px;
