@@ -19,7 +19,7 @@ function Boundaries() {
       <div className="mb-30 boundaries_stats_title">
         <TitleBar5 title="Boundaries Stats" fontSize="20px" />
         <div className="boundaries_dropdown">
-          <p>All Team</p>
+          <p className="bold">All Team</p>
           <BsChevronDown />
         </div>
       </div>
@@ -32,13 +32,13 @@ function Boundaries() {
           <div className="row">
             <Tab
               className="match_details_tab"
-              activeClassName="match_details_tabs_active"
+              activeClassName="match_details_tabs_active bold black"
               label="Max Boundaries"
               tabIndex={1}
             />
             <Tab
               className="match_details_tab"
-              activeClassName="match_details_tabs_active"
+              activeClassName="match_details_tabs_active bold black"
               label="Max Runs"
               tabIndex={2}
             />

@@ -29,7 +29,6 @@
 .match_details_tab {
   padding: 0.813rem 0.938rem;
   cursor: pointer;
-
   font-weight: normal;
   font-size: 0.875rem;
   line-height: 24px;
@@ -39,6 +38,16 @@
 .match_details_tabs_active {
   color: #33a2d2;
   border-bottom: 2px solid #33a2d2;
+}
+.match_details_tab.bold {
+  font-weight: bold;
+}
+
+.match_details_tabs_active.black {
+  color: #081027;
+}
+.match_details_tabs_active.bold {
+  font-weight: bold;
 }
 
 /* match_details_content_right */

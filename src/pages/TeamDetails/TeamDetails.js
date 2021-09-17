@@ -53,31 +53,31 @@ function TeamDetails() {
                   <div className="scrollbar-height-0 match_details_tabs">
                     <Tab
                       className="match_details_tab"
-                      activeClassName="match_details_tabs_active"
+                      activeClassName="match_details_tabs_active bold black"
                       label="Statistics"
                       tabIndex={1}
                     />
                     <Tab
                       className="match_details_tab"
-                      activeClassName="match_details_tabs_active"
+                      activeClassName="match_details_tabs_active bold black"
                       label="Players"
                       tabIndex={2}
                     />
                     <Tab
                       className="match_details_tab"
-                      activeClassName="match_details_tabs_active"
+                      activeClassName="match_details_tabs_active bold black"
                       label="Matches"
                       tabIndex={3}
                     />
                     <Tab
                       className="match_details_tab"
-                      activeClassName="match_details_tabs_active"
+                      activeClassName="match_details_tabs_active bold black"
                       label="Leaderboard"
                       tabIndex={4}
                     />
                     <Tab
                       className="match_details_tab"
-                      activeClassName="match_details_tabs_active"
+                      activeClassName="match_details_tabs_active bold black"
                       label="MVP"
                       tabIndex={5}
                     />

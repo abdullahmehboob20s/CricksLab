@@ -36,13 +36,13 @@ function Statistics() {
             <Tabs defaultTab={1}>
               <Tab
                 className="match_details_tab"
-                activeClassName="match_details_tabs_active"
+                activeClassName="match_details_tabs_active bold black"
                 label="Overall"
                 tabIndex={1}
               />
               <Tab
                 className="match_details_tab"
-                activeClassName="match_details_tabs_active"
+                activeClassName="match_details_tabs_active bold black"
                 label="Match Type"
                 tabIndex={2}
               />
@@ -97,13 +97,13 @@ function Statistics() {
             <Tabs defaultTab={2}>
               <Tab
                 className="match_details_tab"
-                activeClassName="match_details_tabs_active"
+                activeClassName="match_details_tabs_active bold black"
                 label="Overall"
                 tabIndex={1}
               />
               <Tab
                 className="match_details_tab"
-                activeClassName="match_details_tabs_active"
+                activeClassName="match_details_tabs_active bold black"
                 label="Match Type"
                 tabIndex={2}
               />

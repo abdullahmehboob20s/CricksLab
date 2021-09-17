@@ -58,38 +58,38 @@ function AdvanceSearch() {
                   </div>
                   <div className="advance_search_tabs">
                     <Tab
-                      className="adv_search_tab"
-                      activeClassName="adv_search_tab_active"
+                      className="match_details_tab"
+                      activeClassName="match_details_tabs_active bold black"
                       label="Competitions"
                       tabIndex={1}
                     />
                     <Tab
-                      className="adv_search_tab"
-                      activeClassName="adv_search_tab_active"
+                      className="match_details_tab"
+                      activeClassName="match_details_tabs_active bold black"
                       label="Clubs"
                       tabIndex={2}
                     />
                     <Tab
-                      className="adv_search_tab"
-                      activeClassName="adv_search_tab_active"
+                      className="match_details_tab"
+                      activeClassName="match_details_tabs_active bold black"
                       label="Matches"
                       tabIndex={3}
                     />
                     <Tab
-                      className="adv_search_tab"
-                      activeClassName="adv_search_tab_active"
+                      className="match_details_tab"
+                      activeClassName="match_details_tabs_active bold black"
                       label="Teams"
                       tabIndex={4}
                     />
                     <Tab
-                      className="adv_search_tab"
-                      activeClassName="adv_search_tab_active"
+                      className="match_details_tab"
+                      activeClassName="match_details_tabs_active bold black"
                       label="Players"
                       tabIndex={5}
                     />
                     <Tab
-                      className="adv_search_tab"
-                      activeClassName="adv_search_tab_active"
+                      className="match_details_tab"
+                      activeClassName="match_details_tabs_active bold black"
                       label="Officials"
                       tabIndex={6}
                     />

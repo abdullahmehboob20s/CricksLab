@@ -53,31 +53,31 @@ function CompetitionOverviewDetails() {
                   <div className="scrollbar-height-0 match_details_tabs">
                     <Tab
                       className="match_details_tab"
-                      activeClassName="match_details_tabs_active"
+                      activeClassName="match_details_tabs_active bold"
                       label="Overview"
                       tabIndex={1}
                     />
                     <Tab
                       className="match_details_tab"
-                      activeClassName="match_details_tabs_active"
+                      activeClassName="match_details_tabs_active bold"
                       label="Players"
                       tabIndex={2}
                     />
                     <Tab
                       className="match_details_tab"
-                      activeClassName="match_details_tabs_active"
+                      activeClassName="match_details_tabs_active bold"
                       label="Matches"
                       tabIndex={3}
                     />
                     <Tab
                       className="match_details_tab"
-                      activeClassName="match_details_tabs_active"
+                      activeClassName="match_details_tabs_active bold"
                       label="Teams"
                       tabIndex={4}
                     />
                     <Tab
                       className="match_details_tab"
-                      activeClassName="match_details_tabs_active"
+                      activeClassName="match_details_tabs_active bold"
                       label="MVP"
                       tabIndex={5}
                     />

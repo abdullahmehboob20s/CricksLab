@@ -22,16 +22,17 @@ function Players() {
         <TitleBar5 title="All Players" fontSize="20px" />
         <div className="row gap-50">
           <button
-            onClick={() => changeLayout(true)}
-            className={isGrid ? "img_tab img_tab_active" : "img_tab "}
-          >
-            <IoGridOutline />
-          </button>
-          <button
             onClick={() => changeLayout(false)}
             className={!isGrid ? "img_tab img_tab_active" : "img_tab"}
           >
             <FaBars />
+          </button>
+
+          <button
+            onClick={() => changeLayout(true)}
+            className={isGrid ? "img_tab img_tab_active" : "img_tab "}
+          >
+            <IoGridOutline />
           </button>
         </div>
       </div>

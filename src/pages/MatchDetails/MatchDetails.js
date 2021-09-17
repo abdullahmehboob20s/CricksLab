@@ -81,43 +81,43 @@ function MatchDetails() {
                   <div className="match_details_tabs scrollbar-height-0">
                     <Tab
                       className="match_details_tab"
-                      activeClassName="match_details_tabs_active"
+                      activeClassName="match_details_tabs_active bold"
                       label="Scorecard"
                       tabIndex={1}
                     />
                     <Tab
                       className="match_details_tab"
-                      activeClassName="match_details_tabs_active"
+                      activeClassName="match_details_tabs_active bold"
                       label="Ball by Ball"
                       tabIndex={2}
                     />
                     <Tab
                       className="match_details_tab"
-                      activeClassName="match_details_tabs_active"
+                      activeClassName="match_details_tabs_active bold"
                       label="Squad"
                       tabIndex={3}
                     />
                     <Tab
                       className="match_details_tab"
-                      activeClassName="match_details_tabs_active"
+                      activeClassName="match_details_tabs_active bold"
                       label="Highlights"
                       tabIndex={4}
                     />
                     <Tab
                       className="match_details_tab"
-                      activeClassName="match_details_tabs_active"
+                      activeClassName="match_details_tabs_active bold"
                       label="Stats"
                       tabIndex={5}
                     />
                     <Tab
                       className="match_details_tab"
-                      activeClassName="match_details_tabs_active"
+                      activeClassName="match_details_tabs_active bold"
                       label="Top Performers"
                       tabIndex={6}
                     />
                     <Tab
                       className="match_details_tab"
-                      activeClassName="match_details_tabs_active"
+                      activeClassName="match_details_tabs_active bold"
                       label="Information"
                       tabIndex={7}
                     />
@@ -185,14 +185,14 @@ function MatchDetails() {
                           </p>
                           <div className="live_commentry_right">
                             <Tab
-                              className="match_details_tab"
-                              activeClassName="match_details_tabs_active"
+                              className=" match_details_tab"
+                              activeClassName=" match_details_tabs_active bold"
                               label="Crease Hunters"
                               tabIndex="1"
                             />
                             <Tab
                               className="match_details_tab"
-                              activeClassName="match_details_tabs_active"
+                              activeClassName="match_details_tabs_active bold"
                               label="Mash Eagles"
                               tabIndex="2"
                             />

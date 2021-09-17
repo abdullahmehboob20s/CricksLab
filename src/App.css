@@ -73,6 +73,10 @@
   font-weight: bold;
   color: #081027;
 }
+.only-bold {
+  font-weight: bold;
+}
+
 .color-blue {
   color: #33a2d2;
 }

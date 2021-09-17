@@ -46,51 +46,51 @@ function CompetitionOverview() {
                 <div className="match_details_tabs scrollbar-height-0">
                   <Tab
                     className="match_details_tab"
-                    activeClassName="match_details_tabs_active"
+                    activeClassName="match_details_tabs_active bold "
                     label="Overview"
                     tabIndex={1}
                   />
                   <Tab
                     className="match_details_tab"
-                    activeClassName="match_details_tabs_active"
+                    activeClassName="match_details_tabs_active bold"
                     label="Squads"
                     tabIndex={2}
                   />
                   <Tab
                     className="match_details_tab"
-                    activeClassName="match_details_tabs_active"
+                    activeClassName="match_details_tabs_active bold"
                     label="Matches"
                     tabIndex={3}
                   />
                   <Tab
                     className="match_details_tab"
-                    activeClassName="match_details_tabs_active"
+                    activeClassName="match_details_tabs_active bold"
                     label="Boundaries"
                     tabIndex={4}
                   />
                   <Tab
                     className="match_details_tab"
-                    activeClassName="match_details_tabs_active"
+                    activeClassName="match_details_tabs_active bold"
                     label="MVP"
                     tabIndex={5}
                   />
                   <Tab
                     className="match_details_tab"
-                    activeClassName="match_details_tabs_active"
+                    activeClassName="match_details_tabs_active bold"
                     label="Videos"
                     tabIndex={6}
                   />
                   <Tab
                     className="match_details_tab"
-                    activeClassName="match_details_tabs_active"
+                    activeClassName="match_details_tabs_active bold"
                     label="Rules Information"
                     tabIndex={7}
                   />
                   <Tab
                     className="match_details_tab"
-                    activeClassName="match_details_tabs_active"
+                    activeClassName="match_details_tabs_active bold"
                     label="Our Sponsors"
-                    tabIndex={7}
+                    tabIndex={8}
                   />
                 </div>
 

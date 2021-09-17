@@ -201,7 +201,7 @@
     margin-top: 0px;
     border-right: 1px solid rgb(233, 233, 233);
     transition: all 0.2s ease;
-    z-index: 10000000000000000000000;
+    z-index: 10000000000000000000000 !important;
   }
   .navbar_right.open {
     right: 0;

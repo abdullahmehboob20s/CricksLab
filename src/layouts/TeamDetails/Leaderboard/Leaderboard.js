@@ -13,7 +13,7 @@ function Leaderboard() {
         <div className="mb-30 boundaries_stats_title">
           <TitleBar5 title="Boundaries Stats" fontSize="20px" />
           <div className="boundaries_dropdown">
-            <p>Filter Matches</p>
+            <p className="bold">Filter Matches</p>
             <BsChevronDown />
           </div>
         </div>
