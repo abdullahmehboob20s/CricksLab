@@ -44,7 +44,7 @@ function Squad() {
 
       <TitleBar5 showBg={true} title="Playing XI" fontSize="0.875rem" />
 
-      <div className="container-wrapper-30">
+      <div className="container-wrapper-30 mb-30">
         <div className="squad_playing_X1_cards">
           {squad.map((player, index) => (
             <SquadPlayerCard data={player} />
