@@ -1,10 +1,18 @@
 import InformationCard from "components/Cards/InformationCard/InformationCard";
+import TitleBar5 from "components/TitleBars/TitleBar5/TitleBar5";
 import React from "react";
 
 function Information() {
   return (
     <div className="container-wrapper-30">
-      <p className="information_title">Information</p>
+      <div className="mb-30">
+        <TitleBar5
+          title="Information"
+          fontSize="1.25rem"
+          lineHeight="32px"
+          containerWrapper30={false}
+        />
+      </div>
       <div className="information_cards">
         <InformationCard
           title="Tournament:"

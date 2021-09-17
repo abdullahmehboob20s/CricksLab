@@ -3,6 +3,7 @@ import "./TopPerformerCard.css";
 import squad_player_1 from "assets/images/squad-player-1.png";
 import star from "assets/images/star.png";
 import PerformenceCard from "components/Cards/PerformenceCard/PerformenceCard";
+import TitleBar5 from "components/TitleBars/TitleBar5/TitleBar5";
 
 function TopPerformerCard() {
   return (
@@ -17,7 +18,11 @@ function TopPerformerCard() {
           src={squad_player_1}
           alt=""
         />
-        <p className="top_performer_profile_name">Kwadwo Asamoah</p>
+        <TitleBar5
+          title="Kwadwo Asamoah"
+          fontSize="1rem"
+          containerWrapper30={false}
+        />
       </div>
       <div className="top_performer_performence">
         <PerformenceCard

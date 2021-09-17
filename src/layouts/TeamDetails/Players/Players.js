@@ -18,23 +18,31 @@ function Players() {
 
   return (
     <div className="container-wrapper-30">
-      <div className="batting_stats_tabs mb-30">
-        <TitleBar5 title="All Players" fontSize="20px" />
-        <div className="row gap-50">
-          <button
-            onClick={() => changeLayout(false)}
-            className={!isGrid ? "img_tab img_tab_active" : "img_tab"}
-          >
-            <FaBars />
-          </button>
+      <div className="mb-30">
+        <TitleBar5
+          title="All Players"
+          fontSize="1.25rem"
+          showBg={false}
+          flex={true}
+          containerWrapper30={false}
+          leading={
+            <div className="row gap-50">
+              <button
+                onClick={() => changeLayout(false)}
+                className={!isGrid ? "img_tab img_tab_active" : "img_tab"}
+              >
+                <FaBars />
+              </button>
 
-          <button
-            onClick={() => changeLayout(true)}
-            className={isGrid ? "img_tab img_tab_active" : "img_tab "}
-          >
-            <IoGridOutline />
-          </button>
-        </div>
+              <button
+                onClick={() => changeLayout(true)}
+                className={isGrid ? "img_tab img_tab_active" : "img_tab "}
+              >
+                <IoGridOutline />
+              </button>
+            </div>
+          }
+        />
       </div>
 
       <div className={isGrid ? "player_squad_player_card_wrapper" : ""}>

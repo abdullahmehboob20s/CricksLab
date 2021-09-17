@@ -9,15 +9,22 @@ function Leaderboard() {
 
   return (
     <div>
-      <div className="container-wrapper-30">
-        <div className="mb-30 boundaries_stats_title">
-          <TitleBar5 title="Boundaries Stats" fontSize="20px" />
-          <div className="boundaries_dropdown">
-            <p className="bold">Filter Matches</p>
-            <BsChevronDown />
-          </div>
-        </div>
+      <div className="mb-30">
+        <TitleBar5
+          title="Boundaries Stats"
+          fontSize="1.25rem"
+          showBg={false}
+          flex={true}
+          containerWrapper30={true}
+          leading={
+            <div className="boundaries_dropdown">
+              <p className="bold">Filter Matches</p>
+              <BsChevronDown />
+            </div>
+          }
+        />
       </div>
+
       <div className="mb-70">
         <Table
           tabelHead={[
@@ -44,8 +51,14 @@ function Leaderboard() {
       </div>
 
       <div className="container-wrapper-30">
-        <div className="mb-30 ">
-          <TitleBar5 title="Bowling Summary" fontSize="20px" />
+        <div className="mb-30">
+          <TitleBar5
+            title="Bowling Summary"
+            fontSize="1.25rem"
+            showBg={false}
+            flex={true}
+            containerWrapper30={false}
+          />
         </div>
       </div>
       <Table

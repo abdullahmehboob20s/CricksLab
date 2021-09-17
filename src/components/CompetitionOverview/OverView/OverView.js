@@ -11,10 +11,22 @@ function OverView() {
   return (
     <div>
       <div className="mb-30">
-        <TitleBar5 title="Overview" fontSize="20px" />
+        <TitleBar5
+          title="Overview"
+          fontSize="1.25rem"
+          showBg={false}
+          flex={false}
+          containerWrapper30={false}
+        />
       </div>
       <div className="mb-30">
-        <TitleBar5 title="Group B" fontSize="16px" />
+        <TitleBar5
+          title="Group B"
+          fontSize="1rem"
+          showBg={false}
+          flex={false}
+          containerWrapper30={false}
+        />
       </div>
 
       <div className="mb-30">
@@ -26,7 +38,13 @@ function OverView() {
       </div>
 
       <div className="mb-30">
-        <TitleBar5 title="Semi-Finals" fontSize="16px" />
+        <TitleBar5
+          title="Semi-Finals"
+          fontSize="1rem"
+          showBg={false}
+          flex={false}
+          containerWrapper30={false}
+        />
       </div>
 
       <div className="mb-30">
@@ -38,7 +56,13 @@ function OverView() {
       </div>
 
       <div className="mb-30">
-        <TitleBar5 title="Final" fontSize="16px" />
+        <TitleBar5
+          title="Finals"
+          fontSize="1rem"
+          showBg={false}
+          flex={false}
+          containerWrapper30={false}
+        />
       </div>
 
       <div className="mb-30">
@@ -50,7 +74,13 @@ function OverView() {
       </div>
 
       <div className="mb-30">
-        <TitleBar5 title="Group A" fontSize="16px" />
+        <TitleBar5
+          title="Group A"
+          fontSize="1rem"
+          showBg={false}
+          flex={false}
+          containerWrapper30={false}
+        />
       </div>
 
       <div className="mb-30">

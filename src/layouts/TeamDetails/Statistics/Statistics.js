@@ -30,24 +30,33 @@ function Statistics() {
         <div className="mb-30">
           <ScoreCard4 data={statistics} />
         </div>
-        <div className="batting_stats_tabs mb-30">
-          <TitleBar5 title="Battings Statistics" fontSize="20px" />
-          <div className="row">
-            <Tabs defaultTab={1}>
-              <Tab
-                className="match_details_tab"
-                activeClassName="match_details_tabs_active bold black"
-                label="Overall"
-                tabIndex={1}
-              />
-              <Tab
-                className="match_details_tab"
-                activeClassName="match_details_tabs_active bold black"
-                label="Match Type"
-                tabIndex={2}
-              />
-            </Tabs>
-          </div>
+
+        <div className="mb-30">
+          <TitleBar5
+            title="Battings Statistics"
+            fontSize="1.25rem"
+            showBg={false}
+            flex={true}
+            containerWrapper30={false}
+            leading={
+              <div className="row">
+                <Tabs defaultTab={1}>
+                  <Tab
+                    className="match_details_tab"
+                    activeClassName="match_details_tabs_active bold black"
+                    label="Overall"
+                    tabIndex={1}
+                  />
+                  <Tab
+                    className="match_details_tab"
+                    activeClassName="match_details_tabs_active bold black"
+                    label="Match Type"
+                    tabIndex={2}
+                  />
+                </Tabs>
+              </div>
+            }
+          />
         </div>
       </div>
       <div className="batting_stats_table_container scrollbar-height-0 mb-30">
@@ -91,24 +100,32 @@ function Statistics() {
         </table>
       </div>
       <div className="container-wrapper-30">
-        <div className="batting_stats_tabs mb-30">
-          <TitleBar5 title="Bowling Statistics" fontSize="20px" />
-          <div className="row">
-            <Tabs defaultTab={2}>
-              <Tab
-                className="match_details_tab"
-                activeClassName="match_details_tabs_active bold black"
-                label="Overall"
-                tabIndex={1}
-              />
-              <Tab
-                className="match_details_tab"
-                activeClassName="match_details_tabs_active bold black"
-                label="Match Type"
-                tabIndex={2}
-              />
-            </Tabs>
-          </div>
+        <div className="mb-30">
+          <TitleBar5
+            title="Bowling Statistics"
+            fontSize="1.25rem"
+            showBg={false}
+            flex={true}
+            containerWrapper30={false}
+            leading={
+              <div className="row">
+                <Tabs defaultTab={2}>
+                  <Tab
+                    className="match_details_tab"
+                    activeClassName="match_details_tabs_active bold black"
+                    label="Overall"
+                    tabIndex={1}
+                  />
+                  <Tab
+                    className="match_details_tab"
+                    activeClassName="match_details_tabs_active bold black"
+                    label="Match Type"
+                    tabIndex={2}
+                  />
+                </Tabs>
+              </div>
+            }
+          />
         </div>
       </div>
       <div className="batting_stats_table_container scrollbar-height-0 mb-30">

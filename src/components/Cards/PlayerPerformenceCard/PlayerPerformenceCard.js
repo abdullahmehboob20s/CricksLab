@@ -3,6 +3,7 @@ import "./PlayerPerformenceCard.css";
 import squad_player_1 from "assets/images/squad-player-1.png";
 import PerformenceCard from "components/Cards/PerformenceCard/PerformenceCard";
 import pattren from "assets/images/pattren.png";
+import TitleBar5 from "components/TitleBars/TitleBar5/TitleBar5";
 
 function PlayerPerformenceCard(props) {
   const { data, index } = props;
@@ -24,7 +25,13 @@ function PlayerPerformenceCard(props) {
         alt=""
         className="player_performence_card_img"
       />
-      <p className="player_performence_card_title">{data.name}</p>
+      <div className="mb-20">
+        <TitleBar5
+          title={data.name}
+          fontSize="1rem"
+          containerWrapper30={false}
+        />
+      </div>
 
       <div className="player_performence_card_cards">
         {data.batting ? (

@@ -42,7 +42,13 @@ function Statistics() {
           <ScoreCard4 data={statistics} />
         </div>
         <div className="mb-30">
-          <TitleBar5 title="Recent Batting form" fontSize="20px" />
+          <TitleBar5
+            title="Recent Batting form"
+            fontSize="1.25rem"
+            showBg={false}
+            flex={true}
+            containerWrapper30={false}
+          />
         </div>
       </div>
 

@@ -6,6 +6,7 @@ import TeamsCard from "components/Cards/TeamsCard/TeamsCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import SwiperCore, { Navigation } from "swiper";
+import TitleBar5 from "components/TitleBars/TitleBar5/TitleBar5";
 
 SwiperCore.use([Navigation]);
 
@@ -14,22 +15,30 @@ function Slider1(props) {
   const navigationNextRef = React.useRef(null);
   return (
     <div>
-      <div className="slider1_titles mb-30">
-        <p className="slider1_title">{props.headerTitle}</p>
-        <div className="slider1_titles_right">
-          <button
-            className="slider1_titles_right_btn btn_1"
-            ref={navigationPrevRef}
-          >
-            <BsArrowLeft />
-          </button>
-          <button
-            className="slider1_titles_right_btn btn_2"
-            ref={navigationNextRef}
-          >
-            <BsArrowRight />
-          </button>
-        </div>
+      <div className="mb-30">
+        <TitleBar5
+          title={props.headerTitle}
+          fontSize="1rem"
+          showBg={false}
+          flex={true}
+          containerWrapper30={false}
+          leading={
+            <div className="slider1_titles_right">
+              <button
+                className="slider1_titles_right_btn btn_1"
+                ref={navigationPrevRef}
+              >
+                <BsArrowLeft />
+              </button>
+              <button
+                className="slider1_titles_right_btn btn_2"
+                ref={navigationNextRef}
+              >
+                <BsArrowRight />
+              </button>
+            </div>
+          }
+        />
       </div>
 
       <Swiper

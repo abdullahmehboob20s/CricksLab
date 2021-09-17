@@ -88,12 +88,6 @@ function CompetitionOverviewDetails() {
                       <OverView />
                     </div>
                   </TabPan>
-                  <TabPan tabIndex={2}>
-                    <Players />
-                  </TabPan>
-                  <TabPan tabIndex={4}>
-                    <Leaderboard />
-                  </TabPan>
                 </Tabs>
               </div>
 

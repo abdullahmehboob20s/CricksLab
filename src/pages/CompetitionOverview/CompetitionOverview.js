@@ -12,6 +12,7 @@ import MVP from "components/CompetitionOverview/MVP/MVP";
 import TeamSquad from "components/CompetitionOverview/TeamSquad/TeamSquad";
 import Matches from "components/CompetitionOverview/Matches/Matches";
 import Boundaries from "components/CompetitionOverview/Boundaries/Boundaries";
+import TitleBar5 from "components/TitleBars/TitleBar5/TitleBar5";
 
 function CompetitionOverview() {
   return (

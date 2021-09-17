@@ -13,7 +13,13 @@ function TeamSquad() {
     <div>
       <div className="container-wrapper-30">
         <div className="mb-30">
-          <TitleBar5 title="Overview" fontSize="20px" />
+          <TitleBar5
+            title="Overview"
+            fontSize="1.25rem"
+            showBg={false}
+            flex={false}
+            containerWrapper30={false}
+          />
         </div>
       </div>
       <Accordion

@@ -8,7 +8,13 @@ function OverView() {
   return (
     <div>
       <div className="mb-30">
-        <TitleBar5 title="MVP" fontSize="20px" />
+        <TitleBar5
+          title="MVP"
+          fontSize="1.25rem"
+          showBg={false}
+          flex={false}
+          containerWrapper30={false}
+        />
       </div>
       <div className="mb-30">
         <Table

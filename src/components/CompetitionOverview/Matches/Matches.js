@@ -7,15 +7,24 @@ import Checkbox from "components/Checkbox/Checkbox";
 function Matches() {
   return (
     <div>
-      <div className="mathes_title_bar mb-30">
-        <TitleBar5 title="Matches" fontSize="20px" />
-        <div className="mathes_title_bar_right">
-          <Checkbox title="All" />
-          <Checkbox title="Live" />
-          <Checkbox title="Scheduled" />
-          <Checkbox title="Recent" />
-        </div>
+      <div className="mb-30">
+        <TitleBar5
+          title="Matches"
+          fontSize="1.25rem"
+          showBg={false}
+          flex={true}
+          containerWrapper30={false}
+          leading={
+            <div className="mathes_title_bar_right">
+              <Checkbox title="All" />
+              <Checkbox title="Live" />
+              <Checkbox title="Scheduled" />
+              <Checkbox title="Recent" />
+            </div>
+          }
+        />
       </div>
+
       <div className="matches_details">
         {new Array(8).fill("").map((item, index) => (
           <UpcomingMatchesCard

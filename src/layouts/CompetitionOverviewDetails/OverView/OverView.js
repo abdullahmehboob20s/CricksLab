@@ -25,14 +25,26 @@ function OverView() {
   return (
     <div>
       <div className="mb-30">
-        <TitleBar5 title="Overview" fontSize="20px" />
+        <TitleBar5
+          title="Overview"
+          fontSize="1.25rem"
+          showBg={false}
+          flex={true}
+          containerWrapper30={false}
+        />
       </div>
       <div className="mb-30">
         <ScoreCard4 data={statistics} />
       </div>
 
       <div className="mb-30">
-        <TitleBar5 title="Recent Matches" fontSize="20px" />
+        <TitleBar5
+          title="Recent Matches"
+          fontSize="1.25rem"
+          showBg={false}
+          flex={true}
+          containerWrapper30={false}
+        />
       </div>
 
       <div className="matches_details">
