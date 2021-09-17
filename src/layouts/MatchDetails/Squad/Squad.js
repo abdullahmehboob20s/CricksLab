@@ -2,7 +2,6 @@ import SquadPlayerCard from "components/Cards/SquadPlayerCard/SquadPlayerCard";
 import Tab from "components/Tabs/Tab";
 import Tabs from "components/Tabs/Tabs";
 import TitleBar5 from "components/TitleBars/TitleBar5/TitleBar5";
-import TitleBar6 from "components/TitleBars/TitleBar6/TitleBar6";
 import React from "react";
 import { useSelector } from "react-redux";
 
