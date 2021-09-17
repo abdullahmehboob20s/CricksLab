@@ -63,6 +63,11 @@
   display: none;
 }
 
+.title_bar_score_card_header_right {
+  display: flex;
+  align-items: center;
+}
+
 @media (max-width: 1400px) {
   .divider {
     padding-left: 1rem;
@@ -120,7 +125,7 @@
 }
 
 @media (max-width: 600px) {
-  .score_card_header_right {
+  .title_bar_score_card_header_right {
     display: none;
   }
 
@@ -175,7 +180,7 @@
     padding-left: 0;
     border: 0;
   }
-  .score_card_header_right.showOnResponsive {
+  .title_bar_score_card_header_right.showOnResponsive {
     display: flex;
   }
 }

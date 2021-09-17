@@ -78,8 +78,8 @@ function TitleBar2(props) {
               <div
                 className={
                   showShareOnResponsive
-                    ? "score_card_header_right showOnResponsive"
-                    : "score_card_header_right"
+                    ? "title_bar_score_card_header_right showOnResponsive"
+                    : "title_bar_score_card_header_right"
                 }
               >
                 <p className="score_card_header_right_title dark showOnResponsive">

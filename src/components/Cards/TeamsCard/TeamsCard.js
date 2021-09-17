@@ -49,7 +49,7 @@ function TeamsCard({
 
       {showPlayerDetails ? (
         <PlayerHistory
-          bgColor="rgba(110, 112, 119, 0.05)"
+          style={{ background: "rgba(110, 112, 119, 0.05)" }}
           playerHistoryTitle={teamdata.playerHistoryTitle}
           playerHistory={teamdata.playerHistory}
         />

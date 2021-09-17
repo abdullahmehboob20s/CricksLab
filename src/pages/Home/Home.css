@@ -18,3 +18,12 @@
 .swiper-button-prev::after {
   display: none;
 }
+
+@media (max-width: 500px) {
+  .swiper-button-next {
+    display: none;
+  }
+  .swiper-button-prev {
+    display: none;
+  }
+}

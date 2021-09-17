@@ -12,6 +12,7 @@ import competitionOverview from "./competitionOverview";
 import battingLeaders from "./battingLeaders";
 import maxBoundaries from "./maxBoundaries";
 import battingSummary from "./battingSummary";
+import tabs from "redux/tabs";
 
 export const store = configureStore({
   reducer: {
@@ -28,5 +29,6 @@ export const store = configureStore({
     battingLeaders,
     maxBoundaries,
     battingSummary,
+    tabs,
   },
 });

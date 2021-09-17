@@ -105,12 +105,10 @@
 }
 
 .calendar_date_picker .rdrDefinedRangesWrapper {
-  /* border: 2px solid red; */
   border-left: 1px solid #dedee4;
 }
 
 .calendar_date_picker .rdrDateDisplayWrapper {
-  /* border: 2px solid red; */
   display: none;
 }
 
@@ -131,7 +129,6 @@
 }
 
 .rdrMonths {
-  /* border: 2px solid red; */
   margin-top: 20px;
 }
 
@@ -165,8 +162,6 @@
 .rdrDayInPreview {
   border: 2px solid #33a2d2 !important;
   border-radius: 50% !important;
-  /* width: 100%;
-  height: 100%; */
 }
 .rdrDayStartPreview {
   border: 0px !important;
@@ -199,7 +194,6 @@
 }
 
 .rdrMonthAndYearWrapper {
-  /* border: 2px solid red; */
   margin-top: 20px;
 }
 
@@ -208,11 +202,9 @@
 }
 
 .rdrNextPrevButton.rdrPprevButton {
-  /* border: 2px solid red; */
   background: white;
 }
 .rdrNextPrevButton.rdrNextButton {
-  /* border: 2px solid red; */
   background: white;
 }
 

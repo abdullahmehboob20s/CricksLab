@@ -16,6 +16,7 @@ import TitleBar2 from "components/TitleBars/TitleBar2/TitleBar2";
 import Statistics from "layouts/TeamDetails/Statistics/Statistics";
 import Players from "layouts/TeamDetails/Players/Players";
 import Leaderboard from "layouts/TeamDetails/Leaderboard/Leaderboard";
+import stars from "assets/images/stars.png";
 
 function TeamDetails() {
   return (
@@ -31,6 +32,7 @@ function TeamDetails() {
             showRightSide={true}
             showSharewith={true}
             divider={false}
+            showShareOnResponsive={true}
           />
           <div className="mb-70">
             <LeagueCard
@@ -41,6 +43,7 @@ function TeamDetails() {
               showLocation={true}
               showStartAndEndDate={false}
               showDividerInResponsive={false}
+              img={stars}
             />
           </div>
         </div>

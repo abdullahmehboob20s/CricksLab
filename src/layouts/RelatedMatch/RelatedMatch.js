@@ -21,6 +21,15 @@ function RelatedMatche() {
             clickable: true,
           }}
           breakpoints={{
+            2000: {
+              slidesPerView: 5,
+            },
+            1800: {
+              slidesPerView: 4.5,
+            },
+            1600: {
+              slidesPerView: 4,
+            },
             1350: {
               slidesPerView: 3.5,
               spaceBetween: 0,

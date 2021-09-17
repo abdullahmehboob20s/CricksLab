@@ -30,9 +30,10 @@ function ScoreCardHeader() {
         </p>
         <div className="score_card_left_live">LIVE</div>
       </div>
-      <div className="score_card_header_right">
+      <div className="score_card_header_right_2">
         <div className="score_card_header_share_btn">
           <Button
+            title={<BiShareAlt />}
             style={{
               width: "50px",
               height: "50px",
@@ -43,7 +44,6 @@ function ScoreCardHeader() {
               color: "#33A2D2",
               fontSize: "24px",
             }}
-            title={<BiShareAlt />}
           />
         </div>
         <p className="score_card_header_right_title">Share with:</p>
