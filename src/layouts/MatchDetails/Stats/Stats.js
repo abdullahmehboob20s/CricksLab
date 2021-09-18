@@ -1,8 +1,8 @@
 import TitleBar5 from "components/TitleBars/TitleBar5/TitleBar5";
-import TitleBar6 from "components/TitleBars/TitleBar6/TitleBar6";
 import React from "react";
-import { Bar as ChartJsBar } from "react-chartjs-2";
 import { useSelector } from "react-redux";
+import Highcharts from "highcharts";
+import HighchartsReact from "highcharts-react-official";
 import {
   LineChart,
   Line,
@@ -19,70 +19,76 @@ import {
 function Stats() {
   const { data, data2 } = useSelector((state) => state.playerDetails);
 
-  const dataChart = {
-    labels: [
-      "11(10)",
-      "10(9)",
-      "49(18)",
-      "27(12)",
-      "2(2)",
-      "8(6)",
-      "3(7)",
-      "0(1)",
-      "4(4)",
-      "0(0)",
-    ],
-    datasets: [
+  const options = {
+    chart: {
+      type: "bar",
+    },
+    credits: {
+      enabled: false,
+    },
+    title: {
+      style: { display: "none" },
+    },
+
+    legend: {
+      enabled: false,
+    },
+
+    xAxis: {
+      categories: [
+        "11(10)",
+        "10(9)",
+        "49(18)",
+        "27(12)",
+        "2(2)",
+        "8(6)",
+        "3(7)",
+        "0(1)",
+        "4(4)",
+        "0(0)",
+      ],
+    },
+    yAxis: {
+      lineWidth: 0,
+      title: {
+        style: { display: "none" },
+      },
+    },
+    plotOptions: {
+      series: {
+        stacking: "normal",
+      },
+    },
+    series: [
       {
-        data: [12, 10, 3, 5, 2, 3, 15, 0, 5, 0],
-        backgroundColor: [
+        name: "John",
+        data: [20, 32, 10, 7, 0, 30, 12, 0, 50, 0],
+        colorByPoint: true,
+        colors: [
+          "#925CB1",
+          "#925CB1",
+          "#3B6F9F",
+          "#3B6F9F",
+          "#4B975B",
+          "#418B76",
+          "#418B76",
+        ],
+      },
+      {
+        name: "Jane",
+        data: [10, 3, 30, 7, 5, 20, 22, 0, 5, 0],
+        colorByPoint: true,
+        colors: [
           "#BC4D3D",
           "#3B6F9F",
           "#4DA38A",
           "#4DA38A",
           "#4B975B",
           "#CEAE3C",
-          "#AD511F",
-          "#AD511F",
-          "#925CB1",
           "#925CB1",
         ],
       },
     ],
-  };
-
-  const options = {
-    indexAxis: "y",
-    responsive: true,
-    // stack: true,
-    plugins: {
-      legend: false,
-    },
-
-    scales: {
-      x: {
-        ticks: {
-          color: "#B5B5BB",
-        },
-        grid: {
-          display: true,
-          drawBorder: false,
-          drawOnChartArea: true,
-          drawTicks: false,
-        },
-      },
-      y: {
-        ticks: {
-          color: "#B5B5BB",
-        },
-        grid: {
-          display: true,
-          drawBorder: true,
-          drawTicks: false,
-          drawOnChartArea: false,
-        },
-      },
-    },
   };
 
   return (
@@ -236,28 +242,7 @@ function Stats() {
 
       <div className="container-wrapper-30">
         <div className="stats_chart_2">
-          <ChartJsBar data={dataChart} options={options} />
-          {/* <ResponsiveContainer width="100%" height="100%">
-            <BarChart
-              width={500}
-              height={300}
-              // layout="vertical"
-              data={data}
-              margin={{
-                top: 20,
-                right: 30,
-                left: 20,
-                bottom: 5,
-              }}
-            >
-              <CartesianGrid strokeDasharray="0 0" />
-              <XAxis dataKey="name" />
-              <YAxis />
-              <Tooltip />
-              <Bar dataKey="pv" stackId="a" fill="#8884d8" />
-              <Bar dataKey="uv" stackId="a" fill="#82ca9d" />
-            </BarChart>
-          </ResponsiveContainer> */}
+          <HighchartsReact highcharts={Highcharts} options={options} />
         </div>
       </div>
     </>
