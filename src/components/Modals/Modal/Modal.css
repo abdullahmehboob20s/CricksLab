@@ -13,7 +13,7 @@
 }
 .modal.show {
   opacity: 1;
-  z-index: 1000000000000000000000000000000;
+  z-index: 100000000;
 }
 
 .modal_form {
@@ -26,7 +26,7 @@
 }
 .modal.show .modal_form {
   display: block;
-  z-index: 10000000000000000 !important;
+  z-index: 100000000;
 }
 
 .modal_form input {
