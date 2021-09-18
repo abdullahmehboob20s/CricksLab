@@ -13,6 +13,11 @@ function Dropdowns(props) {
     searchBar = false,
     dropdownWidth,
     showRightSide,
+    position = "left",
+    btnClassName,
+    top = "99%",
+    rounded = false,
+    responsiveClass,
   } = props;
   const [showDropdown, setShowDropdown] = React.useState(false);
   const menuRef = React.useRef();
@@ -36,7 +41,11 @@ function Dropdowns(props) {
       <div
         onClick={() => setShowDropdown(!showDropdown)}
         style={{ width: width ? width : "fit-content" }}
-        className={showDropdown ? "dropdown_btn showMenu" : "dropdown_btn"}
+        className={
+          showDropdown
+            ? `dropdown_btn showMenu ${btnClassName ? btnClassName : ""}`
+            : `dropdown_btn ${btnClassName ? btnClassName : ""}`
+        }
       >
         <p>{btnTitle}</p>
         <div
@@ -51,8 +60,11 @@ function Dropdowns(props) {
         {showDropdown ? (
           props.children ? (
             <div
+              style={{ top }}
               className={`dropdown_menu_2 ${
                 dropdownWidth ? "dropdownWidth" : ""
+              } ${rounded ? "rounded" : ""} ${position ? position : ""} ${
+                responsiveClass ? responsiveClass : ""
               }`}
             >
               <div>{props.children}</div>
@@ -67,7 +79,10 @@ function Dropdowns(props) {
                     ""
                   )}
                   {checkBoxes ? (
-                    <div className="dropdown_menu_checkboxes">
+                    <div
+                      style={{ paddingTop: 8 }}
+                      className="dropdown_menu_checkboxes"
+                    >
                       {checkBoxes.map((item, index) => (
                         <Checkbox title={item} />
                       ))}
@@ -98,7 +113,11 @@ function Dropdowns(props) {
               )}
             </div>
           ) : (
-            <div className="dropdown_menu">
+            <div
+              className={
+                position === "left" ? "dropdown_menu " : "dropdown_menu right"
+              }
+            >
               {searchBar ? (
                 <div className="mb-20">
                   <Search style={{ width: "100%" }} />

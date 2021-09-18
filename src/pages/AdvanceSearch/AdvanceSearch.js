@@ -22,16 +22,13 @@ import BlackBackgroundScreen from "components/Screens/BlackBackgroundScreen";
 function AdvanceSearch() {
   const [open, setOpen] = React.useState(false);
   const { data } = useSelector((state) => state.leagues);
-
-  const handleSelect = (ranges) => {
-    console.log(ranges);
-  };
-
-  const selectionRange = {
-    startDate: new Date(),
-    endDate: new Date(),
-    key: "selection",
-  };
+  const [state, setState] = React.useState([
+    {
+      startDate: new Date(),
+      endDate: null,
+      key: "selection",
+    },
+  ]);
 
   return (
     <>
@@ -243,10 +240,10 @@ function AdvanceSearch() {
                     >
                       <DateRangePicker
                         className="calendar_date_picker"
-                        ranges={[selectionRange]}
-                        onChange={handleSelect}
+                        ranges={state}
+                        editableDateInputs={true}
+                        onChange={(item) => setState([item.selection])}
                         showMonthAndYearPickers={false}
-                        // dayDisplayFormat={}
                         weekdayDisplayFormat="EEEEE"
                       />
                     </Dropdowns>
@@ -254,13 +251,17 @@ function AdvanceSearch() {
                 </div>
                 <div className="advance_search_dropdowns_right">
                   <Dropdowns
-                    dropdownWidth="fit-content"
-                    width="180px"
                     btnTitle="Sort By"
-                    showRightSide={false}
-                  >
-                    Drodown
-                  </Dropdowns>
+                    width="180px"
+                    position="right"
+                    checkBoxes={[
+                      "India",
+                      "Sri Lanka",
+                      "Pakistan",
+                      "New Zealand",
+                      "Australia",
+                    ]}
+                  />
                 </div>
               </div>
             </div>

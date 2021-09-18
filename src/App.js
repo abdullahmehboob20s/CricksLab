@@ -13,6 +13,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import ScrollToTop from "components/ScrollToTop";
 import CompetitionOverviewDetails from "pages/CompetitionOverviewDetails/CompetitionOverviewDetails";
 import PlayerDetails2 from "pages/PlayerDetails2/PlayerDetails2";
+import MatchListing from "pages/MatchListing/MatchListing";
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
             path="/competition-overview"
             component={CompetitionOverview}
           />
+          <Route exact path="/match-listing" component={MatchListing} />
         </Switch>
       </Router>
     </div>

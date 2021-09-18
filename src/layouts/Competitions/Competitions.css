@@ -19,6 +19,12 @@
   color: #081027;
   cursor: pointer;
 }
+.competitions_tab.flex-1 {
+  flex: 1;
+}
+/* .competitions_tab.text-center{
+  flex: 1;
+} */
 .competitions_tab.competitions_tab_active {
   border-bottom: 2px solid #33a2d2;
   color: #33a2d2;
