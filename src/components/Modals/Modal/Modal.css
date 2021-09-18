@@ -22,9 +22,11 @@
   overflow: hidden;
   background-color: white;
   display: none;
+  position: relative;
 }
 .modal.show .modal_form {
   display: block;
+  z-index: 10000000000000000 !important;
 }
 
 .modal_form input {
