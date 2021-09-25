@@ -83,3 +83,16 @@
     min-width: 800px;
   }
 }
+
+@media (max-width: 500px) {
+  .table_container {
+    border-radius: 0px;
+    border: 0;
+  }
+
+  .table_container.borderInResponsive {
+    border-radius: 9px 0 0 9px;
+    border: 1px solid #dedee4;
+    border-right: 0;
+  }
+}

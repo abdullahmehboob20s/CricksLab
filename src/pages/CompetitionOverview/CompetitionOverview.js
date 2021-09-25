@@ -95,11 +95,9 @@ function CompetitionOverview() {
                   />
                 </div>
 
-                <div className="container-wrapper-30">
-                  <TabPan tabIndex={1}>
-                    <OverView />
-                  </TabPan>
-                </div>
+                <TabPan tabIndex={1}>
+                  <OverView />
+                </TabPan>
 
                 <TabPan tabIndex={2}>
                   <TeamSquad />
@@ -109,16 +107,12 @@ function CompetitionOverview() {
                     <Matches />
                   </TabPan>
                 </div>
-                <div className="container-wrapper-30">
-                  <TabPan tabIndex={4}>
-                    <Boundaries />
-                  </TabPan>
-                </div>
-                <div className="container-wrapper-30">
-                  <TabPan tabIndex={5}>
-                    <MVP />
-                  </TabPan>
-                </div>
+                <TabPan tabIndex={4}>
+                  <Boundaries />
+                </TabPan>
+                <TabPan tabIndex={5}>
+                  <MVP />
+                </TabPan>
               </Tabs>
             </div>
           </div>

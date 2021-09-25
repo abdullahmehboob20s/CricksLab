@@ -13,6 +13,7 @@ function Leaderboard() {
         <TitleBar5
           title="Boundaries Stats"
           fontSize="1.25rem"
+          rowInResponsive={true}
           showBg={false}
           flex={true}
           containerWrapper30={true}

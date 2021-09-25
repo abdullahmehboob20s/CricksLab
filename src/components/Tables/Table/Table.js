@@ -9,12 +9,15 @@ function Table(props) {
     showIndexes = true,
     border = true,
     squeeze = false,
+    borderInResponsive = false,
   } = props;
   return (
     <div
       className={
         border
-          ? "table_container scrollbar-height-0"
+          ? `table_container scrollbar-height-0 ${
+              borderInResponsive ? "borderInResponsive" : ""
+            }`
           : "table_container scrollbar-height-0 no-border"
       }
     >

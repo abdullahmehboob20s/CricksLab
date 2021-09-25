@@ -22,6 +22,7 @@ function Players() {
         <TitleBar5
           title="All Players"
           fontSize="1.25rem"
+          rowInResponsive={true}
           showBg={false}
           flex={true}
           containerWrapper30={false}

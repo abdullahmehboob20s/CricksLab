@@ -4,7 +4,6 @@
 .accordion_header {
   background: rgba(51, 162, 210, 0.05);
   cursor: pointer;
-  margin-bottom: 30px;
 }
 .accordion_wrapper {
   display: flex;
@@ -42,4 +41,10 @@
   height: 0;
   overflow: hidden;
   transition: height 0.3s ease;
+}
+
+@media (max-width: 760px) {
+  .accordion_header {
+    margin-bottom: 0;
+  }
 }

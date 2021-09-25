@@ -11,11 +11,18 @@ function TitleBar5(props) {
     lineHeight,
     fontWeight = "bold",
     color,
+    rowInResponsive = false,
   } = props;
   return (
     <div className={showBg ? "stats_title_bar_wrapper" : ""}>
       <div className={containerWrapper30 ? "container-wrapper-30" : ""}>
-        <div className={flex ? "stats_title_bar" : ""}>
+        <div
+          className={
+            flex
+              ? `stats_title_bar ${rowInResponsive ? "rowInResponsive" : ""}`
+              : ""
+          }
+        >
           <p
             style={{
               fontWeight: "bold",

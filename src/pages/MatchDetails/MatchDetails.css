@@ -450,6 +450,11 @@
     flex-direction: column;
     gap: 1rem;
   }
+  .stats_title_bar.rowInResponsive {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 @media (max-width: 300px) {
